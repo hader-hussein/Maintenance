@@ -687,9 +687,9 @@
                                 </a>
                               </li>
                               <li class="menu-item">
-                                <a href="Register-problem.html" class="menu-link">
+                                <a href="Maintenance-request.html" class="menu-link">
                                   <i class="menu-icon tf-icons ti ti-menu-2"></i>
-                                  <div data-i18n="Register-problem">   تسجبل مشكلة</div>
+                                  <div data-i18n="Maintenance-request-form">    نموذج طلب صيانة</div>
                                 </a>
                               </li>
                             </ul>
@@ -835,10 +835,10 @@
                  <!-- Content -->
                 <div class="container-xxl flex-grow-1 container-p-y">
                    <div class="card comonent-hader-top">
-                      <div class="card-body py-2 px-4 card-widget-separator">
-                        <div class="row mx-0 d-flex justify-content-between  mb-3 align-items-center pt-4">
-                          <div class="col">
-                            <strong class="py-3 px-3 text-title-hadeer text-tilte-b"><span class="text-muted fw-medium">المعدات</span>  </strong>
+                      <div class="card-body py-2 px-md-4 px-2 card-widget-separator">
+                        <div class="row mx-0 d-flex flex-wrap justify-content-between  mb-3 align-items-center pt-4">
+                          <div class="col-md-8 col-12 mb-md-0 mb-4">
+                            <strong class="py-md-3 px-md-3  text-title-hadeer text-tilte-b"><span class="text-muted fw-medium">المعدات</span>  </strong>
 
                           </div>
                           <div class="col text-end">
@@ -854,12 +854,16 @@
                             <tr>
                            
                               <th>م</th>
-                              <th>الاسم</th>
-                              <th>موديل</th>
+                              <th>رقم التسلسل</th>
+                              <th>اسم المصنع</th>
+                              <th> انواع المعدات</th>
+                              <th> موديل</th>
                               <th>سنه الصنع</th>
                               <th>بلد المنشا</th>
                               <th>مدة الصيانه الدورية</th>
-                            
+                              <th>  اسم الفرع</th>
+                              <th>   الكمية</th>
+                              <th>  الملاحظات </th>
                               <th>Action</th>
                             </tr>
                           </thead>
@@ -871,7 +875,11 @@
                                 <td></td>
                                 <td></td>
                                 <td></td>
-                                
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
                                 <td>
                                   <div class="d-flex justify-content-center">
                                   
@@ -900,20 +908,36 @@
             <div class="modal-dialog modal-lg modal-dialog-centered">
               <div class="modal-content p-3 p-md-3">
                 <div class="modal-header">
-                  <h1 class="modal-title fs-4 fw-bold text-tilte-b"> تعديل بيانات المعدة</h1>
+                  <h1 class="modal-title fs-5 fw-bold text-tilte-b"> تعديل بيانات المعدة</h1>
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="modal-body">
+                <div class="modal-body px-0">
                   <form class="row component-form">
                     <div class="col-12 col-lg-6 mb-3">
-                      <label class="form-label" for="basic-default-fullname"> الإسم</label>
-                      <input type="text" class="form-control" id="basic-default-fullname" placeholder=" الإسم">
+                      <label class="form-label" for="basic-default-fullname"> اسم المصنع</label>
+                      <input type="text" class="form-control" id="basic-default-fullname" placeholder=" اسم المصنع" disabled>
                     </div>
-                   
                     <div class="col-12 col-lg-6 mb-3">
-                      <label class="form-label" for="basic-default-model">موديل</label>
-                      <input type="text" class="form-control" id="basic-default-model" placeholder="موديل ">
-
+                      <label class="form-label" for="select-type"> انواع المعدات</label>
+                      <select id="select-type" class="select2 form-select" data-allow-clear="true">
+                        <option value="AK">   انواع المعدات   </option>
+                       
+                    
+                      </select>
+                  
+                    </div>
+                    <div class="col-12 col-lg-6 mb-3">
+                      <label class="form-label" for="basic-default-model">اختار المعدة</label>
+                      <select id="select1Basic-driver-v" class="select2 form-select" data-allow-clear="true">
+                        <option value="AK">  اختار المعدة   </option>
+                       
+                    
+                      </select>
+                  
+                    </div>
+                    <div class="col-12 col-lg-6 mb-3">
+                      <label class="form-label" for="basic-default-namber">  رقم التسلسلى</label>
+                      <input type="text" class="form-control" id="basic-default-namber" placeholder="  رقم التسلسلى" >
                     </div>
                     <div class="col-12 col-lg-6 mb-3">
                       <label class="form-label" for="basic-default-year">سنة الصنع</label>
@@ -925,17 +949,35 @@
                       <input type="text" class="form-control" id="basic-default-country " placeholder=" بلد المنشأ ">
 
                     </div>
-                    <div class="col-12 col-lg-12 mb-3">
+                    <div class="col-12 col-lg-6 mb-3">
                       <label class="form-label" for="basic-default-line2"> مدة الصيانة الدورية</label>
                       <input type="text" class="form-control" id="basic-default-line2" placeholder=" مدة الصيانة الدورية ">
 
                     </div>
-                   
-                    <div class="col-12 col-lg-8">
-                      <button type="submit" class="btn btn-primary  waves-effect waves-light">تعديل</button>
-                      <button type="reset" class="btn btn-outline-secondary waves-effect mx-3">مسح المحتوى </button>
+                    <div class="col-12 col-lg-6 mb-3">
+                      <label class="form-label" for="select-branch"> اسم الفرع</label>
+                      <select id="select-branch" class="select2 form-select" data-allow-clear="true">
+                        <option value="AK"> اسم الفرع  </option>
+                       
+                    
+                      </select>
+                  
+                    </div>
+                    <div class="col-12 col-lg-12 mb-3">
+                      <label class="form-label" for="basic-quntenty"> الكمية  </label>
+                      <input type="text" class="form-control" id="basic-quntenty" placeholder=" الكمية">
 
                     </div>
+                    <div class="col-12 col-lg-12 mb-3">
+                      <label class="form-label" for="basic-notes"> الملاحظات  </label>
+                      <textarea type="text" class="form-control" id="basic-notes" placeholder="   الملاحظات "></textarea>
+
+                    </div>
+                    <div class="col-12 col-lg-8">
+                      <button type="submit" class="btn btn-primary  waves-effect waves-light">حفظ</button>
+                      <button type="reset" class="btn btn-outline-secondary waves-effect mx-md-2 mx-1">مسح المحتوى </button>
+
+                     </div>
                    
                   </form>
                   
@@ -955,7 +997,7 @@
                   data-bs-dismiss="modal"
                   aria-label="Close"></button>
                 <div class="modal-body text-center">
-                    <h3 class="role-title mb-2 fs-4">
+                    <h3 class="role-title mb-2 fs-6">
                       هل انت متاكد من حذف العنصر؟
                     </h3>
                   

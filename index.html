@@ -682,12 +682,7 @@
                             <div data-i18n="mission">   المهام</div>
                           </a>
                         </li>
-                        <li class="menu-item">
-                          <a href="Register-problem.html" class="menu-link">
-                            <i class="menu-icon tf-icons ti ti-menu-2"></i>
-                            <div data-i18n="Register-problem">   تسجبل مشكلة</div>
-                          </a>
-                        </li>
+                       
                       </ul>
                     </li>
                     <!-- Maintenance -->
@@ -697,6 +692,57 @@
                         <div data-i18n="Maintenance">الصيانة </div>
                       </a>
                       <ul class="menu-sub">
+                        <li class="menu-item">
+                          <a href="Maintenance-request.html" class="menu-link">
+                            <i class="menu-icon tf-icons ti ti-toggle-left"></i>
+                            <div data-i18n="Maintenance-request-form">    نموذج طلب صيانة</div>
+                          </a>
+                        </li>
+                        <li class="menu-item">
+                          <a href="javascript:void(0)" class="menu-link menu-toggle">
+                            <i class="menu-icon tf-icons ti ti-settings"></i>
+                            <div data-i18n="Forms-Maintenance"> نماذج الفحص </div>
+                          </a>
+                          <ul class="menu-sub">
+                              
+                              <li class="menu-item">
+                                <a href="Weekly-examination.html" class="menu-link">
+                                  <div data-i18n="Weekly-examination">    نموذج  الفحص الاسبوعى</div>
+                                </a>
+                                
+                              </li>
+                              <li class="menu-item">
+                                <a href="league-Examination.html" class="menu-link">
+                                  <div data-i18n="league-Examination">    نموذج  الفحص الدورى</div>
+                                </a>
+                                
+                              </li>
+                              <li class="menu-item">
+                                <a href="Weekly-inspection.html" class="menu-link">
+                                  <div data-i18n="Weekly inspection">    نموذج   التفتيش الاسبوعى</div>
+                                </a>
+                                
+                              </li>
+                          </ul>
+                        </li>
+                        <li class="menu-item">
+                          <a href="javascript:void(0)" class="menu-link menu-toggle">
+                            <i class="menu-icon tf-icons ti ti-settings"></i>
+                            <div data-i18n="Maintenance-checklist">  قائمة-مراجعه الصيانة </div>
+                          </a>
+                          <ul class="menu-sub">
+                            <li class="menu-item">
+                              <a href="Add-Review-Maintenance.html" class="menu-link">
+                                <div data-i18n="Add-Review-Maintenance">    اضافه -مراجعه -الصيانة  </div>
+                              </a>
+                            </li>
+                            <li class="menu-item">
+                              <a href="Maintenance-request.html" class="menu-link">
+                                <div data-i18n="show-Review-Maintenance">    عرض -مراجعه -الصيانة  </div>
+                              </a>
+                            </li>
+                          </ul>
+                        </li>
                         <li class="menu-item">
                           <a href="Request-spare-part.html" class="menu-link">
                             <i class="menu-icon tf-icons ti ti-settings"></i>
@@ -830,539 +876,584 @@
             <!-- Content -->
            
             <div class="container-xxl flex-grow-1 container-p-y">
-              <h4 class="py-3 mb-4 text-title-hadeer"><span class="text-muted fw-medium"></span> Dashboard</h4>
-
-              <ul class="nav nav-tabs" id="myTab" role="tablist">
-                <li class="nav-item" role="presentation">
-                  <button class="nav-link active" id="all-tab" data-bs-toggle="tab" data-bs-target="#all-tab-pane" type="button" role="tab" aria-controls="all-tab-pane" aria-selected="true">all</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                  <button class="nav-link" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">station1</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                  <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">station2</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                  <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">station3</button>
-                </li>
-              
-              </ul>
-              <div class="tab-content" id="myTabContent">
-                <div class="tab-pane fade show active" id="all-tab-pane" role="tabpanel" aria-labelledby="all-tab" tabindex="0">
-
-                    <!--start-station-->
-                    <!-- Card--->
-                    <!-- Earning Reports Tabs-->
-                        <div class="col-12 col-xl-12 mb-4 component-earning">
-                          <div class="card">
-                            <div class="card-header d-flex justify-content-between">
-                              <div class="card-title mb-0">
-                                <h5 class="mb-0">Earning Reports</h5>
-                                <small class="text-muted">Yearly Earnings Overview</small>
-                              </div>
-                              <div class="dropdown">
-                                <button
-                                  class="btn p-0"
-                                  type="button"
-                                  id="earningReportsTabsId"
-                                  data-bs-toggle="dropdown"
-                                  aria-haspopup="true"
-                                  aria-expanded="false">
-                                  <i class="ti ti-dots-vertical ti-sm text-muted"></i>
-                                </button>
-                                <div class="dropdown-menu dropdown-menu-end" aria-labelledby="earningReportsTabsId">
-                                  <a class="dropdown-item" href="javascript:void(0);">View More</a>
-                                  <a class="dropdown-item" href="javascript:void(0);">Delete</a>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="card-body">
-                              <ul class="nav nav-tabs widget-nav-tabs pb-3 gap-4 mx-1 d-flex flex-nowrap" role="tablist">
-                                <li class="nav-item">
-                                  <a
-                                    href="javascript:void(0);"
-                                    class="nav-link btn active d-flex flex-column align-items-center justify-content-center border"
-                                    role="tab"
-                                    data-bs-toggle="tab"
-                                    data-bs-target="#navs-orders-id"
-                                    aria-controls="navs-orders-id"
-                                    aria-selected="true">
-                                    <div class="badge bg-label-secondary rounded p-2">
-                                      <i class="ti ti-shopping-cart ti-sm"></i>
-                                    </div>
-                                    <h6 class="tab-widget-title mb-0 mt-2">Orders</h6>
-                                  </a>
-                                </li>
-                                <li class="nav-item">
-                                  <a
-                                    href="javascript:void(0);"
-                                    class="nav-link btn d-flex flex-column align-items-center justify-content-center"
-                                    role="tab"
-                                    data-bs-toggle="tab"
-                                    data-bs-target="#navs-sales-id"
-                                    aria-controls="navs-sales-id"
-                                    aria-selected="false">
-                                    <div class="badge bg-label-secondary rounded p-2">
-                                      <i class="ti ti-chart-bar ti-sm"></i>
-                                    </div>
-                                    <h6 class="tab-widget-title mb-0 mt-2">Sales</h6>
-                                  </a>
-                                </li>
-                                <li class="nav-item">
-                                  <a
-                                    href="javascript:void(0);"
-                                    class="nav-link btn d-flex flex-column align-items-center justify-content-center"
-                                    role="tab"
-                                    data-bs-toggle="tab"
-                                    data-bs-target="#navs-profit-id"
-                                    aria-controls="navs-profit-id"
-                                    aria-selected="false">
-                                    <div class="badge bg-label-secondary rounded p-2">
-                                      <i class="ti ti-currency-dollar ti-sm"></i>
-                                    </div>
-                                    <h6 class="tab-widget-title mb-0 mt-2">Profit</h6>
-                                  </a>
-                                </li>
-                                <li class="nav-item">
-                                  <a
-                                    href="javascript:void(0);"
-                                    class="nav-link btn d-flex flex-column align-items-center justify-content-center"
-                                    role="tab"
-                                    data-bs-toggle="tab"
-                                    data-bs-target="#navs-income-id"
-                                    aria-controls="navs-income-id"
-                                    aria-selected="false">
-                                    <div class="badge bg-label-secondary rounded p-2">
-                                      <i class="ti ti-chart-pie-2 ti-sm"></i>
-                                    </div>
-                                    <h6 class="tab-widget-title mb-0 mt-2">Income</h6>
-                                  </a>
-                                </li>
-                                <li class="nav-item">
-                                  <a
-                                    href="javascript:void(0);"
-                                    class="nav-link btn d-flex align-items-center justify-content-center disabled"
-                                    role="tab"
-                                    data-bs-toggle="tab"
-                                    aria-selected="false">
-                                    <div class="badge bg-label-secondary rounded p-2"><i class="ti ti-plus ti-sm"></i></div>
-                                  </a>
-                                </li>
-                              </ul>
-                              <div class="tab-content p-0 ms-0 ms-sm-2">
-                                <div class="tab-pane fade show active" id="navs-orders-id" role="tabpanel">
-                                  <div id="earningReportsTabsOrders"></div>
-                                </div>
-                                <div class="tab-pane fade" id="navs-sales-id" role="tabpanel">
-                                  <div id="earningReportsTabsSales"></div>
-                                </div>
-                                <div class="tab-pane fade" id="navs-profit-id" role="tabpanel">
-                                  <div id="earningReportsTabsProfit"></div>
-                                </div>
-                                <div class="tab-pane fade" id="navs-income-id" role="tabpanel">
-                                  <div id="earningReportsTabsIncome"></div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-
-                    <!--charts-->
-                    <div class="row-card row  row-cols-lg-2 row-cols-md-1 row-cols-1 gx-md-4">
-                      <!-- Bar Chart -->
-
-                      <div class="col">
-                        <div class="card">
-                          <div class="card-header flex-nowrap header-elements">
-                            <h5 class="card-title mb-0">المشتريات</h5>
-                            <div class="card-header-elements ms-auto py-0 d-none d-sm-block">
-                              <div class="btn-group" role="group" aria-label="radio toggle button group">
-                                <input type="radio" class="btn-check" name="btnradio" id="dailyRadio" checked />
-                                <label class="btn btn-outline-secondary" for="dailyRadio">Daily</label>
-      
-                                <input type="radio" class="btn-check" name="btnradio" id="monthlyRadio" />
-                                <label class="btn btn-outline-secondary" for="monthlyRadio">Monthly</label>
-      
-                                <input type="radio" class="btn-check" name="btnradio" id="yearlyRadio" />
-                                <label class="btn btn-outline-secondary" for="yearlyRadio">Yearly</label>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="card-body">
-                            <div id="barChart"></div>
-                          </div>
-                        </div>
-                      </div>
-                      <!-- /Bar Chart -->
-                      <!--balance-->
-                        <div class="col">
-                          <div class="card">
-                            <div class="card-header flex-nowrap header-elements">
-                              <h5 class="card-title mb-0">   مبيعات  المضخات</h5>
-                              <div class="card-header-elements ms-auto py-0 d-none d-sm-block">
-                                <div class="btn-group" role="group" aria-label="radio toggle button group">
-                                  <input type="radio" class="btn-check" name="btnradio" id="dailyRadiow" checked />
-                                  <label class="btn btn-outline-secondary" for="dailyRadiow">Daily</label>
-        
-                                  <input type="radio" class="btn-check" name="btnradio" id="monthlyRadiow" />
-                                  <label class="btn btn-outline-secondary" for="monthlyRadiow">Monthly</label>
-        
-                                  <input type="radio" class="btn-check" name="btnradio" id="yearlyRadiow" />
-                                  <label class="btn btn-outline-secondary" for="yearlyRadiow">Yearly</label>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="card-body">
-                              <div id="horizontalBarChart"></div>
-                            </div>
-                           </div>
-                        </div>
-                      <!--end-balance-->
-                    </div>
-                    <!--end-charts-->
-                    <!--Withdrawals-->
-                    <div class="row-card row mt-4">
-                      <div class="card">
-                        <div class="card-header flex-nowrap header-elements">
-                          <h5 class="card-title mb-0">مسحوبات</h5>
-                          <div class="card-header-elements ms-auto py-0 d-none d-sm-block">
-                            <div class="btn-group" role="group" aria-label="radio toggle button group">
-                              <input type="radio" class="btn-check" name="btnradio" id="dailyRadioe" checked />
-                              <label class="btn btn-outline-secondary" for="dailyRadioe">Daily</label>
-    
-                              <input type="radio" class="btn-check" name="btnradio" id="monthlyRadioe" />
-                              <label class="btn btn-outline-secondary" for="monthlyRadioe">Monthly</label>
-    
-                              <input type="radio" class="btn-check" name="btnradio" id="yearlyRadioe" />
-                              <label class="btn btn-outline-secondary" for="yearlyRadioe">Yearly</label>
-                            </div>
+              <div class="row mx-0">
+                 <!--المهام الشخصيه-->
+                   <div class="col-lg-6 mb-4 order-md-0 order-lg-0">
+                      <div class="card comonent-hader-top h-100">
+                        <div class="card-header">
+                          <div class="card-title mb-0">
+                            <h5 class="mb-0">المهام الشخصية </h5>
                           </div>
                         </div>
                         <div class="card-body">
-                          <div id="radialBarChart"></div>
-                        </div>
-                      </div>
-                    </div>
-                    <!--end-Withdrawals-->
-                    <!--end-station-->
-
-
-
-
-
-                </div>
-                <div class="tab-pane fade" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
-
-                     <!--start-station-->
-               <!-- Card--->
-              <div class="row"> 
-                
-                      <div class="col-sm-6 col-lg-4  mb-4">
-                        <div class="component-progress">
-                         
-                          <div class="row align-items-end">
-                             <span class="col fw-bold mb-2 fs-5 text-gray">91</span>
-                             <span class="stake"></span>
-
-                              <span class="col fw-bold mb-2 fs-5 text-gray">200لتر</span>
-
-                            </div>
-
-                            <div class="progress rounded-top" role="progressbar" aria-label="success example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-                                <div class="progress-bar bg-success text-bg-dark" style="height: 90%">90%</div>
-                            </div>
+                          <div class="card-datatable text-nowrap  table-responsive pt-3">
                           
-                        </div>
-                        
-                        <div class="card card-border-shadow-success mt-4">
-                          <div class="card-body">
-                            <div class="table-responsive text-nowrap">
-                              <table class="table table-bordered">
-                                <tbody>
+                            <table class=" table table-bordered table-hover rounded table-center">
+                              <thead class="table-light">
+                                <tr>
+                              
+                                
+                                  <th>    من </th>
+                                  <th>   الى</th>
+                                  <th>     المدة</th>
+                                  <th>     الشركة</th>
+                                  <th>نوع المهمه</th>
+                                  <th>حالة المهمه</th>
+                                  <th>الوصف</th>
+                                  <th>عرض المهمه</th>
+                                  <th>ملاحظة على المهمه</th>
+                                  <th>الحالة</th>
+    
+                                  <th>تعديل على المهمه</th>
+                                </tr>
+                              </thead>
+                              <tbody>
                                   <tr>
+                                  
+                                    <td>  	</td>
+                                    <td>	</td>
+                                    <td> 	 	</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
                                     <td>
-                                      <span class="fw-bold">Product height</span>
+                                      <a class=" p-1 d-flex align-items-center justify-content-center me-3 rounded cursor-pointer" data-bs-target="#viewtasks" data-bs-toggle="modal" title="عرض"><i class="fas fa-eye"></i> </a>
+    
                                     </td>
-                                    <td>200mm</td>
-                                  </tr>
-                                  <tr>
                                     <td>
-                                      <span class="fw-bold">Product volume</span>
+                                      <a class=" p-1 d-flex align-items-center justify-content-center me-3 rounded cursor-pointer" data-bs-target="#addcomment" data-bs-toggle="modal" title="اضافه"><i class="fas fa-comment-alt  fs-4"></i> </a>
+    
                                     </td>
-                                    <td>1022 L</td>
-                                  </tr>
-                                  <tr>
                                     <td>
-                                      <span class="fw-bold">Product TC volume   </span>
+                                      <a class=" p-1 d-flex align-items-center justify-content-center me-3 rounded cursor-pointer" data-bs-target="#condition" data-bs-toggle="modal" title="تعليق الحالة"><i class="fas  fa-question" aria-hidden="true"></i>   </a>
+    
                                     </td>
-                                    <td>9660 L </td>
-                                  </tr>
-                                  <tr>
                                     <td>
-                                      <span class="fw-bold">Product ullage </span>
+                                      
+                                        <a class="bg-success text-bg-success p-1 d-flex align-items-center justify-content-center me-3 rounded cursor-pointer" data-bs-target="#edittruck" data-bs-toggle="modal" title="تعديل"><i class="ti ti-pencil  fs-4"></i> </a>
+                                      
+                                    
                                     </td>
-                                    <td>3528 L</td>
                                   </tr>
-                                  <tr>
-                                    <td>
-                                      <span class="fw-bold">Water height </span>
-                                    </td>
-                                    <td>0 mm</td>
-                                  </tr>
-                                  <tr>
-                                    <td>
-                                      <span class="fw-bold">Water volume </span>
-                                    </td>
-                                    <td>0 L</td>
-                                  </tr>
-                                  <tr>
-                                    <td>
-                                      <span class="fw-bold">Temperature </span>
-                                    </td>
-                                    <td>38.5 c</td>
-                                  </tr>
-                                </tbody>
-                              </table>
-                            </div>
+                                  
+                              </tbody>
+                            </table>
                           </div>
                         </div>
-                          
                       </div>
-                     <!--card-tow-->
-                      <div class="col-sm-6 col-lg-4  mb-4">
-                          <div class="component-progress">
-                          
-                            <div class="row align-items-end">
-                                <span class="col fw-bold mb-2 fs-5 text-gray">95</span>
-                                <span class="stake"></span>
-
-                                <span class="col fw-bold mb-2 fs-5 text-gray">100لتر</span>
-
-                              </div>
-
-                              <div class="progress" role="progressbar" aria-label="danger example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-                                  <div class="progress-bar bg-danger text-bg-dark" style="height: 70%">70%</div>
-                              </div>
-                            
-                          </div>
-                          <div class="card card-border-shadow-danger mt-4">
-                            <div class="card-body">
-                              <div class="table-responsive text-nowrap">
-                                <table class="table table-bordered">
-                                  <tbody>
-                                    <tr>
-                                      <td>
-                                        <span class="fw-bold">Product height</span>
-                                      </td>
-                                      <td>200mm</td>
-                                    </tr>
-                                    <tr>
-                                      <td>
-                                        <span class="fw-bold">Product volume</span>
-                                      </td>
-                                      <td>1022 L</td>
-                                    </tr>
-                                    <tr>
-                                      <td>
-                                        <span class="fw-bold">Product TC volume   </span>
-                                      </td>
-                                      <td>9660 L </td>
-                                    </tr>
-                                    <tr>
-                                      <td>
-                                        <span class="fw-bold">Product ullage </span>
-                                      </td>
-                                      <td>3528 L</td>
-                                    </tr>
-                                    <tr>
-                                      <td>
-                                        <span class="fw-bold">Water height </span>
-                                      </td>
-                                      <td>0 mm</td>
-                                    </tr>
-                                    <tr>
-                                      <td>
-                                        <span class="fw-bold">Water volume </span>
-                                      </td>
-                                      <td>0 L</td>
-                                    </tr>
-                                    <tr>
-                                      <td>
-                                        <span class="fw-bold">Temperature </span>
-                                      </td>
-                                      <td>38.5 c</td>
-                                    </tr>
-                                  </tbody>
-                                </table>
-                              </div>
-                            </div>
-                          </div>
-                      </div>
-                      <!--carrd-there-->
-                      <div class="col-sm-6 col-lg-4  mb-4">
-                        <div class="component-progress">
-                         
-                          <div class="row align-items-end">
-                              <span class="col fw-bold mb-2 fs-5 text-gray">ديزل </span>
-                              <span class="stake"></span>
-
-                              <span class="col fw-bold mb-2 fs-5 text-gray">50لتر</span>
-
-                            </div>
-
-                            <div class="progress" role="progressbar" aria-label="yellow  example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-                                <div class="progress-bar bg-yellowe " style="height: 80%">80%</div>
-                            </div>
-                          
-                        </div>
-                          <div class="card card-border-shadow-warning mt-4">
-                            <div class="card-body">
-                              <div class="table-responsive text-nowrap">
-                                <table class="table table-bordered">
-                                  <tbody>
-                                    <tr>
-                                      <td>
-                                        <span class="fw-bold">Product height</span>
-                                      </td>
-                                      <td>200mm</td>
-                                    </tr>
-                                    <tr>
-                                      <td>
-                                        <span class="fw-bold">Product volume</span>
-                                      </td>
-                                      <td>1022 L</td>
-                                    </tr>
-                                    <tr>
-                                      <td>
-                                        <span class="fw-bold">Product TC volume   </span>
-                                      </td>
-                                      <td>9660 L </td>
-                                    </tr>
-                                    <tr>
-                                      <td>
-                                        <span class="fw-bold">Product ullage </span>
-                                      </td>
-                                      <td>3528 L</td>
-                                    </tr>
-                                    <tr>
-                                      <td>
-                                        <span class="fw-bold">Water height </span>
-                                      </td>
-                                      <td>0 mm</td>
-                                    </tr>
-                                    <tr>
-                                      <td>
-                                        <span class="fw-bold">Water volume </span>
-                                      </td>
-                                      <td>0 L</td>
-                                    </tr>
-                                    <tr>
-                                      <td>
-                                        <span class="fw-bold">Temperature </span>
-                                      </td>
-                                      <td>38.5 c</td>
-                                    </tr>
-                                  </tbody>
-                                </table>
-                              </div>
-                            </div>
-                          </div>
-                      </div>
-                
-              </div>
-              <!--charts-->
-              <div class="row-card row row-cols-lg-2 row-cols-md-1 row-cols-1 gx-md-4">
-                <!-- Bar Chart -->
-
-                <div class="col">
-                  <div class="card">
-                    <div class="card-header flex-nowrap header-elements">
-                      <h5 class="card-title mb-0">المشتريات</h5>
-                      <div class="card-header-elements ms-auto py-0 d-none d-sm-block">
-                        <div class="btn-group" role="group" aria-label="radio toggle button group">
-                          <input type="radio" class="btn-check" name="btnradio" id="dailyRadio" checked />
-                          <label class="btn btn-outline-secondary" for="dailyRadio">Daily</label>
-
-                          <input type="radio" class="btn-check" name="btnradio" id="monthlyRadio" />
-                          <label class="btn btn-outline-secondary" for="monthlyRadio">Monthly</label>
-
-                          <input type="radio" class="btn-check" name="btnradio" id="yearlyRadio" />
-                          <label class="btn btn-outline-secondary" for="yearlyRadio">Yearly</label>
-                        </div>
+                   </div>
+                   <!--المهام الشخصيه-->
+                 <!--المهام المفتوحة-->
+                 <div class="col-lg-6 mb-4 order-md-0 order-lg-0">
+                  <div class="card comonent-hader-top h-100">
+                    <div class="card-header">
+                      <div class="card-title mb-0">
+                        <h5 class="mb-0">المهام المفتوحة </h5>
                       </div>
                     </div>
                     <div class="card-body">
-                      <div id="barCharts"></div>
+                      <div class="card-datatable text-nowrap  table-responsive pt-3">
+                      
+                        <table class=" table table-bordered table-hover rounded table-center">
+                          <thead class="table-light">
+                            <tr>
+                          
+                            
+                              <th>    م </th>
+                              <th>الوصف</th>
+                             
+                              <th>     الشركة</th>
+                              <th>نوع المهمه</th>
+                              <th>حالة المهمه</th>
+                              <th>     المدة</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                              <tr>
+                              
+                                <td>  1	</td>
+                                <td>	</td>
+                                <td> 	 	</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                               
+                              </tr>
+                              
+                          </tbody>
+                        </table>
+                      </div>
                     </div>
                   </div>
-                </div>
-                <!-- /Bar Chart -->
-                <!--balance-->
-                  <div class="col">
-                    <div class="card">
-                      <div class="card-header flex-nowrap header-elements">
-                        <h5 class="card-title mb-0">   مبيعات  المضخات</h5>
-                        <div class="card-header-elements ms-auto py-0 d-none d-sm-block">
-                          <div class="btn-group" role="group" aria-label="radio toggle button group">
-                            <input type="radio" class="btn-check" name="btnradio" id="dailyRadiow" checked />
-                            <label class="btn btn-outline-secondary" for="dailyRadiow">Daily</label>
-  
-                            <input type="radio" class="btn-check" name="btnradio" id="monthlyRadiow" />
-                            <label class="btn btn-outline-secondary" for="monthlyRadiow">Monthly</label>
-  
-                            <input type="radio" class="btn-check" name="btnradio" id="yearlyRadiow" />
-                            <label class="btn btn-outline-secondary" for="yearlyRadiow">Yearly</label>
-                          </div>
+               </div>
+                 <!--المهام المفتوحة-->
+                 <!--الاشعارات-->
+                 <div class="col-lg-6 mb-4 order-md-0 order-lg-0">
+                  <div class="card comonent-hader-top h-100">
+                    <div class="card-header">
+                      <div class="card-title mb-0">
+                        <h5 class="mb-0"> الاشعارات </h5>
+                        <span>Change to notification settings, the user will get the update</span>
+
+                      </div>
+                    </div>
+                    
+                      <div class="card-body">
+                        <div class="table-responsive border rounded table-notification">
+                          <table class="table table-striped">
+                            <thead class="table-light">
+                              <tr>
+                                <th class="text-nowrap">Type</th>
+                                <th class="text-nowrap text-center">✉️ Email</th>
+                                <th class="text-nowrap text-center">🖥 Browser</th>
+                                <th class="text-nowrap text-center">👩🏻‍💻 App</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td class="text-nowrap">Order status</td>
+                                <td>
+                                  <div class="form-check d-flex justify-content-center">
+                                    <input class="form-check-input" type="checkbox" id="defaultCheck1" checked="">
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="form-check d-flex justify-content-center">
+                                    <input class="form-check-input" type="checkbox" id="defaultCheck2" checked="">
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="form-check d-flex justify-content-center">
+                                    <input class="form-check-input" type="checkbox" id="defaultCheck3" checked="">
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td class="text-nowrap">Upcoming sale</td>
+                                <td>
+                                  <div class="form-check d-flex justify-content-center">
+                                    <input class="form-check-input" type="checkbox" id="defaultCheck4" checked="">
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="form-check d-flex justify-content-center">
+                                    <input class="form-check-input" type="checkbox" id="defaultCheck5" checked="">
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="form-check d-flex justify-content-center">
+                                    <input class="form-check-input" type="checkbox" id="defaultCheck6" checked="">
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td class="text-nowrap">Special offers</td>
+                                <td>
+                                  <div class="form-check d-flex justify-content-center">
+                                    <input class="form-check-input" type="checkbox" id="defaultCheck7" checked="">
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="form-check d-flex justify-content-center">
+                                    <input class="form-check-input" type="checkbox" id="defaultCheck8" checked="">
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="form-check d-flex justify-content-center">
+                                    <input class="form-check-input" type="checkbox" id="defaultCheck9">
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr class="border-transparent">
+                                <td class="text-nowrap">New item arrival</td>
+                                <td>
+                                  <div class="form-check d-flex justify-content-center">
+                                    <input class="form-check-input" type="checkbox" id="defaultCheck10" checked="">
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="form-check d-flex justify-content-center">
+                                    <input class="form-check-input" type="checkbox" id="defaultCheck11">
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="form-check d-flex justify-content-center">
+                                    <input class="form-check-input" type="checkbox" id="defaultCheck12">
+                                  </div>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
                         </div>
                       </div>
-                      <div class="card-body">
-                        <div id="horizontalBarCharts"></div>
+                      <div class="card-body pt-0">
+                        <button type="submit" class="btn btn-primary me-2 waves-effect waves-light">Save changes</button>
+                        <button type="reset" class="btn btn-label-secondary waves-effect">Discard</button>
                       </div>
+                   
                   </div>
-                  </div>
-                <!--end-balance-->
-              </div>
-              <!--end-charts-->
-              <!--Withdrawals-->
-              <div class="row-card row mt-4">
-                <div class="card">
-                  <div class="card-header flex-nowrap header-elements">
-                    <h5 class="card-title mb-0">مسحوبات</h5>
-                    <div class="card-header-elements ms-auto py-0 d-none d-sm-block">
-                      <div class="btn-group" role="group" aria-label="radio toggle button group">
-                        <input type="radio" class="btn-check" name="btnradio" id="dailyRadioe" checked />
-                        <label class="btn btn-outline-secondary" for="dailyRadioe">Daily</label>
-
-                        <input type="radio" class="btn-check" name="btnradio" id="monthlyRadioe" />
-                        <label class="btn btn-outline-secondary" for="monthlyRadioe">Monthly</label>
-
-                        <input type="radio" class="btn-check" name="btnradio" id="yearlyRadioe" />
-                        <label class="btn btn-outline-secondary" for="yearlyRadioe">Yearly</label>
+               </div>
+                 <!--الاشعارات-->
+                  <!--الطلبات-->
+                  <div class="col-lg-6 mb-4 order-md-0 order-lg-0">
+                    <div class="card comonent-hader-top h-100">
+                      <div class="card-header">
+                        <div class="card-title  mb-0">
+                          <h5 class="mb-0"> الطلبات </h5>
+                         
+                        </div>
                       </div>
+                      
+                        <div class="card-body">
+                          <table class=" table table-bordered table-hover rounded table-center">
+                            <thead class="table-light">
+                              <tr>
+                             
+                                <th>م</th>
+                                <th>   رقم الطلب </th>
+                                <th>   التاريخ</th>
+                                <th>   الجهة </th>
+                                
+                                <th>    الحالة</th>
+                                <th>    عرض</th>
+                              
+                              </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                  <td>1</td>
+                                  <td>1/1/2023</td>
+                                  <td>  رايتو	</td>
+                                 
+                                  <td> 	</td>
+                                  <td></td>
+                                
+                                </tr>
+                                
+                            </tbody>
+                          </table>
+                        </div>
+                        
+                     
                     </div>
-                  </div>
-                  <div class="card-body">
-                    <div id="radialBarCharts"></div>
-                  </div>
-                </div>
+                 </div>
+                   <!--الطلبات-->
+                     <!--المواعيد-->
+                  <div class="col-lg-12 mb-4 order-md-0 order-lg-0">
+                    <div class="card comonent-hader-top h-100">
+                      <div class="card-header">
+                        <div class="card-title  mb-0">
+                          <h5 class="mb-0"> المواعيد </h5>
+                         
+                        </div>
+                      </div>
+                      
+                        <div class="card-body">
+                          <table class=" table table-bordered table-hover rounded table-center">
+                            <thead class="table-light">
+                              <tr>
+                             
+                                <th>م</th>
+                                <th>   التاريخ</th>
+                                <th>   الوقت  </th>
+
+                                <th>   اسم العميل </th>
+                                <th>    رقم   الجوال</th>
+                                <th>    بيانات التركيب او الصيانة</th>
+                                <th>    الموقع</th>
+                              
+                              </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                  <td>1</td>
+                                  <td>1/1/2023</td>
+                                  <td>  رايتو	</td>
+                                 
+                                  <td> 	</td>
+                                  <td></td>
+                                  <td> 	</td>
+                                  <td></td>
+                                </tr>
+                                
+                            </tbody>
+                          </table>
+                        </div>
+                        
+                     
+                    </div>
+                 </div>
+                   <!--المواعيد-->
               </div>
-              <!--end-Withdrawals-->
-              <!--end-station-->
-
-
-
-
-
-                </div>
-                <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">...</div>
-                <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">...</div>
-                <div class="tab-pane fade" id="disabled-tab-pane" role="tabpanel" aria-labelledby="disabled-tab" tabindex="0">...</div>
-              </div>
+            
              
             </div>
           
             <!--/ Content -->
+                   <!--المهام الشخصية-->
+                   <!---->
+            <!-- Add comment  -->
+            <div class="modal fade " id="addcomment" aria-labelledby="exampleModalToggleLabel" tabindex="-1" aria-modal="true" role="dialog">
+              <div class="modal-dialog modal-md  modal-dialog-centered">
+                <div class="modal-content p-3 p-md-3">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-4 fw-bold text-tilte-b">   ملاحظة علي المهمة</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <form class="row component-form">
+                     
+                     
+                      <div class="col-12 col-md-12  mb-3">
+                        <label class="form-label" for="basic-default-user-work"> إضافة ملاحظة  </label>
+                        <textarea type="text" class="form-control" id="basic-default-user-work" placeholder="  إضافة ملاحظة  " rows="4"></textarea>
+                      </div>
+                      
+                      <div class="col-12 col-lg-8">
+                        <button type="submit" class="btn btn-primary  waves-effect waves-light">حفظ</button>
+                        <button type="reset" class="btn btn-outline-secondary waves-effect mx-3">مسح المحتوى </button>
+  
+                       </div>
+                     
+                    </form>
+                    
+                  </div>
+                 
+                </div>
+              </div>
+            </div>
+             <!---->
+              <!-- Add condition  -->
+            <div class="modal fade " id="condition" aria-labelledby="exampleModalToggleLabel" tabindex="-1" aria-modal="true" role="dialog">
+              <div class="modal-dialog modal-md  modal-dialog-centered">
+                <div class="modal-content p-3 p-md-3">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-4 fw-bold text-tilte-b">   ملاحظة علي الحالة</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <form class="row component-form">
+                     
+                     
+                      <div class="col-12 col-md-12  mb-3">
+                        <label class="form-label" for="basic-default-user-work">   أدخل تعليقًا لاستئناف هذه العملية وإيقاف العمليات الأخرى: </label>
+                        <textarea type="text" class="form-control" id="basic-default-user-work" placeholder="  إضافة تعليق  " rows="4"></textarea>
+                      </div>
+                      
+                      <div class="col-12 col-lg-8">
+                        <button type="submit" class="btn btn-primary  waves-effect waves-light">حفظ</button>
+                        <button type="reset" class="btn btn-outline-secondary waves-effect mx-3">مسح المحتوى </button>
+  
+                       </div>
+                     
+                    </form>
+                    
+                  </div>
+                 
+                </div>
+              </div>
+            </div>
+              <!-- viewtasks -->
+              <div class="modal fade " id="viewtasks" aria-labelledby="exampleModalToggleLabel" tabindex="-1" aria-modal="true" role="dialog">
+                <div class="modal-dialog modal-md  modal-dialog-centered">
+                  <div class="modal-content p-3 p-md-3">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-4 fw-bold text-tilte-b"> جميع معلومات المهمة بالنسبة للموظف : هدير
+                      </h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <ul class="p-0 m-0 ul-task">
+                        <li class="mb-2 pb-1 light-style-none">
+                          <div class="d-flex  align-items-center">
+                            <div class="badge bg-label-success rounded p-2"><i class="ti ti-users ti-sm"></i></div>
+                            <h6 class="mb-0 ms-3">الموظف الموكل اليه
+                            </h6>
+                          </div>
+                        
+                            <div class="d-text p-2 mt-2">
+                              <p class="mb-0 fw-medium">هدير</p>
+                              
+                            </div>
+                         
+                        </li>
+                        <li class="mb-2 pb-1">
+                          <div class="d-flex  align-items-center">
+                            <div class="badge bg-label-info rounded p-2"><i class="ti ti-link ti-sm"></i></div>
+                          
+                            <h6 class="mb-0 ms-3">الشركة</h6>
+                          </div>
+                       
+                            <div class="d-text p-2 mt-2">
+                              <p class="mb-0 fw-medium">رايتو</p>
+                             
+                            </div>
+                         
+                        </li>
+                        <li class="mb-2 pb-1 ">
+                          <div class="d-flex align-items-center">
+                          <div class="badge bg-label-warning rounded p-2"><i class="ti ti-click ti-sm"></i></div>
+                         
+                            <h6 class="mb-0 ms-3">نوع المهمة
+                            </h6>
+                          </div>
+                            <div class="p-2 mt-2 d-text">
+                              <p class="mb-0 fw-medium">مهمة عادية
 
+                              </p>
+                            
+                          </div>
+                        </li>
+                        <li class="mb-2 pb-1 ">
+                          <div class="d-flex align-items-center">
+
+                            <div class="badge bg-label-primary rounded p-2"><i class="fas fa-comment-alt  fs-4"></i></i></div>
+                       
+                            <h6 class="mb-0 ms-3">الوصف</h6>
+                          </div>
+                            <div class="p-2 mt-2 d-text">
+                              <p class="mb-0 fw-medium">اعادة تصميم المحطات
+
+                              </p>
+                            </div>
+                         
+                        </li>
+                        <li class="mb-2 pb-1 ">
+                          <div class="d-flex align-items-center">
+
+                              <div class="badge bg-label-secondary rounded p-2">
+                                <i class="ti ti-alert-triangle ti-sm text-body"></i>
+                              </div>
+                                <h6 class="mb-0 ms-3">حالة المهمة</h6>
+                          </div>
+                            <div class="p-2 mt-2 d-text">
+                              <p class="mb-0 fw-medium">جديد</p>
+                           
+                             </div>
+                        </li>
+                        <li class="mb-2 pb-1 ">
+                          <div class="d-flex align-items-center">
+                            <div class="badge bg-label-danger rounded p-2"><i class="ti ti-calendar ti-sm"></i></div>
+                            <h6 class="mb-0 ms-3">من</h6>
+                          </div>
+                          
+                            <div class="p-2 mt-2 d-text">
+                              <p class="mb-0 fw-medium">2024-02-22 15:32:32</p>
+                            </div>
+                         
+                        </li>
+                        <li class="mb-2 pb-1 ">
+                          <div class="d-flex align-items-center w-100 flex-wrap">
+                            <div class="badge bg-label-danger rounded p-2"><i class="ti ti-calendar ti-sm"></i></div>
+
+                            <h6 class="mb-0 ms-3">الى</h6>
+                            
+                          </div>
+                          <div class="p-2 mt-2 d-text">
+                            <p class="mb-0 fw-medium">2024-02-22 15:32:32</p>
+                          </div>
+                        </li>
+                        <li class="mb-2 pb-1">
+                          <div class="d-flex align-items-center w-100 flex-wrap">
+                            <div class="badge bg-label-warning rounded p-2"><i class="ti ti-clock ti-sm"></i></div>
+                          
+                            <h6 class="mb-0 ms-3"> 
+                              المدة
+                            </h6>
+                          </div>
+                         
+                            <div class="p-2 mt-2 d-text">
+                              <p class="mb-0 fw-medium">
+                                00.00 
+
+                              </p>
+                            </div>
+                        
+                        </li>
+                        <li class="mb-2 pb-1 ">
+                          <div class="d-flex align-items-center w-100 flex-wrap">
+
+                              <div class="badge bg-label-primary rounded p-2"><i class="fas fa-comment-alt  fs-4"></i></i></div>
+                                <h6 class="mb-0 ms-3">ملاحظة علي المهمة
+                                </h6>
+                            </div>
+                            <div class="p-2 mt-2 d-text">
+                              <p class="mb-0 fw-medium">  
+                                ...............................
+                              </p>
+                            </div>
+                        
+                        </li>
+                      </ul>
+                      
+                    </div>
+                   
+                  </div>
+                </div>
+              </div>
+            <!-- edit Hardware Modal -->
+            <div class="modal fade " id="edittruck" aria-labelledby="exampleModalToggleLabel" tabindex="-1" aria-modal="true" role="dialog">
+              <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content p-3 p-md-3">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-4 fw-bold text-tilte-b">     تعديل مهمه</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <form class="row component-form">
+                      <div class="col-12 col-md-4  mb-3">
+                        <label class="form-label" for="basic-default-name"> الموظف  </label>
+                        <input type="text" class="form-control" id="basic-default-name" placeholder="    الموظف">
+                      </div>
+                      <div class="col-12 col-md-4  mb-3">
+                        <label class="form-label" for="basic-default-work">الشركة  </label>
+                        <input type="text" class="form-control" id="basic-default-work" placeholder="   الشركة">
+                      </div>
+                      <div class="col-12 col-md-4 mb-3">
+                        
+                        <label for="select1Basic-driver" class="form-label">    
+                          حالة التنفيذ
+                        </label>
+                        <select id="select1Basic-driver" class="select2 form-select" data-allow-clear="true">
+                          <option value="AK">  تم الانتهاء</option>
+                          <option value="HI">  مستلمة</option>
+                          <option value="HI">  تحت التجربة</option>
+                          <option value="HI">    جارى العمل عليها</option>
+                          <option value="HI">      موجلة</option>
+                        </select>
+                    
+                    </div>
+                    <div class="col-12 col-md-4  mb-3">
+                      <label class="form-label" for="basic-default-number-description">   الوصف</label>
+                      <textarea type="text" class="form-control" id="basic-default-number-description " rows="2"></textarea>
+                    </div>
+                    <div class="col-12 col-md-4  mb-3">
+                      <label class="form-label" for="basic-comment-chang">   تعليقى عن تغييرحالة المهمه</label>
+                      <textarea type="text" class="form-control" id="basic-comment-chang " rows="2"></textarea>
+                    </div>
+                    <div class="col-12 col-md-4  mb-3">
+                      <label class="form-label" for="basic-comment-co">   تعليق مدير المهمه</label>
+                      <textarea type="text" class="form-control" id="basic-comment-co" rows="2"></textarea>
+                    </div>
+                    <div class="col-12 col-md-12  mb-3">
+                      <label class="form-label" for="basic-default-time">مدة تنفيذ المهمه  </label>
+                      <input type="time" class="form-control" id="basic-default-time" placeholder="   مدة تنفيذ المهمه">
+                    </div>
+                      <div class="col-12 col-lg-8">
+                        <button type="submit" class="btn btn-primary  waves-effect waves-light">تعديل</button>
+                        <button type="reset" class="btn btn-outline-secondary waves-effect mx-3">مسح المحتوى </button>
+  
+                       </div>
+                     
+                    </form>
+                    
+                  </div>
+                 
+                </div>
+              </div>
+            </div>
+                   <!--المهام الشخصيه-->
             <!-- Footer -->
             <footer class="content-footer footer bg-footer-theme">
               <div class="container-xxl">

@@ -109,10 +109,10 @@
   display: none;
 }
 html:not([dir=rtl]) .bg-menu-theme.menu-horizontal .menu-inner > .menu-item > .menu-sub > .menu-item > .menu-link {
-  padding-left: 0.875rem;
+  padding-left: 0.775rem;
 }
 [dir=rtl] .bg-menu-theme.menu-horizontal .menu-inner > .menu-item > .menu-sub > .menu-item > .menu-link {
-  padding-right: 0.875rem;
+  padding-right: 0.775rem;
 }
 .bg-menu-theme.menu-horizontal .menu-inner > .menu-item > .menu-sub > .menu-item > .menu-link:before {
   content: "";

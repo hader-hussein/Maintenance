@@ -14,7 +14,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
 
-    <title>Request-spare-part</title>
+    <title>Register-problem</title>
 
     <meta name="description" content="" />
 
@@ -575,7 +575,7 @@
                           </li>
 
                           <!-- Apps -->
-                          <li class="menu-item ">
+                          <li class="menu-item">
                             <a href="javascript:void(0)" class="menu-link menu-toggle">
                               <i class="menu-icon tf-icons ti ti-apps"></i>
                               <div data-i18n="Apps">الإدارة</div>
@@ -623,7 +623,7 @@
                                   <div data-i18n="Reasons-visiting">أسباب الزيارة </div>
                                 </a>
                               </li>
-                              <li class="menu-item">
+                              <li class="menu-item ">
                                 <a href="employees.html" class="menu-link">
                                   <i class="menu-icon tf-icons ti ti-square"></i>
                                   <div data-i18n="employees">الموظفين </div>
@@ -650,13 +650,13 @@
                             </ul>
                           </li>
                           <!--employees-->
-                          <li class="menu-item ">
+                          <li class="menu-item">
                             <a class="menu-link menu-toggle" href="javascript:void(0)">
                               <i class="menu-icon tf-icons ti ti-users-group"></i>
                               <div data-i18n="employees">الموظفين</div>
                             </a>
                             <ul class="menu-sub">
-                              <li class="menu-item">
+                              <li class="menu-item ">
                                 <a href="Externalvisits.html" class="menu-link">
                                   <i class="menu-icon tf-icons ti ti-menu-2"></i>
                                   <div data-i18n="External visits">  الزيارات الخارجية</div>
@@ -686,52 +686,98 @@
                                   <div data-i18n="mission">   المهام</div>
                                 </a>
                               </li>
-                              <li class="menu-item">
-                                <a href="Maintenance-request.html" class="menu-link">
-                                  <i class="menu-icon tf-icons ti ti-menu-2"></i>
-                                  <div data-i18n="Maintenance-request-form">    نموذج طلب صيانة</div>
-                                </a>
-                              </li>
-                            </ul>
-                          </li>
-                          <!-- Maintenance -->
-                          <li class="menu-item">
-                            <a href="javascript:void(0)" class="menu-link menu-toggle">
-                              <i class="menu-icon tf-icons ti ti-settings"></i>
-                              <div data-i18n="Maintenance">الصيانة </div>
-                            </a>
-                            <ul class="menu-sub">
-                              <li class="menu-item">
-                                <a href="Request-spare-part.html" class="menu-link">
-                                  <i class="menu-icon tf-icons ti ti-settings"></i>
-                                  <div data-i18n="Request-spare-part"> طلب قطعة غيار  </div>
-                                </a>
-                              </li>
-                            
                               
-                              <li class="menu-item">
-                                <a href="Directors-approval.html" class="menu-link">
-                                  <i class="menu-icon tf-icons ti ti-user-check"></i>
-                                  <div data-i18n="Director's-approval"> موافقة المدير </div>
-                                </a>
-                              </li>
-                              <li class="menu-item">
-                                <a href="Oil-change.html" class="menu-link">
-                                  <i class="menu-icon tf-icons ti ti-arrows-maximize"></i>
-                                  <div data-i18n="Oil change"> غيار الزيت</div>
-                                </a>
-                              </li>
                             </ul>
                           </li>
+                            <!-- Maintenance -->
+                        <li class="menu-item active">
+                          <a href="javascript:void(0)" class="menu-link menu-toggle">
+                            <i class="menu-icon tf-icons ti ti-settings"></i>
+                            <div data-i18n="Maintenance">الصيانة </div>
+                          </a>
+                          <ul class="menu-sub">
+                            <li class="menu-item active">
+                              <a href="Maintenance-request.html" class="menu-link">
+                                <i class="menu-icon tf-icons ti ti-toggle-left"></i>
+                                <div data-i18n="Maintenance-request-form">    نموذج طلب صيانة</div>
+                              </a>
+                            </li>
+                            <li class="menu-item">
+                              <a href="javascript:void(0)" class="menu-link menu-toggle">
+                                <i class="menu-icon tf-icons ti ti-settings"></i>
+                                <div data-i18n="Forms-Maintenance"> نماذج الفحص </div>
+                              </a>
+                              <ul class="menu-sub">
+                                  
+                                  <li class="menu-item">
+                                    <a href="Weekly-examination.html" class="menu-link">
+                                      <div data-i18n="Weekly-examination">    نموذج  الفحص الاسبوعى</div>
+                                    </a>
+                                    
+                                  </li>
+                                  <li class="menu-item">
+                                    <a href="league-Examination.html" class="menu-link">
+                                      <div data-i18n="league-Examination">    نموذج  الفحص الدورى</div>
+                                    </a>
+                                    
+                                  </li>
+                                  <li class="menu-item">
+                                    <a href="Weekly-inspection.html" class="menu-link">
+                                      <div data-i18n="Weekly inspection">    نموذج   التفتيش الاسبوعى</div>
+                                    </a>
+                                    
+                                  </li>
+                              </ul>
+                            </li>
+                            <li class="menu-item">
+                              <a href="javascript:void(0)" class="menu-link menu-toggle">
+                                <i class="menu-icon tf-icons ti ti-settings"></i>
+                                <div data-i18n="Maintenance-checklist">  قائمة-مراجعه الصيانة </div>
+                              </a>
+                              <ul class="menu-sub">
+                                <li class="menu-item">
+                                  <a href="Add-Review-Maintenance.html" class="menu-link">
+                                    <div data-i18n="Add-Review-Maintenance">    اضافه -مراجعه -الصيانة  </div>
+                                  </a>
+                                </li>
+                                <li class="menu-item">
+                                  <a href="Maintenance-request.html" class="menu-link">
+                                    <div data-i18n="show-Review-Maintenance">    عرض -مراجعه -الصيانة  </div>
+                                  </a>
+                                </li>
+                              </ul>
+                            </li>
+                            <li class="menu-item">
+                              <a href="Request-spare-part.html" class="menu-link">
+                                <i class="menu-icon tf-icons ti ti-settings"></i>
+                                <div data-i18n="Request-spare-part"> طلب قطعة غيار  </div>
+                              </a>
+                            </li>
+                          
+                            
+                            <li class="menu-item">
+                              <a href="Directors-approval.html" class="menu-link">
+                                <i class="menu-icon tf-icons ti ti-user-check"></i>
+                                <div data-i18n="Director's-approval"> موافقة المدير </div>
+                              </a>
+                            </li>
+                            <li class="menu-item">
+                              <a href="Oil-change.html" class="menu-link">
+                                <i class="menu-icon tf-icons ti ti-arrows-maximize"></i>
+                                <div data-i18n="Oil change"> غيار الزيت</div>
+                              </a>
+                            </li>
+                          </ul>
+                        </li>
 
                           <!-- Reports -->
-                          <li class="menu-item active">
+                          <li class="menu-item">
                             <a href="javascript:void(0)" class="menu-link menu-toggle">
                               <i class="menu-icon tf-icons ti ti-file-description"></i>
                               <div data-i18n="Reports">التقارير </div>
                             </a>
                             <ul class="menu-sub">
-                              <li class="menu-item active">
+                              <li class="menu-item">
                                 <a href="mission-Reports.html" target="_blank" class="menu-link">
                                   <i class="menu-icon tf-icons ti ti-lifebuoy"></i>
                                   <div data-i18n="mission"> المهام</div>
@@ -836,43 +882,58 @@
                 <div class="container-xxl flex-grow-1 container-p-y">
                    <div class="card comonent-hader-top">
                       <div class="card-body py-2 px-4 card-widget-separator">
-                    
-                      <strong class="py-3 px-3 text-title-hadeer text-tilte-b"><span class="text-muted fw-medium">  تقرير المهام  </span>  </strong>
+                       
+                        <strong class="py-3 px-3 text-title-hadeer text-tilte-b"><span class="text-muted fw-medium">   طلب صيانة </span>  </strong>
 
                        <!---->
-                       <div class="row  mt-5 justify-content-center">
-                        <div class="col-xl-8 col-lg-10 col-md-10">
-                          <div class="card h-100 card-border-shadow-gray">
+                       <div class="row  mt-5 mb-5 justify-content-center mx-0">
+                        <div class="col-xl-4 col-lg-4 col-md-12">
+                          <div class="card h-100 card-border-shadow-gray ">
                             <div class="row h-100 align-items-center">
                               <div class="col-sm-5">
                                 <div class="d-flex align-items-end h-100 justify-content-center mt-sm-0 mt-3">
-                                  <img src="./assets/img/illustrations/invoices.jpg" class="img-fluid mt-sm-4 mt-md-0" alt="add-new-roles" width="300">
-        
+                                  <img src="./assets/img/illustrations/add-icon.png" class="img-fluid mt-sm-4 mt-md-0" alt="add-new-roles" width="100">
+
                                 </div>
                               </div>
-                              <div class="col-sm-7">
-                                <form class="row component-form  mt-4  mb-4 pt-4 align-items-center justify-content-center">
-                                  <div class="mb-3 col-lg-11 col-xl-8 col-11 ">
-                                    <label class="form-label" for="form-repeater-1">   من تاريخ<span class="start-form">*</span></label>
-                                    <input type="date" id="form-repeater-1" class="form-control">
-                                  </div>
-                                  <div class="mb-3 col-lg-11 col-xl-8 col-11">
-                                    <label class="form-label" for="form-repeater">   الى تاريخ<span class="start-form">*</span></label>
-                                    <input type="date" id="form-repeater" class="form-control">
-                                  </div>
-                                 <div class="mb-3 col-11 col-lg-11 col-xl-8">
-                                  <a class="btn btn-primary  waves-effect waves-light" href="all-mission-Reports.html">عرض التقارير</a>
-                                 </div>
-                                 
-                                </form>
+                              <div class="col-sm-7 mt-md-0 mt-4">
+                                <div class="card-body text-sm-end text-center ps-sm-0">
+                                  <button data-bs-target="#addtruck" data-bs-toggle="modal" class="btn btn-primary mb-2 text-nowrap add-new-role waves-effect waves-light">
+                                    إضافةطلب 
+
+                                  </button>
+                                  <p class="mb-0 mt-1">Add maintenance-request, if it does not exist</p>
+                                </div>
                               </div>
                             </div>
-                           
                           </div>
-                          
                         </div>
+                        <!---->
+                         <!--item-->
+                         <div class="col-xl-4 col-lg-4 col-md-12">
+                                
+                          <div class="card h-100">
+                            <div class="row h-100">
+                              <div class="col-sm-5 col-5">
+                                <div class="d-flex align-items-center h-100 justify-content-center mt-sm-0">
+                                  <img src="./assets/img/illustrations/icons8-eye.png" class="img-fluid mt-sm-4 mt-md-0" alt="add-new-roles" width="83">
+                                </div>
+                              </div>
+                              <div class="col-sm-7 col-7">
+                                <div class="card-body text-sm-end text-center ps-sm-0">
+                                  <a href="all-maintenance.html" class="btn btn-primary mb-2 text-nowrap add-new-role waves-effect waves-light">
+                                    عرض الكل
+                                  </a>
+                                  <p class="mb-0 mt-1">view all maintenance-request</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                       
+                        </div>
+                       <!--item-->
+                        <!---->
                       </div>
-                    
                        <!---->
                       </div>
                     
@@ -883,8 +944,140 @@
             </div>
           
             <!--/ Content -->
-           
-         
+           <!-- Add Hardware Modal -->
+           <div class="modal fade " id="addtruck" aria-labelledby="exampleModalToggleLabel" tabindex="-1" aria-modal="true" role="dialog">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+              <div class="modal-content p-3 p-md-3">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-4 fw-bold text-tilte-b">    
+                    نموذج طلب صيانة    
+
+                  </h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <form class="row component-form">
+                    <div class="col-12 col-lg-4  mb-3">
+                      <label class="form-label" for="basic-default-name">  إسم المشروع
+                      </label>
+                      <select id="basic-default-name" class="select2 form-select" data-allow-clear="true">
+                        <option value="Ab">     ابو هيثم للعقارات</option>
+                        <option value="Ac">      العاصم للعقارات</option>
+                    
+                      </select>                
+                    
+                    </div>
+                    <div class="col-12 col-lg-4 mb-3">
+                      <label class="form-label" for="basic-default-date">   تاريخ البداء</label>
+                      <input type="date" class="form-control" id="basic-default-date">
+
+                    </div>
+                    <div class="col-12 col-lg-4 mb-3">
+                      <label class="form-label" for="basic-Malfunction-number">   رقم العطل</label>
+                      <input type="text" class="form-control" id="basic-Malfunction-number">
+
+                    </div>
+                    <div class="col-12 col-lg-4 mb-3">
+                      <label for="validationCustom03" class="form-label">المدينة</label>
+                      <input type="text" class="form-control" id="validationCustom03" required="">
+                      
+                    </div>
+                    <div class="col-12 col-lg-4 mb-3">
+                      <label for="validationCustom04" class="form-label">المنطقة	</label>
+                      <input type="text" class="form-control" id="validationCustom04" required="">
+                      
+                    </div>
+                    <div class="col-12 col-lg-4 mb-3">
+                      <label for="validationCustom05" class="form-label">فریق صیانة أو مقاول	</label>
+                      <input type="text" class="form-control" id="validationCustom05" required="">
+                      
+                    </div>
+                    <div class="col-12 col-lg-4  mb-3">
+                      <label class="form-label" for="basic-technician-name"> 
+                        فني صیانة
+                      </label>
+                      <select id="basic-technician-name" class="select2 form-select" data-allow-clear="true">
+                        <option value="Ab">     محمد	</option>
+                        <option value="Ac">     احمد </option>
+                    
+                      </select>                
+                    
+                    </div>
+                    <div class="col-12 col-lg-4 mb-3">
+                      <label for="validationCustom06" class="form-label">  رقم امر العمل</label>
+                      <input type="text" class="form-control" id="validationCustom06" required="">
+                      
+                    </div>
+                    <div class="col-12 col-lg-4  mb-3">
+                      <label class="form-label" for="basic-technician-type"> 
+                        نوع الصيانه
+                      </label>
+                      <select id="basic-technician-type" class="select2 form-select" data-allow-clear="true">
+                        <option value="pm">    pm	</option>
+                        <option value="CM">      cm </option>
+                        <option value="TUV">TUV </option>
+                        <option value="Other"> Other </option>
+
+                      </select>                
+                    
+                    </div>
+                    <div class="col-12 col-lg-4 mb-3">
+                      <label for="validation-number5" class="form-label"> المبلغ المدفوع</label>
+                      <input type="text" class="form-control" id="validation-number5" required="">
+                      
+                    </div>
+                    
+                  <div class="col-12 col-lg-4 mb-3">
+                    <label class="form-label" for="basic-comment-one">   تفصيل العطل
+                    </label>
+                    <textarea type="text" class="form-control" id="basic-comment-one " rows="1"></textarea>
+                  </div>
+                   
+                 
+                  <div class="col-12 col-lg-4 mb-3">
+                    <label class="form-label" for="basic-comment">   سبب العطل</label>
+                    <textarea type="text" class="form-control" id="basic-comment " rows="1"></textarea>
+                  </div>
+                  <div class="col-12 col-lg-4 mb-3">
+                    <label class="form-label" for="basic-Work "> 
+                      نوع موقع العمل
+
+                    </label>
+                    <select id="basic-Work" class="select2 form-select" data-allow-clear="true">
+                      <option value="pm">    pm	</option>
+                      <option value="CM">      cm </option>
+                      <option value="TUV">TUV </option>
+                      <option value="Other"> Other </option>
+
+                    </select>                
+                  
+                  </div>
+                  <div class="col-12 col-lg-4 mb-3">
+                    <label for="validation-time" class="form-label">   ساعات العمل المنجزة </label>
+                    <input type="time" class="form-control" id="validation-time" required="">
+                    
+                  </div>
+                  <div class="col-12 col-lg-4 mb-3">
+                    <label class="form-label" for="basic-comment-one">   العمل المنجز
+                    </label>
+                    <textarea type="text" class="form-control" id="basic-comment-one " rows="1"></textarea>
+                  </div>
+                   
+                    <div class="col-12 col-lg-12">
+                      <button type="submit" class="btn btn-primary  waves-effect waves-light">حفظ</button>
+                      <button type="reset" class="btn btn-outline-secondary waves-effect mx-1">مسح المحتوى </button>
+                      <a href="all-maintenance.html" class="btn btn-label-secondary waves-effect mx-md-1 mx-1 mt-md-0 mt-1">مشاهدة الكل</a>
+                     </div>
+                   
+                  </form>
+                  
+                </div>
+               
+              </div>
+            </div>
+          </div>
+           <!---->
+        
             <!-- Footer -->
             <footer class="content-footer footer bg-footer-theme">
               <div class="container-xxl">
@@ -974,7 +1167,6 @@
     <!-- Vendors JS -->
     <script src="./assets/vendor/libs/apex-charts/apexcharts.js"></script>
     <script src="./assets/vendor/libs/datatables-bs5/datatables-bootstrap5.js"></script>
-    <script src="./assets/vendor/libs/jquery-repeater/jquery-repeater.js"></script>
 
 
     
@@ -991,7 +1183,6 @@
      <script src="./assets/vendor/js/chart.js"></script>
      <script src="./assets/js/dashboards-crm.js"></script>
      <script src="./assets/js/tables-datatables-basic.js"></script>
-     <script src="./assets/js/forms-extras.js"></script>
 
   </body>
 </html>
