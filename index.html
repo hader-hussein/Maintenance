@@ -717,12 +717,7 @@
                                 </a>
                                 
                               </li>
-                              <li class="menu-item">
-                                <a href="Weekly-inspection.html" class="menu-link">
-                                  <div data-i18n="Weekly inspection">    نموذج   التفتيش الاسبوعى</div>
-                                </a>
-                                
-                              </li>
+                              
                           </ul>
                         </li>
                         <li class="menu-item">
@@ -737,7 +732,7 @@
                               </a>
                             </li>
                             <li class="menu-item">
-                              <a href="Maintenance-request.html" class="menu-link">
+                              <a href="show-Review-Maintenance" class="menu-link">
                                 <div data-i18n="show-Review-Maintenance">    عرض -مراجعه -الصيانة  </div>
                               </a>
                             </li>
@@ -885,56 +880,35 @@
                             <h5 class="mb-0">المهام الشخصية </h5>
                           </div>
                         </div>
-                        <div class="card-body">
-                          <div class="card-datatable text-nowrap  table-responsive pt-3">
+                        <div class="card-body scrollable-c">
+                          <div class="card-datatable text-nowrap  table-responsive">
                           
                             <table class=" table table-bordered table-hover rounded table-center">
                               <thead class="table-light">
                                 <tr>
                               
                                 
-                                  <th>    من </th>
-                                  <th>   الى</th>
-                                  <th>     المدة</th>
+                               
                                   <th>     الشركة</th>
                                   <th>نوع المهمه</th>
-                                  <th>حالة المهمه</th>
+                                
                                   <th>الوصف</th>
                                   <th>عرض المهمه</th>
-                                  <th>ملاحظة على المهمه</th>
-                                  <th>الحالة</th>
-    
-                                  <th>تعديل على المهمه</th>
+                             
                                 </tr>
                               </thead>
                               <tbody>
                                   <tr>
                                   
                                     <td>  	</td>
-                                    <td>	</td>
-                                    <td> 	 	</td>
                                     <td></td>
                                     <td></td>
-                                    <td></td>
-                                    <td></td>
+                                
                                     <td>
                                       <a class=" p-1 d-flex align-items-center justify-content-center me-3 rounded cursor-pointer" data-bs-target="#viewtasks" data-bs-toggle="modal" title="عرض"><i class="fas fa-eye"></i> </a>
     
                                     </td>
-                                    <td>
-                                      <a class=" p-1 d-flex align-items-center justify-content-center me-3 rounded cursor-pointer" data-bs-target="#addcomment" data-bs-toggle="modal" title="اضافه"><i class="fas fa-comment-alt  fs-4"></i> </a>
-    
-                                    </td>
-                                    <td>
-                                      <a class=" p-1 d-flex align-items-center justify-content-center me-3 rounded cursor-pointer" data-bs-target="#condition" data-bs-toggle="modal" title="تعليق الحالة"><i class="fas  fa-question" aria-hidden="true"></i>   </a>
-    
-                                    </td>
-                                    <td>
-                                      
-                                        <a class="bg-success text-bg-success p-1 d-flex align-items-center justify-content-center me-3 rounded cursor-pointer" data-bs-target="#edittruck" data-bs-toggle="modal" title="تعديل"><i class="ti ti-pencil  fs-4"></i> </a>
-                                      
-                                    
-                                    </td>
+                                  
                                   </tr>
                                   
                               </tbody>
@@ -952,8 +926,8 @@
                         <h5 class="mb-0">المهام المفتوحة </h5>
                       </div>
                     </div>
-                    <div class="card-body">
-                      <div class="card-datatable text-nowrap  table-responsive pt-3">
+                    <div class="card-body scrollable-c">
+                      <div class="card-datatable text-nowrap  table-responsive">
                       
                         <table class=" table table-bordered table-hover rounded table-center">
                           <thead class="table-light">
@@ -994,103 +968,221 @@
                     <div class="card-header">
                       <div class="card-title mb-0">
                         <h5 class="mb-0"> الاشعارات </h5>
-                        <span>Change to notification settings, the user will get the update</span>
-
                       </div>
                     </div>
                     
                       <div class="card-body">
-                        <div class="table-responsive border rounded table-notification">
-                          <table class="table table-striped">
-                            <thead class="table-light">
-                              <tr>
-                                <th class="text-nowrap">Type</th>
-                                <th class="text-nowrap text-center">✉️ Email</th>
-                                <th class="text-nowrap text-center">🖥 Browser</th>
-                                <th class="text-nowrap text-center">👩🏻‍💻 App</th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              <tr>
-                                <td class="text-nowrap">Order status</td>
-                                <td>
-                                  <div class="form-check d-flex justify-content-center">
-                                    <input class="form-check-input" type="checkbox" id="defaultCheck1" checked="">
+                          <div class="dropdown-notifications-list scrollable-container scrollable-c ps ps__rtl">
+                            <ul class="list-group list-group-flush">
+                              <li class="list-group-item list-group-item-action dropdown-notifications-item">
+                                <div class="d-flex">
+                                  <div class="flex-shrink-0 me-3">
+                                    <div class="avatar">
+                                      <img src="./assets/img/avatars/1.png" alt class="h-auto rounded-circle" />
+                                    </div>
                                   </div>
-                                </td>
-                                <td>
-                                  <div class="form-check d-flex justify-content-center">
-                                    <input class="form-check-input" type="checkbox" id="defaultCheck2" checked="">
+                                  <div class="flex-grow-1">
+                                    <h6 class="mb-1">Congratulation Lettie 🎉</h6>
+                                    <p class="mb-0">Won the monthly best seller gold badge</p>
+                                    <small class="text-muted">1h ago</small>
                                   </div>
-                                </td>
-                                <td>
-                                  <div class="form-check d-flex justify-content-center">
-                                    <input class="form-check-input" type="checkbox" id="defaultCheck3" checked="">
+                                  <div class="flex-shrink-0 dropdown-notifications-actions">
+                                    <a href="javascript:void(0)" class="dropdown-notifications-read"
+                                      ><span class="badge badge-dot"></span
+                                    ></a>
+                                    <a href="javascript:void(0)" class="dropdown-notifications-archive"
+                                      ><span class="ti ti-x"></span
+                                    ></a>
                                   </div>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td class="text-nowrap">Upcoming sale</td>
-                                <td>
-                                  <div class="form-check d-flex justify-content-center">
-                                    <input class="form-check-input" type="checkbox" id="defaultCheck4" checked="">
+                                </div>
+                              </li>
+                              <li class="list-group-item list-group-item-action dropdown-notifications-item">
+                                <div class="d-flex">
+                                  <div class="flex-shrink-0 me-3">
+                                    <div class="avatar">
+                                      <span class="avatar-initial rounded-circle bg-label-danger">CF</span>
+                                    </div>
                                   </div>
-                                </td>
-                                <td>
-                                  <div class="form-check d-flex justify-content-center">
-                                    <input class="form-check-input" type="checkbox" id="defaultCheck5" checked="">
+                                  <div class="flex-grow-1">
+                                    <h6 class="mb-1">Charles Franklin</h6>
+                                    <p class="mb-0">Accepted your connection</p>
+                                    <small class="text-muted">12hr ago</small>
                                   </div>
-                                </td>
-                                <td>
-                                  <div class="form-check d-flex justify-content-center">
-                                    <input class="form-check-input" type="checkbox" id="defaultCheck6" checked="">
+                                  <div class="flex-shrink-0 dropdown-notifications-actions">
+                                    <a href="javascript:void(0)" class="dropdown-notifications-read"
+                                      ><span class="badge badge-dot"></span
+                                    ></a>
+                                    <a href="javascript:void(0)" class="dropdown-notifications-archive"
+                                      ><span class="ti ti-x"></span
+                                    ></a>
                                   </div>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td class="text-nowrap">Special offers</td>
-                                <td>
-                                  <div class="form-check d-flex justify-content-center">
-                                    <input class="form-check-input" type="checkbox" id="defaultCheck7" checked="">
+                                </div>
+                              </li>
+                              <li class="list-group-item list-group-item-action dropdown-notifications-item marked-as-read">
+                                <div class="d-flex">
+                                  <div class="flex-shrink-0 me-3">
+                                    <div class="avatar">
+                                      <img src="./assets/img/avatars/2.png" alt class="h-auto rounded-circle" />
+                                    </div>
                                   </div>
-                                </td>
-                                <td>
-                                  <div class="form-check d-flex justify-content-center">
-                                    <input class="form-check-input" type="checkbox" id="defaultCheck8" checked="">
+                                  <div class="flex-grow-1">
+                                    <h6 class="mb-1">New Message ✉️</h6>
+                                    <p class="mb-0">You have new message from Natalie</p>
+                                    <small class="text-muted">1h ago</small>
                                   </div>
-                                </td>
-                                <td>
-                                  <div class="form-check d-flex justify-content-center">
-                                    <input class="form-check-input" type="checkbox" id="defaultCheck9">
+                                  <div class="flex-shrink-0 dropdown-notifications-actions">
+                                    <a href="javascript:void(0)" class="dropdown-notifications-read"
+                                      ><span class="badge badge-dot"></span
+                                    ></a>
+                                    <a href="javascript:void(0)" class="dropdown-notifications-archive"
+                                      ><span class="ti ti-x"></span
+                                    ></a>
                                   </div>
-                                </td>
-                              </tr>
-                              <tr class="border-transparent">
-                                <td class="text-nowrap">New item arrival</td>
-                                <td>
-                                  <div class="form-check d-flex justify-content-center">
-                                    <input class="form-check-input" type="checkbox" id="defaultCheck10" checked="">
+                                </div>
+                              </li>
+                              <li class="list-group-item list-group-item-action dropdown-notifications-item">
+                                <div class="d-flex">
+                                  <div class="flex-shrink-0 me-3">
+                                    <div class="avatar">
+                                      <span class="avatar-initial rounded-circle bg-label-success"
+                                        ><i class="ti ti-shopping-cart"></i
+                                      ></span>
+                                    </div>
                                   </div>
-                                </td>
-                                <td>
-                                  <div class="form-check d-flex justify-content-center">
-                                    <input class="form-check-input" type="checkbox" id="defaultCheck11">
+                                  <div class="flex-grow-1">
+                                    <h6 class="mb-1">Whoo! You have new order 🛒</h6>
+                                    <p class="mb-0">ACME Inc. made new order $1,154</p>
+                                    <small class="text-muted">1 day ago</small>
                                   </div>
-                                </td>
-                                <td>
-                                  <div class="form-check d-flex justify-content-center">
-                                    <input class="form-check-input" type="checkbox" id="defaultCheck12">
+                                  <div class="flex-shrink-0 dropdown-notifications-actions">
+                                    <a href="javascript:void(0)" class="dropdown-notifications-read"
+                                      ><span class="badge badge-dot"></span
+                                    ></a>
+                                    <a href="javascript:void(0)" class="dropdown-notifications-archive"
+                                      ><span class="ti ti-x"></span
+                                    ></a>
                                   </div>
-                                </td>
-                              </tr>
-                            </tbody>
-                          </table>
-                        </div>
-                      </div>
-                      <div class="card-body pt-0">
-                        <button type="submit" class="btn btn-primary me-2 waves-effect waves-light">Save changes</button>
-                        <button type="reset" class="btn btn-label-secondary waves-effect">Discard</button>
-                      </div>
+                                </div>
+                              </li>
+                              <li class="list-group-item list-group-item-action dropdown-notifications-item marked-as-read">
+                                <div class="d-flex">
+                                  <div class="flex-shrink-0 me-3">
+                                    <div class="avatar">
+                                      <img src="./assets/img/avatars/9.png" alt class="h-auto rounded-circle" />
+                                    </div>
+                                  </div>
+                                  <div class="flex-grow-1">
+                                    <h6 class="mb-1">Application has been approved 🚀</h6>
+                                    <p class="mb-0">Your ABC project application has been approved.</p>
+                                    <small class="text-muted">2 days ago</small>
+                                  </div>
+                                  <div class="flex-shrink-0 dropdown-notifications-actions">
+                                    <a href="javascript:void(0)" class="dropdown-notifications-read"
+                                      ><span class="badge badge-dot"></span
+                                    ></a>
+                                    <a href="javascript:void(0)" class="dropdown-notifications-archive"
+                                      ><span class="ti ti-x"></span
+                                    ></a>
+                                  </div>
+                                </div>
+                              </li>
+                              <li class="list-group-item list-group-item-action dropdown-notifications-item marked-as-read">
+                                <div class="d-flex">
+                                  <div class="flex-shrink-0 me-3">
+                                    <div class="avatar">
+                                      <span class="avatar-initial rounded-circle bg-label-success"
+                                        ><i class="ti ti-chart-pie"></i
+                                      ></span>
+                                    </div>
+                                  </div>
+                                  <div class="flex-grow-1">
+                                    <h6 class="mb-1">Monthly report is generated</h6>
+                                    <p class="mb-0">July monthly financial report is generated</p>
+                                    <small class="text-muted">3 days ago</small>
+                                  </div>
+                                  <div class="flex-shrink-0 dropdown-notifications-actions">
+                                    <a href="javascript:void(0)" class="dropdown-notifications-read"
+                                      ><span class="badge badge-dot"></span
+                                    ></a>
+                                    <a href="javascript:void(0)" class="dropdown-notifications-archive"
+                                      ><span class="ti ti-x"></span
+                                    ></a>
+                                  </div>
+                                </div>
+                              </li>
+                              <li class="list-group-item list-group-item-action dropdown-notifications-item marked-as-read">
+                                <div class="d-flex">
+                                  <div class="flex-shrink-0 me-3">
+                                    <div class="avatar">
+                                      <img src="./assets/img/avatars/5.png" alt class="h-auto rounded-circle" />
+                                    </div>
+                                  </div>
+                                  <div class="flex-grow-1">
+                                    <h6 class="mb-1">Send connection request</h6>
+                                    <p class="mb-0">Peter sent you connection request</p>
+                                    <small class="text-muted">4 days ago</small>
+                                  </div>
+                                  <div class="flex-shrink-0 dropdown-notifications-actions">
+                                    <a href="javascript:void(0)" class="dropdown-notifications-read"
+                                      ><span class="badge badge-dot"></span
+                                    ></a>
+                                    <a href="javascript:void(0)" class="dropdown-notifications-archive"
+                                      ><span class="ti ti-x"></span
+                                    ></a>
+                                  </div>
+                                </div>
+                              </li>
+                              <li class="list-group-item list-group-item-action dropdown-notifications-item">
+                                <div class="d-flex">
+                                  <div class="flex-shrink-0 me-3">
+                                    <div class="avatar">
+                                      <img src="./assets/img/avatars/6.png" alt class="h-auto rounded-circle" />
+                                    </div>
+                                  </div>
+                                  <div class="flex-grow-1">
+                                    <h6 class="mb-1">New message from Jane</h6>
+                                    <p class="mb-0">Your have new message from Jane</p>
+                                    <small class="text-muted">5 days ago</small>
+                                  </div>
+                                  <div class="flex-shrink-0 dropdown-notifications-actions">
+                                    <a href="javascript:void(0)" class="dropdown-notifications-read"
+                                      ><span class="badge badge-dot"></span
+                                    ></a>
+                                    <a href="javascript:void(0)" class="dropdown-notifications-archive"
+                                      ><span class="ti ti-x"></span
+                                    ></a>
+                                  </div>
+                                </div>
+                              </li>
+                              <li class="list-group-item list-group-item-action dropdown-notifications-item marked-as-read">
+                                <div class="d-flex">
+                                  <div class="flex-shrink-0 me-3">
+                                    <div class="avatar">
+                                      <span class="avatar-initial rounded-circle bg-label-warning"
+                                        ><i class="ti ti-alert-triangle"></i
+                                      ></span>
+                                    </div>
+                                  </div>
+                                  <div class="flex-grow-1">
+                                    <h6 class="mb-1">CPU is running high</h6>
+                                    <p class="mb-0">CPU Utilization Percent is currently at 88.63%,</p>
+                                    <small class="text-muted">5 days ago</small>
+                                  </div>
+                                  <div class="flex-shrink-0 dropdown-notifications-actions">
+                                    <a href="javascript:void(0)" class="dropdown-notifications-read"
+                                      ><span class="badge badge-dot"></span
+                                    ></a>
+                                    <a href="javascript:void(0)" class="dropdown-notifications-archive"
+                                      ><span class="ti ti-x"></span
+                                    ></a>
+                                  </div>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                           
+                          
+                       </div>
                    
                   </div>
                </div>
@@ -1105,7 +1197,7 @@
                         </div>
                       </div>
                       
-                        <div class="card-body">
+                        <div class="card-body scrollable-c">
                           <table class=" table table-bordered table-hover rounded table-center">
                             <thead class="table-light">
                               <tr>
@@ -1193,67 +1285,9 @@
             <!--/ Content -->
                    <!--المهام الشخصية-->
                    <!---->
-            <!-- Add comment  -->
-            <div class="modal fade " id="addcomment" aria-labelledby="exampleModalToggleLabel" tabindex="-1" aria-modal="true" role="dialog">
-              <div class="modal-dialog modal-md  modal-dialog-centered">
-                <div class="modal-content p-3 p-md-3">
-                  <div class="modal-header">
-                    <h1 class="modal-title fs-4 fw-bold text-tilte-b">   ملاحظة علي المهمة</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                  </div>
-                  <div class="modal-body">
-                    <form class="row component-form">
-                     
-                     
-                      <div class="col-12 col-md-12  mb-3">
-                        <label class="form-label" for="basic-default-user-work"> إضافة ملاحظة  </label>
-                        <textarea type="text" class="form-control" id="basic-default-user-work" placeholder="  إضافة ملاحظة  " rows="4"></textarea>
-                      </div>
-                      
-                      <div class="col-12 col-lg-8">
-                        <button type="submit" class="btn btn-primary  waves-effect waves-light">حفظ</button>
-                        <button type="reset" class="btn btn-outline-secondary waves-effect mx-3">مسح المحتوى </button>
-  
-                       </div>
-                     
-                    </form>
-                    
-                  </div>
-                 
-                </div>
-              </div>
-            </div>
+           
              <!---->
-              <!-- Add condition  -->
-            <div class="modal fade " id="condition" aria-labelledby="exampleModalToggleLabel" tabindex="-1" aria-modal="true" role="dialog">
-              <div class="modal-dialog modal-md  modal-dialog-centered">
-                <div class="modal-content p-3 p-md-3">
-                  <div class="modal-header">
-                    <h1 class="modal-title fs-4 fw-bold text-tilte-b">   ملاحظة علي الحالة</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                  </div>
-                  <div class="modal-body">
-                    <form class="row component-form">
-                     
-                     
-                      <div class="col-12 col-md-12  mb-3">
-                        <label class="form-label" for="basic-default-user-work">   أدخل تعليقًا لاستئناف هذه العملية وإيقاف العمليات الأخرى: </label>
-                        <textarea type="text" class="form-control" id="basic-default-user-work" placeholder="  إضافة تعليق  " rows="4"></textarea>
-                      </div>
-                      
-                      <div class="col-12 col-lg-8">
-                        <button type="submit" class="btn btn-primary  waves-effect waves-light">حفظ</button>
-                        <button type="reset" class="btn btn-outline-secondary waves-effect mx-3">مسح المحتوى </button>
-  
-                       </div>
-                     
-                    </form>
-                    
-                  </div>
-                 
-                </div>
-              </div>
-            </div>
+             
               <!-- viewtasks -->
               <div class="modal fade " id="viewtasks" aria-labelledby="exampleModalToggleLabel" tabindex="-1" aria-modal="true" role="dialog">
                 <div class="modal-dialog modal-md  modal-dialog-centered">
@@ -1393,66 +1427,7 @@
                 </div>
               </div>
             <!-- edit Hardware Modal -->
-            <div class="modal fade " id="edittruck" aria-labelledby="exampleModalToggleLabel" tabindex="-1" aria-modal="true" role="dialog">
-              <div class="modal-dialog modal-lg modal-dialog-centered">
-                <div class="modal-content p-3 p-md-3">
-                  <div class="modal-header">
-                    <h1 class="modal-title fs-4 fw-bold text-tilte-b">     تعديل مهمه</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                  </div>
-                  <div class="modal-body">
-                    <form class="row component-form">
-                      <div class="col-12 col-md-4  mb-3">
-                        <label class="form-label" for="basic-default-name"> الموظف  </label>
-                        <input type="text" class="form-control" id="basic-default-name" placeholder="    الموظف">
-                      </div>
-                      <div class="col-12 col-md-4  mb-3">
-                        <label class="form-label" for="basic-default-work">الشركة  </label>
-                        <input type="text" class="form-control" id="basic-default-work" placeholder="   الشركة">
-                      </div>
-                      <div class="col-12 col-md-4 mb-3">
-                        
-                        <label for="select1Basic-driver" class="form-label">    
-                          حالة التنفيذ
-                        </label>
-                        <select id="select1Basic-driver" class="select2 form-select" data-allow-clear="true">
-                          <option value="AK">  تم الانتهاء</option>
-                          <option value="HI">  مستلمة</option>
-                          <option value="HI">  تحت التجربة</option>
-                          <option value="HI">    جارى العمل عليها</option>
-                          <option value="HI">      موجلة</option>
-                        </select>
-                    
-                    </div>
-                    <div class="col-12 col-md-4  mb-3">
-                      <label class="form-label" for="basic-default-number-description">   الوصف</label>
-                      <textarea type="text" class="form-control" id="basic-default-number-description " rows="2"></textarea>
-                    </div>
-                    <div class="col-12 col-md-4  mb-3">
-                      <label class="form-label" for="basic-comment-chang">   تعليقى عن تغييرحالة المهمه</label>
-                      <textarea type="text" class="form-control" id="basic-comment-chang " rows="2"></textarea>
-                    </div>
-                    <div class="col-12 col-md-4  mb-3">
-                      <label class="form-label" for="basic-comment-co">   تعليق مدير المهمه</label>
-                      <textarea type="text" class="form-control" id="basic-comment-co" rows="2"></textarea>
-                    </div>
-                    <div class="col-12 col-md-12  mb-3">
-                      <label class="form-label" for="basic-default-time">مدة تنفيذ المهمه  </label>
-                      <input type="time" class="form-control" id="basic-default-time" placeholder="   مدة تنفيذ المهمه">
-                    </div>
-                      <div class="col-12 col-lg-8">
-                        <button type="submit" class="btn btn-primary  waves-effect waves-light">تعديل</button>
-                        <button type="reset" class="btn btn-outline-secondary waves-effect mx-3">مسح المحتوى </button>
-  
-                       </div>
-                     
-                    </form>
-                    
-                  </div>
-                 
-                </div>
-              </div>
-            </div>
+           
                    <!--المهام الشخصيه-->
             <!-- Footer -->
             <footer class="content-footer footer bg-footer-theme">

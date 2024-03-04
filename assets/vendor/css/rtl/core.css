@@ -18820,7 +18820,7 @@ html:not(.layout-menu-fixed) .menu-inner-shadow {
 .layout-navbar .navbar-dropdown .dropdown-menu .last-login {
   white-space: normal;
 }
-.layout-navbar .navbar-dropdown.dropdown-notifications .dropdown-notifications-list {
+.layout-navbar .navbar-dropdown.dropdown-notifications .dropdown-notifications-list,.scrollable-c {
   max-height: 24.08rem;
 }
 .layout-navbar .navbar-dropdown.dropdown-notifications .dropdown-notifications-list .dropdown-notifications-item {
@@ -18844,14 +18844,14 @@ html:not(.layout-menu-fixed) .menu-inner-shadow {
 .layout-navbar .navbar-dropdown.dropdown-notifications .dropdown-notifications-list .dropdown-notifications-item.marked-as-read .dropdown-notifications-read span {
   background-color: #a8aaae;
 }
-.layout-navbar .navbar-dropdown.dropdown-notifications .dropdown-notifications-list .dropdown-notifications-item:not(.marked-as-read) .dropdown-notifications-archive {
+.layout-navbar .navbar-dropdown.dropdown-notifications .dropdown-notifications-list .dropdown-notifications-item:not(.marked-as-read) .dropdown-notifications-archive,.dropdown-notifications-list .dropdown-notifications-item .dropdown-notifications-archive{
   visibility: hidden;
 }
 .layout-navbar .navbar-dropdown.dropdown-notifications .dropdown-notifications-list .dropdown-notifications-item:hover.marked-as-read .dropdown-notifications-read,
 .layout-navbar .navbar-dropdown.dropdown-notifications .dropdown-notifications-list .dropdown-notifications-item:hover.marked-as-read .dropdown-notifications-archive {
   visibility: visible;
 }
-.layout-navbar .navbar-dropdown.dropdown-notifications .dropdown-notifications-list .dropdown-notifications-item:hover:not(.marked-as-read) .dropdown-notifications-archive {
+.layout-navbar .navbar-dropdown.dropdown-notifications .dropdown-notifications-list .dropdown-notifications-item:hover:not(.marked-as-read) .dropdown-notifications-archive,.dropdown-notifications-list .dropdown-notifications-item:hover .dropdown-notifications-archive  {
   visibility: visible;
 }
 .layout-navbar .navbar-dropdown.dropdown-shortcuts .dropdown-shortcuts-list {

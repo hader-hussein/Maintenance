@@ -494,3 +494,12 @@ color: #dbdade !important;
   }
   
 }
+.scrollable-c{
+  overflow: auto !important;
+}
+.scrollable-c::-webkit-scrollbar{
+  width: 0px;
+}
+.dropdown-notifications-list a .ti{
+  color: rgb(var(--theme-color))!important;
+}
