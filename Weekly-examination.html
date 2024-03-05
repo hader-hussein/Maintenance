@@ -711,7 +711,7 @@
                                     
                                     <li class="menu-item active">
                                       <a href="Weekly-examination.html" class="menu-link">
-                                        <div data-i18n="Weekly-examination">    نموذج  الفحص الاسبوعى</div>
+                                        <div data-i18n="Weekly-examination">  Weekly-examination</div>
                                       </a>
                                       
                                     </li>
@@ -878,11 +878,18 @@
                 <div class="container-xxl flex-grow-1 container-p-y">
                    <div class="card comonent-hader-top">
                       <div class="card-body py-2 px-md-4 px-2   card-widget-separator">
-                            <strong class="py-md-3 px-md-3  text-title-hadeer text-tilte-b"><span class="text-muted fw-medium">   تعرفيات الفحص </span>  </strong>
+                        <div class="row mx-0 d-flex flex-wrap justify-content-between  mb-3 align-items-center pt-4">
+                            <div class="col">
 
+                                 <strong class="py-md-3 px-md-0  text-title-hadeer text-tilte-b"><span class="text-muted fw-medium">   تعرفيات الفحص </span>  </strong>
+                           </div>
+                            <div class="col text-end col-5">
+                              <a href="all-weekly-examination.html" class="btn  btn-primary  waves-effect ">مشاهدة </a>
+
+                            </div>
+                        </div>
                        <!---->
-                       <div class="card-datatable text-nowrap  table-responsive pt-3">
-                        <form class="row component-form align-items-end mx-0">
+                        <form class="row component-form align-items-end mx-0 mt-4">
                           <div class="col-12 col-md-6  mb-4">
                             <label class="form-label" for="basic-default-name">اسم النموذج(عربى)  </label>
                             <input type="text" class="form-control" id="basic-default-name" placeholder="   الإسم">
@@ -895,7 +902,7 @@
                             <label class="form-check-label mb-2" >
                               المدة
                             </label>
-                            <div class="d-flex justify-content-between">
+                            <div class="d-flex justify-content-between flex-wrap">
                               <div class="form-check">
                                 <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
                                 <label class="form-check-label" for="flexRadioDefault1">
@@ -943,16 +950,40 @@
                             <label class="form-label" for="basic-default-name"> نقطة الفحص(انجيلزى)  </label>
                             <input type="text" class="form-control" id="basic-default-name" placeholder="   الإسم">
                           </div>
-                          
+                          <div class="col-md-6  mb-4">
+                            <label class="form-check-label mb-2" >
+                              عناصر الفحص
+                            </label>
+                            <div class="d-flex justify-content-between flex-wrap">
+                              <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault2" id="flexRadioDefault11">
+                                <label class="form-check-label" for="flexRadioDefault11">
+                                  جيد
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault2" id="flexRadioDefault22" checked>
+                                <label class="form-check-label" for="flexRadioDefault22">
+                                  سيئ
+                                </label>
+                              </div>
+                             
+                           
+                            </div>
+                            
+                          </div>
+                          <div class="col-12 col-md-6  mb-3">
+                            <label class="form-label" for="basic-comment-co">     الملاحظات</label>
+                            <textarea type="text" class="form-control" id="basic-comment-co" rows="1"></textarea>
+                          </div>
                      
                           <div class="col-12 col-lg-8">
                             <button type="submit" class="btn btn-primary  waves-effect waves-light">حفظ</button>
                             <button type="reset" class="btn btn-outline-secondary waves-effect mx-md-2 mx-1">مسح المحتوى </button>
-                            <a href="all-weekly-examination.html" class="btn btn-label-secondary waves-effect  mt-md-0 mt-2">مشاهدة الكل</a>
                           </div>
                          
                         </form>
-                      </div>
+                      
                        <!---->
                       </div>
                     
