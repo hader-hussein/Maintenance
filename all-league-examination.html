@@ -696,11 +696,25 @@
                               <div data-i18n="Maintenance">الصيانة </div>
                             </a>
                             <ul class="menu-sub">
-                              <li class="menu-item ">
-                                <a href="Maintenance-request.html" class="menu-link">
+                              <li class="menu-item active">
+                                <a href="javascript:void(0)" class="menu-link menu-toggle">
                                   <i class="menu-icon tf-icons ti ti-toggle-left"></i>
-                                  <div data-i18n="Maintenance-request-form">    نموذج طلب صيانة</div>
+                                  <div data-i18n="Maintenance-request">     طلب صيانة</div>
                                 </a>
+                                <ul class="menu-sub">
+                                    <li class="menu-item active">
+                                      <a href="Maintenance-request.html" class="menu-link">
+                                      
+                                        <div data-i18n="Maintenance-request-form">    نموذج طلب صيانة</div>
+                                      </a>
+                                    </li>
+                                    <li class="menu-item">
+                                      <a href="all-maintenance.html" class="menu-link">
+                                      
+                                        <div data-i18n="view-Maintenance-request">    عرض طلب صيانة</div>
+                                      </a>
+                                    </li>
+                                </ul>
                               </li>
                               <li class="menu-item active">
                                 <a href="javascript:void(0)" class="menu-link menu-toggle">
@@ -709,20 +723,20 @@
                                 </a>
                                 <ul class="menu-sub">
                                     
-                                    <li class="menu-item ">
-                                      <a href="Weekly-examination.html" class="menu-link">
-                                        <div data-i18n="Weekly-examination">    نموذج  الفحص الاسبوعى</div>
-                                      </a>
-                                      
-                                    </li>
-                                    <li class="menu-item active">
-                                      <a href="league-Examination.html" class="menu-link">
-                                        <div data-i18n="league-Examination">    نموذج  الفحص الدورى</div>
-                                      </a>
-                                      
-                                    </li>
-                                   
-                                </ul>
+                                  <li class="menu-item ">
+                                    <a href="Examination-definitions.html" class="menu-link">
+                                      <div data-i18n="Examination-definitions"> تعريفات الفحص</div>
+                                    </a>
+                                    
+                                  </li>
+                                  <li class="menu-item">
+                                    <a href="Periodic-inspection.html" class="menu-link">
+                                      <div data-i18n="Periodic-inspection">    نموذج  الفحص الدورى</div>
+                                    </a>
+                                    
+                                  </li>
+                                 
+                              </ul>
                               </li>
                               <li class="menu-item">
                                 <a href="javascript:void(0)" class="menu-link menu-toggle">
@@ -883,7 +897,7 @@
 
                           </div>
                           <div class="col text-end">
-                            <a href="league-Examination.html" class="btn btn-primary waves-effect waves-light btn-add">اضافه </a>
+                            <a href="Periodic-inspection.html" class="btn btn-primary waves-effect waves-light btn-add">اضافه </a>
           
                           </div>
                         </div>
@@ -899,9 +913,10 @@
                               </th>
                               <th> اسم الشحض
                               </th>
-                              <th>   النوع</th>
+                            
                               <th>    التاريخ </th>
-                              <th>     الملاحظات</th>
+                              <th>نقطة الفحص(عربى)</th>
+                              <th>نقطة الفحص(انجيلزى)</th>
                               <th>Action</th>
                             </tr>
                           </thead>
@@ -950,7 +965,7 @@
                   </div>
                   <div class="modal-body px-md-2 px-1">
                     <form class="row component-form align-items-end mx-0">
-                      <div class="col-12 col-md-6  mb-4">
+                      <div class="col-12 col-md-4  mb-4">
                         <label class="form-label" for="basic-technician-type">اسم الفحص  </label>
                         <select id="basic-technician-type" class="select2 form-select" data-allow-clear="true">
                           <option value="pm">    1	</option>
@@ -960,7 +975,7 @@
   
                         </select> 
                       </div>
-                      <div class="col-12 col-md-6  mb-4">
+                      <div class="col-12 col-md-4  mb-4">
                         <label class="form-label" for="basic-user-name">اسم الشحض  </label>
                         <select id="basic-user-name" class="select2 form-select" data-allow-clear="true">
                           <option value="pm">    احمد	</option>
@@ -969,37 +984,74 @@
   
                         </select> 
                       </div>
-                      <div class="col-12 col-md-6  mb-4">
-                        <label class="form-check-label mb-2" >
-                          النوع
-                        </label>
-                        <div class="d-flex justify-content-between">
-                          <div class="form-check">
-                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                            <label class="form-check-label" for="flexRadioDefault1">
-                              pass
-                            </label>
-                          </div>
-                          <div class="form-check">
-                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-                            <label class="form-check-label" for="flexRadioDefault2">
-                             fall
-                            </label>
-                          </div>
-                         
-                          
-                        </div>
-                        
+                      <div class="col-12 col-md-4  mb-4">
+                        <label class="form-label" for="basic-technician-type"> المدة  </label>
+                        <select id="basic-technician-type" class="select2 form-select" data-allow-clear="true">
+                          <option value="day">   يومى	</option>
+                          <option value="week">    اسبوعى </option>
+                          <option value="TUV">3 شهور </option>
+                          <option value="Other">  6شهور </option>
+                          <option value="Other">  سنة </option>
+                          <option value="Other">  خمس سنين </option>
+                        </select> 
                       </div>
-                      <div class="col-12 col-md-6  mb-3">
+                      
+                        
+                     
+                      <div class="col-12 col-md-4  mb-3">
                         <label class="form-label" for="basic-default-date"> التاريخ </label>
                         <input type="date" class="form-control" id="basic-default-date" >
                       </div>
-                      <div class="col-12 col-md-12  mb-3">
-                        <label class="form-label" for="basic-comment-co">     الملاحظات</label>
-                        <textarea type="text" class="form-control" id="basic-comment-co" rows="2"></textarea>
+                      <div class="col-12 col-md-4  mb-3">
+                        <label class="form-label" for="basic-default-name">نقطة الفحص(عربى)  </label>
+                        <textarea type="text" class="form-control" id="basic-default-name" placeholder="   نقطة الفحص"></textarea>
                       </div>
+                      <div class="col-12 col-md-4  mb-3">
+                        <label class="form-label" for="basic-name"> نقطة الفحص(انجيلزى)  </label>
+                        <textarea type="text" class="form-control" id="basic-name" placeholder="  نقطة الفحص"></textarea>
+                      </div>
+                      <div class="table-responsive mb-3">
+                        <table class="table table-bordered">
+                          <thead class="table-light">
+                            <tr>
+                              <th>م</th>
+                              <th>نقطة الفحص(عربى)</th>
+                              <th>نقطة الفحص(انجيلزى)</th>
+                              <th>
+                                PASS
+                              </th>
+                              <th>
+                                FAIL
+                              </th>
+                              <th>الملاحظات</th>
+                            </tr>
+                          </thead>
+                        <tbody>
+                          <tr>
+                            <td>1</td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                              <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                               
+                              </div>
+                            </td>
+                            <td>
+                              <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                
+                              </div>
+                            </td>
+                            <td>
+                              <textarea type="text" class="form-control" id="basic-comment" placeholder="الملاحظات" rows="1"></textarea>
+
+                            </td>
+                          </tr>
+                        </tbody>
+                        </table>
                       
+                      </div>
                  
                       <div class="col-12 col-lg-8">
                         <button type="submit" class="btn btn-primary  waves-effect waves-light">تعديل</button>

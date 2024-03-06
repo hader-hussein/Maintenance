@@ -503,3 +503,10 @@ color: #dbdade !important;
 .dropdown-notifications-list a .ti{
   color: rgb(var(--theme-color))!important;
 }
+.input-groupe {
+  display: grid;
+  grid-template-columns: 0.25fr 1fr;
+  position: relative;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
