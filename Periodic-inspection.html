@@ -696,13 +696,13 @@
                               <div data-i18n="Maintenance">الصيانة </div>
                             </a>
                             <ul class="menu-sub">
-                              <li class="menu-item active">
+                              <li class="menu-item">
                                 <a href="javascript:void(0)" class="menu-link menu-toggle">
                                   <i class="menu-icon tf-icons ti ti-toggle-left"></i>
                                   <div data-i18n="Maintenance-request">     طلب صيانة</div>
                                 </a>
                                 <ul class="menu-sub">
-                                    <li class="menu-item active">
+                                    <li class="menu-item">
                                       <a href="Maintenance-request.html" class="menu-link">
                                       
                                         <div data-i18n="Maintenance-request-form">    نموذج طلب صيانة</div>
@@ -903,7 +903,7 @@
                           </div>
                        <!---->
                         <form class="row component-form align-items-end mx-0">
-                          <div class="col-12 col-md-4  mb-4">
+                          <div class="col-12 col-md-6  mb-2">
                             <label class="form-label" for="basic-technician-type">اسم الفحص  </label>
                             <select id="basic-technician-type" class="select2 form-select" data-allow-clear="true">
                               <option value="pm">    1	</option>
@@ -913,7 +913,7 @@
       
                             </select> 
                           </div>
-                          <div class="col-12 col-md-4  mb-4">
+                          <div class="col-12 col-md-6  mb-2">
                             <label class="form-label" for="basic-user-name">اسم الشحض  </label>
                             <select id="basic-user-name" class="select2 form-select" data-allow-clear="true">
                               <option value="pm">    احمد	</option>
@@ -922,7 +922,7 @@
       
                             </select> 
                           </div>
-                          <div class="col-12 col-md-4  mb-4">
+                          <div class="col-12 col-md-6  mb-2">
                             <label class="form-label" for="basic-technician-type"> المدة  </label>
                             <select id="basic-technician-type" class="select2 form-select" data-allow-clear="true">
                               <option value="day">   يومى	</option>
@@ -936,19 +936,12 @@
                           
                             
                          
-                          <div class="col-12 col-md-4  mb-3">
+                          <div class="col-12 col-md-6  mb-2">
                             <label class="form-label" for="basic-default-date"> التاريخ </label>
                             <input type="date" class="form-control" id="basic-default-date" >
                           </div>
-                          <div class="col-12 col-md-4  mb-3">
-                            <label class="form-label" for="basic-default-name">نقطة الفحص(عربى)  </label>
-                            <textarea type="text" class="form-control" id="basic-default-name" placeholder="   نقطة الفحص"></textarea>
-                          </div>
-                          <div class="col-12 col-md-4  mb-3">
-                            <label class="form-label" for="basic-name"> نقطة الفحص(انجيلزى)  </label>
-                            <textarea type="text" class="form-control" id="basic-name" placeholder="  نقطة الفحص"></textarea>
-                          </div>
-                          <div class="table-responsive mb-3">
+                         
+                          <div class="table-responsive mb-3 mt-3">
                             <table class="table table-bordered">
                               <thead class="table-light">
                                 <tr>
@@ -956,31 +949,30 @@
                                   <th>نقطة الفحص(عربى)</th>
                                   <th>نقطة الفحص(انجيلزى)</th>
                                   <th>
-                                    PASS
+                                    PASS/FAIL
                                   </th>
-                                  <th>
-                                    FAIL
-                                  </th>
+                               
                                   <th>الملاحظات</th>
                                 </tr>
                               </thead>
                             <tbody>
                               <tr>
                                 <td>1</td>
-                                <td></td>
-                                <td></td>
                                 <td>
-                                  <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-                                   
-                                  </div>
+                                  <textarea type="text" class="form-control" id="basic-point-e" placeholder="  نقطة الفحص" rows="1"></textarea>
+
                                 </td>
                                 <td>
-                                  <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                                    
+                                  <textarea type="text" class="form-control" id="basic-point-a" placeholder="  نقطة الفحص" rows="1"></textarea>
+
+                                </td>
+                                <td>
+                                  <div class="form-check form-switch">
+                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+
                                   </div>
                                 </td>
+                             
                                 <td>
                                   <textarea type="text" class="form-control" id="basic-comment" placeholder="الملاحظات" rows="1"></textarea>
 

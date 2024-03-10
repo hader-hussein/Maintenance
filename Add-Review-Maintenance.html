@@ -696,13 +696,13 @@
                               <div data-i18n="Maintenance">الصيانة </div>
                             </a>
                             <ul class="menu-sub">
-                              <li class="menu-item active">
+                              <li class="menu-item">
                                 <a href="javascript:void(0)" class="menu-link menu-toggle">
                                   <i class="menu-icon tf-icons ti ti-toggle-left"></i>
                                   <div data-i18n="Maintenance-request">     طلب صيانة</div>
                                 </a>
                                 <ul class="menu-sub">
-                                    <li class="menu-item active">
+                                    <li class="menu-item ">
                                       <a href="Maintenance-request.html" class="menu-link">
                                       
                                         <div data-i18n="Maintenance-request-form">    نموذج طلب صيانة</div>
@@ -947,14 +947,36 @@
                               <option value="Other">  خمس سنين </option>
                             </select> 
                           </div>
-                          <div class="col-12 col-md-4  mb-3">
-                            <label class="form-label" for="basic-comment-co">     نشاط الصيانة(عربى)</label>
-                            <textarea type="text" class="form-control" id="basic-comment-co" rows="1"></textarea>
+                          <div class="table-responsive mb-3">
+                            <table class="table table-bordered">
+                              <thead class="table-light">
+                                <tr>
+                                  <th>م</th>
+                                  <th> نشاط الصيانة(عربى)</th>
+                                  <th> نشاط الصيانة (انجيلزى)</th>
+                                
+
+                                </tr>
+                              </thead>
+                            <tbody>
+                              <tr>
+                                <td>1</td>
+                                <td>
+                                  <textarea type="text" class="form-control" id="basic-name" placeholder="   نشاط الصيانة"></textarea>
+
+                                </td>
+                                <td>
+                                  <textarea type="text" class="form-control" id="basic-name-e" placeholder="   نشاط الصيانة"></textarea>
+
+                                </td>
+
+                              </tr>
+                            </tbody>
+                            </table>
+                          
                           </div>
-                          <div class="col-12 col-md-4  mb-3">
-                            <label class="form-label" for="basic-comment">   نشاط الصيانة (انجيلزى)</label>
-                            <textarea type="text" class="form-control" id="basic-comment" rows="1"></textarea>
-                          </div>
+                         
+                         
                      
                           <div class="col-12 col-lg-8">
                             <button type="submit" class="btn btn-primary  waves-effect waves-light">حفظ</button>
