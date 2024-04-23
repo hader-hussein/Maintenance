@@ -9,7 +9,7 @@
   <meta name="viewport"
     content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
 
-  <title>Work-sites</title>
+  <title>oil-change</title>
 
   <meta name="description" content="" />
 
@@ -531,7 +531,7 @@
                 </li>
 
                 <!-- Apps -->
-                <li class="menu-item active">
+                <li class="menu-item ">
                   <a href="javascript:void(0)" class="menu-link menu-toggle">
                     <i class="menu-icon tf-icons ti ti-apps"></i>
                     <div data-i18n="Apps">الإدارة</div>
@@ -570,13 +570,13 @@
                         <div data-i18n="Reasons-visiting">أسباب الزيارة </div>
                       </a>
                     </li>
-                    <li class="menu-item ">
+                    <li class="menu-item">
                       <a href="employees.html" class="menu-link">
                         <i class="menu-icon tf-icons ti ti-square"></i>
                         <div data-i18n="employees">الموظفين </div>
                       </a>
                     </li>
-                    <li class="menu-item active">
+                    <li class="menu-item">
                       <a href="Work-sites.html" class="menu-link">
                         <i class="menu-icon tf-icons ti ti-square"></i>
                         <div data-i18n="Work sites">مواقع العمل </div>
@@ -597,7 +597,7 @@
                   </ul>
                 </li>
                 <!--employees-->
-                <li class="menu-item">
+                <li class="menu-item ">
                   <a class="menu-link menu-toggle" href="javascript:void(0)">
                     <i class="menu-icon tf-icons ti ti-users-group"></i>
                     <div data-i18n="employees">الموظفين</div>
@@ -638,7 +638,7 @@
                 </li>
                 <!-- Maintenance -->
                 <!-- Maintenance -->
-                <li class="menu-item">
+                <li class="menu-item active">
                   <a href="javascript:void(0)" class="menu-link menu-toggle">
                     <i class="menu-icon tf-icons ti ti-settings"></i>
                     <div data-i18n="Maintenance">الصيانة </div>
@@ -694,7 +694,7 @@
                         <div data-i18n="Director's-approval"> موافقة المدير </div>
                       </a>
                     </li>
-                    <li class="menu-item">
+                    <li class="menu-item active">
                       <a href="Oil-change.html" class="menu-link">
                         <i class="menu-icon tf-icons ti ti-arrows-maximize"></i>
                         <div data-i18n="Oil change"> غيار الزيت</div>
@@ -803,63 +803,71 @@
           <div class="container-xxl flex-grow-1 container-p-y">
             <div class="card comonent-hader-top">
               <div class="card-body py-2 px-md-4 px-2 card-widget-separator">
-                <div class="row mx-0 d-flex justify-content-between  mb-3 align-items-center pt-4">
-                  <div class="col">
-                    <strong class="py-md-3 px-md-3  text-title-hadeer text-tilte-b"><span class="text-muted fw-medium">
-                        مواقع العمل </span> </strong>
+
+
+                <!---->
+                <div class="row mx-0 d-flex flex-wrap  justify-content-between  mb-3 align-items-center pt-4">
+                  <div class="col col-md-8 col-12  mb-md-4 mb-2 ">
+                    <strong class="py-md-3 px-md-3 text-title-hadeer text-tilte-b"><span class="text-muted fw-medium">
+                        غيار الزيت</span> </strong>
+
 
                   </div>
                   <div class="col text-end">
-                    <a data-bs-target="#addtruck" data-bs-toggle="modal"
-                      class="btn btn-primary waves-effect waves-light btn-add">اضافه موقع</a>
+                    <a href="Oil-change.html" class="btn btn-primary waves-effect waves-light btn-add"> مشاهدة الكل</a>
 
                   </div>
                 </div>
 
+                <!---->
               </div>
 
             </div>
-            <div class="card comonent-hader-top mt-4 p-4">
-              <!---->
-              <div class="card-datatable text-nowrap  table-responsive pt-3">
+            <div class="card comonent-hader-top  p-md-5 p-2 mt-4">
+              <form class="row mx-0">
+                <div class="mb-3 col-md-6 col-xl-6 col-12 mb-0">
+                  <label class="form-label" for="form-repeater-1-4"> المعدات<span class="start-form">*</span></label>
+                  <div class="input-groupe">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#add-hardware">
+                      <i class="fa-solid fa-plus"></i>
+                    </button>
+                  <select id="form-repeater-1-4" class="form-select select2">
+                    <option value="all">اختر المعدات او الشاحنة</option>
+                    <option value="Developer">معدة:موزع الوقود</option>
+                    <option value="Tester">معدة:موزع الوقود</option>
+                    <option value="Manager">معدة:موزع الوقود</option>
+                  </select>
+                  </div>
+                </div>
+                <div class="mb-3 col-md-6 col-xl-6 col-12 mb-0">
+                  <label class="form-label" for="form-repeater-1-1"> التاريخ<span class="start-form">*</span></label>
+                  <input type="date" id="form-repeater-1-1" class="form-control" placeholder="  التاريخ" />
+                </div>
+                <div class="mb-3 col-md-6 col-xl-6 col-12 mb-0">
+                  <label class="form-label" for="form-repeater-1"> عدد كيلوات تغيير الزيت <span
+                      class="start-form">*</span></label>
+                  <input type="text" id="form-repeater-1" class="form-control"
+                    placeholder="  عدد كيلوات تغيير الزيت " />
+                </div>
+                <div class="mb-3 col-md-6 col-xl-6  col-12 mb-0">
+                  <label class="form-label" for="form-repeater"> مسؤول الصيانة<span class="start-form">*</span></label>
+                  <div class="input-groupe">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#add-Maintenance">
+                      <i class="fa-solid fa-plus"></i>
+                    </button>
+                  <select id="form-repeater" class="form-select select2">
+                    <option value="Designer"> اختر الموظف</option>
+                    <option value="Developer">محمد مصطفى </option>
+                    <option value="Tester">بدر</option>
+                    <option value="Manager">مستخدم جديد</option>
+                  </select>
+                </div>
+                </div>
+                <div class="col-12 col-lg-8">
+                  <button type="submit" class="btn btn-primary  waves-effect waves-light">حفظ</button>
+                </div>
 
-                <table class=" table table-bordered table-hover rounded table-center">
-                  <thead class="table-light">
-                    <tr>
-
-                      <th>م</th>
-                      <th> اسم الشركة </th>
-                      <th> الموقع</th>
-                      <th> الشخص المسئول</th>
-                      <th> رقم التليفون</th>
-                      <th>Action</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>1</td>
-                      <td> الرياض </td>
-                      <td>الرياض </td>
-                      <td>مستخدم تجريبى </td>
-                      <td>55555</td>
-                      <td>
-                        <div class="d-flex justify-content-center">
-
-                          <a class="bg-success text-bg-success p-1 d-flex align-items-center justify-content-center me-3 rounded cursor-pointer"
-                            data-bs-target="#edittruck" data-bs-toggle="modal" title="تعديل"><i
-                              class="ti ti-pencil  fs-4"></i> </a>
-                          <a class="bg-danger text-bg-danger p-1 d-flex align-items-center justify-content-center me-3 rounded"
-                            href="javascript:void(0);" title="حذف  " data-bs-target="#closeRoleModal"
-                            data-bs-toggle="modal"><i class="ti ti-trash  fs-4"></i> </a>
-
-                        </div>
-                      </td>
-                    </tr>
-
-                  </tbody>
-                </table>
-              </div>
-              <!---->
+              </form>
             </div>
           </div>
         </div>
@@ -868,111 +876,66 @@
 
       <!--/ Content -->
       <!-- Add Hardware Modal -->
-      <div class="modal fade " id="addtruck" aria-labelledby="exampleModalToggleLabel" tabindex="-1" aria-modal="true"
-        role="dialog">
-        <div class="modal-dialog modal-lg modal-dialog-centered">
-          <div class="modal-content p-3 p-md-3">
-            <div class="modal-header">
-              <h1 class="modal-title fs-4 fw-bold text-tilte-b"> إضافة موقع جديد</h1>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body  px-md-3 px-1">
-              <form class="row component-form">
-                <div class="col-12 col-md-6  mb-3">
-                  <label class="form-label" for="basic-default-name">اسم الشركة </label>
-                  <input type="text" class="form-control" id="basic-default-name" placeholder="   اسم الشركة">
-                </div>
-                <div class="col-12 col-md-6  mb-3">
-                  <label class="form-label" for="basic-default-work">الموقع </label>
-                  <input type="text" class="form-control" id="basic-default-work" placeholder="   الموقع">
-                </div>
-                <div class="col-12 col-md-6  mb-3">
-                  <label class="form-label" for="basic-default-user-work">الشخص المسئول </label>
-                  <input type="text" class="form-control" id="basic-default-user-work" placeholder="   الشخص المسئول">
-                </div>
-                <div class="col-12 col-md-6  mb-3">
-                  <label class="form-label" for="basic-default-number"> رقم التليفون</label>
-                  <input type="text" class="form-control" id="basic-default-number" placeholder="   رقم التليفون  ">
-                </div>
-
-
-                <div class="col-12 col-lg-8">
-                  <button type="submit" class="btn btn-primary  waves-effect waves-light">حفظ</button>
-                  <button type="reset" class="btn btn-outline-secondary waves-effect mx-md-2 mx-1">مسح المحتوى </button>
-
-                </div>
-
-              </form>
-
-            </div>
-
+     <!-- Modal  اختار المعدة-->
+     <div class="modal fade" id="add-hardware" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">  اختيار المعدة </h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
-        </div>
-      </div>
-      <!---->
-      <!-- edit Hardware Modal -->
-      <div class="modal fade " id="edittruck" aria-labelledby="exampleModalToggleLabel" tabindex="-1" aria-modal="true"
-        role="dialog">
-        <div class="modal-dialog modal-lg modal-dialog-centered">
-          <div class="modal-content p-3 p-md-3">
-            <div class="modal-header">
-              <h1 class="modal-title fs-4 fw-bold text-tilte-b"> تعديل موقع</h1>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body px-md-3 px-1">
-              <form class="row component-form">
-                <div class="col-12 col-md-6  mb-3">
-                  <label class="form-label" for="basic-default-name">اسم الشركة </label>
-                  <input type="text" class="form-control" id="basic-default-name" placeholder="   اسم الشركة">
-                </div>
-                <div class="col-12 col-md-6  mb-3">
-                  <label class="form-label" for="basic-default-work">الموقع </label>
-                  <input type="text" class="form-control" id="basic-default-work" placeholder="   الموقع">
-                </div>
-                <div class="col-12 col-md-6  mb-3">
-                  <label class="form-label" for="basic-default-user-work">الشخص المسئول </label>
-                  <input type="text" class="form-control" id="basic-default-user-work" placeholder="   الشخص المسئول">
-                </div>
-                <div class="col-12 col-md-6  mb-3">
-                  <label class="form-label" for="basic-default-number"> رقم التليفون</label>
-                  <input type="text" class="form-control" id="basic-default-number" placeholder="   رقم التليفون  ">
-                </div>
+          <div class="modal-body">
+            <form class="row component-form align-items-end mx-0">
 
+              <div class="col-12 col-lg-12  mb-3">
+                <label class="form-label" for="basic-name-hardware">   اسم المعدة   (عربى)</label>
+                <input type="text" class="form-control" id="basic-name-hardware">
 
-                <div class="col-12 col-lg-8">
-                  <button type="submit" class="btn btn-primary  waves-effect waves-light">تعديل</button>
-                  <button type="reset" class="btn btn-outline-secondary waves-effect mx-md-2 mx-1">مسح المحتوى </button>
-
-                </div>
-
-              </form>
-
-            </div>
-
-          </div>
-        </div>
-      </div>
-      <!---->
-      <!-- delet Modal -->
-      <div class="modal fade" id="closeRoleModal" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog modal-md modal-dialog-centered modal-add-new-role">
-          <div class="modal-content p-1 p-md-3">
-            <button type="button" class="btn-close btn-pinned" data-bs-dismiss="modal" aria-label="Close"></button>
-            <div class="modal-body text-center">
-              <h3 class="role-title mb-2 fs-5">
-                هل انت متاكد من حذف العنصر؟
-              </h3>
-
-              <div class="col-11 col-lg-12 mb-3">
-                <button type="submit" class="btn btn-primary  waves-effect waves-light">نعم</button>
-                <button type="submit" class="btn btn-label-secondary waves-effect mx-3"> لا</button>
               </div>
+              <div class="col-12 col-lg-12  mb-3">
+                <label class="form-label" for="basic-name-hardware-e">    اسم المعدة  (انجيلزي)</label>
+                <input type="text" class="form-control" id="basic-name-hardware-e">
 
-
-            </div>
-          </div>
+              </div>
+              <div class="col-12 col-lg-8">
+                <button type="submit" class="btn btn-primary  waves-effect waves-light">حفظ</button>
+              </div>
+            </form>
         </div>
       </div>
+    </div> 
+      </div>
+      <!---->
+ <!-- Modal  اختار المعدة-->
+ <div class="modal fade" id="add-Maintenance" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">   مسؤول الصيانة </h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form class="row component-form align-items-end mx-0">
+
+          <div class="col-12 col-lg-12  mb-3">
+            <label class="form-label" for="basic-name-hardware">   اسم مسؤول الصيانة   (عربى)</label>
+            <input type="text" class="form-control" id="basic-name-hardware">
+
+          </div>
+          <div class="col-12 col-lg-12  mb-3">
+            <label class="form-label" for="basic-name-hardware-e">    اسم مسؤول الصيانة  (انجيلزي)</label>
+            <input type="text" class="form-control" id="basic-name-hardware-e">
+
+          </div>
+          <div class="col-12 col-lg-8">
+            <button type="submit" class="btn btn-primary  waves-effect waves-light">حفظ</button>
+          </div>
+        </form>
+    </div>
+  </div>
+</div> 
+  </div>
+  <!---->
       <!-- Footer -->
       <footer class="content-footer footer bg-footer-theme">
         <div class="container-xxl">
@@ -1062,6 +1025,7 @@
   <!-- Vendors JS -->
   <script src="./assets/vendor/libs/apex-charts/apexcharts.js"></script>
   <script src="./assets/vendor/libs/datatables-bs5/datatables-bootstrap5.js"></script>
+  <script src="./assets/vendor/libs/jquery-repeater/jquery-repeater.js"></script>
 
 
 
@@ -1078,6 +1042,7 @@
   <script src="./assets/vendor/js/chart.js"></script>
   <script src="./assets/js/dashboards-crm.js"></script>
   <script src="./assets/js/tables-datatables-basic.js"></script>
+  <script src="./assets/js/forms-extras.js"></script>
 
 </body>
 

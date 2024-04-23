@@ -14,7 +14,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
 
-    <title>GeneralSettings</title>
+    <title>Admin Template</title>
 
     <meta name="description" content="" />
 
@@ -42,10 +42,6 @@
     <link rel="stylesheet" href="./assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
     <link rel="stylesheet" href="./assets/vendor/libs/typeahead-js/typeahead.css" />
     <link rel="stylesheet" href="./assets/vendor/libs/apex-charts/apex-charts.css" />
-    <link rel="stylesheet" href="./assets/vendor/libs/datatables-buttons-bs5/buttons.bootstrap5.css" />
-
-    <link rel="stylesheet" href="./assets/vendor/libs/datatables-bs5/datatables.bootstrap5.css" />
-    <link rel="stylesheet" href="./assets/vendor/libs/datatables-responsive-bs5/responsive.bootstrap5.css" />
 
    
    
@@ -588,30 +584,21 @@
                             </a>
 
                             <ul class="menu-sub">
-                              <li class="menu-item">
-                                <a href="javascript:void(0)" class="menu-link menu-toggle">
+                              <li class="menu-item active">
+                                <a href="hardware.html" class="menu-link">
                                   <i class="menu-icon tf-icons ti ti-menu-2"></i>
-                                  <div data-i18n="hardware/car"> الشاحنات/المعدات</div>
+                                  <div data-i18n="hardware"> المعدات</div>
                                 </a>
-                                <ul class="menu-sub">
-                                  <li class="menu-item">
-                                  <a href="hardware.html" class="menu-link">
-                                    <div data-i18n="add-hardware-car"> اضافة/المعدات/الشاحنات</div>
-                                  </a>
-                                  </li>
-                                   <li class="menu-item " >
-                                    <a href="all-hardware.html" class="menu-link">
-                                      <div data-i18n="view-hardware"> مشاهدة/المعدات</div>
-                                    </a>
-                                    </li>
-                                    <li class="menu-item">
-                                      <a href="all-car.html" class="menu-link">
-                                        <div data-i18n="view-car"> مشاهدة/الشاحنات</div>
-                                      </a>
-                                    </li>
-                                </ul>
+                         
                               </li>
-                              <li class="menu-item ">
+                              <li class="menu-item">
+                                <a href="car.html" class="menu-link">
+                                  <i class="menu-icon tf-icons ti ti-menu-2"></i>
+                                  <div data-i18n="car"> الشاحنات</div>
+                                </a>
+                               
+                              </li>
+                              <li class="menu-item">
                                 <a href="Programming-permissions.html" class="menu-link" target="_blank">
                                   <i class="menu-icon tf-icons ti ti-layout-distribute-vertical"></i>
                                   <div data-i18n="Programming-permissions">  برمجة الصلاحيات</div>
@@ -629,7 +616,7 @@
                                   <div data-i18n="Reasons-visiting">أسباب الزيارة </div>
                                 </a>
                               </li>
-                              <li class="menu-item ">
+                              <li class="menu-item">
                                 <a href="employees.html" class="menu-link">
                                   <i class="menu-icon tf-icons ti ti-square"></i>
                                   <div data-i18n="employees">الموظفين </div>
@@ -641,7 +628,7 @@
                                   <div data-i18n="Work sites">مواقع العمل  </div>
                                 </a>
                               </li>
-                              <li class="menu-item active">
+                              <li class="menu-item">
                                 <a href="GeneralSettings.html" class="menu-link">
                                   <i class="menu-icon tf-icons ti ti-arrows-maximize"></i>
                                   <div data-i18n="General Settings">الاعدادات العامة </div>
@@ -697,94 +684,71 @@
                           </li>
                           <!-- Maintenance -->
                             <!-- Maintenance -->
+                    <!-- Maintenance -->
+                <li class="menu-item">
+                  <a href="javascript:void(0)" class="menu-link menu-toggle">
+                    <i class="menu-icon tf-icons ti ti-settings"></i>
+                    <div data-i18n="Maintenance">الصيانة </div>
+                  </a>
+                  <ul class="menu-sub">
+                    <li class="menu-item">
+                      <a href="Maintenance-request.html" class="menu-link">
+                        <i class="menu-icon tf-icons ti ti-toggle-left"></i>
+                        <div data-i18n="Maintenance-request">     طلب صيانة</div>
+                      </a>
+                     
+                    </li>
                     <li class="menu-item">
                       <a href="javascript:void(0)" class="menu-link menu-toggle">
                         <i class="menu-icon tf-icons ti ti-settings"></i>
-                        <div data-i18n="Maintenance">الصيانة </div>
+                        <div data-i18n="Forms-Maintenance"> نماذج الفحص </div>
                       </a>
                       <ul class="menu-sub">
-                        <li class="menu-item active">
-                          <a href="javascript:void(0)" class="menu-link menu-toggle">
-                            <i class="menu-icon tf-icons ti ti-toggle-left"></i>
-                            <div data-i18n="Maintenance-request">     طلب صيانة</div>
-                          </a>
-                          <ul class="menu-sub">
-                              <li class="menu-item active">
-                                <a href="Maintenance-request.html" class="menu-link">
                                 
-                                  <div data-i18n="Maintenance-request-form">    نموذج طلب صيانة</div>
-                                </a>
-                              </li>
-                              <li class="menu-item">
-                                <a href="all-maintenance.html" class="menu-link">
-                                
-                                  <div data-i18n="view-Maintenance-request">    عرض طلب صيانة</div>
-                                </a>
-                              </li>
-                          </ul>
+                        <li class="menu-item ">
+                          <a href="Examination-definitions.html" class="menu-link">
+                            <div data-i18n="Examination-definitions"> تعريفات الفحص</div>
+                          </a>
+                          
                         </li>
                         <li class="menu-item">
-                          <a href="javascript:void(0)" class="menu-link menu-toggle">
-                            <i class="menu-icon tf-icons ti ti-settings"></i>
-                            <div data-i18n="Forms-Maintenance"> نماذج الفحص </div>
+                          <a href="Periodic-inspection.html" class="menu-link">
+                            <div data-i18n="Periodic-inspection">    نموذج  الفحص الدورى</div>
                           </a>
-                          <ul class="menu-sub">
-                                    
-                            <li class="menu-item ">
-                              <a href="Examination-definitions.html" class="menu-link">
-                                <div data-i18n="Examination-definitions"> تعريفات الفحص</div>
-                              </a>
-                              
-                            </li>
-                            <li class="menu-item">
-                              <a href="Periodic-inspection.html" class="menu-link">
-                                <div data-i18n="Periodic-inspection">    نموذج  الفحص الدورى</div>
-                              </a>
-                              
-                            </li>
-                           
-                        </ul>
+                          
                         </li>
-                        <li class="menu-item">
-                          <a href="javascript:void(0)" class="menu-link menu-toggle">
-                            <i class="menu-icon tf-icons ti ti-settings"></i>
-                            <div data-i18n="Maintenance-checklist">  قائمة-مراجعه الصيانة </div>
-                          </a>
-                          <ul class="menu-sub">
-                            <li class="menu-item">
-                              <a href="Add-Review-Maintenance.html" class="menu-link">
-                                <div data-i18n="Add-Review-Maintenance">    اضافه -مراجعه -الصيانة  </div>
-                              </a>
-                            </li>
-                            <li class="menu-item">
-                              <a href="show-Review-Maintenance" class="menu-link">
-                                <div data-i18n="show-Review-Maintenance">    عرض -مراجعه -الصيانة  </div>
-                              </a>
-                            </li>
-                          </ul>
-                        </li>
-                        <li class="menu-item">
-                          <a href="Request-spare-part.html" class="menu-link">
-                            <i class="menu-icon tf-icons ti ti-settings"></i>
-                            <div data-i18n="Request-spare-part"> طلب قطعة غيار  </div>
-                          </a>
-                        </li>
-                      
-                        
-                        <li class="menu-item">
-                          <a href="Directors-approval.html" class="menu-link">
-                            <i class="menu-icon tf-icons ti ti-user-check"></i>
-                            <div data-i18n="Director's-approval"> موافقة المدير </div>
-                          </a>
-                        </li>
-                        <li class="menu-item">
-                          <a href="Oil-change.html" class="menu-link">
-                            <i class="menu-icon tf-icons ti ti-arrows-maximize"></i>
-                            <div data-i18n="Oil change"> غيار الزيت</div>
-                          </a>
-                        </li>
-                      </ul>
+                       
+                    </ul>
                     </li>
+                    <li class="menu-item">
+                      <a href="Add-Review-Maintenance.html" class="menu-link">
+                        <i class="menu-icon tf-icons ti ti-settings"></i>
+                        <div data-i18n="Maintenance-checklist">  قائمة-مراجعه الصيانة </div>
+                      </a>
+                     
+                    </li>
+                    <li class="menu-item">
+                      <a href="Request-spare-part.html" class="menu-link">
+                        <i class="menu-icon tf-icons ti ti-settings"></i>
+                        <div data-i18n="Request-spare-part"> طلب قطعة غيار  </div>
+                      </a>
+                    </li>
+                  
+                    
+                    <li class="menu-item">
+                      <a href="Directors-approval.html" class="menu-link">
+                        <i class="menu-icon tf-icons ti ti-user-check"></i>
+                        <div data-i18n="Director's-approval"> موافقة المدير </div>
+                      </a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="Oil-change.html" class="menu-link">
+                        <i class="menu-icon tf-icons ti ti-arrows-maximize"></i>
+                        <div data-i18n="Oil change"> غيار الزيت</div>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
 
                           <!-- Reports -->
                           <li class="menu-item">
@@ -819,20 +783,20 @@
                               </li>
                               <li class="menu-item">
                                 <a
-                                  href="Repetitive-asks.html"
-                                  target="_blank"
-                                  class="menu-link">
-                                  <i class="menu-icon tf-icons ti ti-file-description"></i>
-                                  <div data-i18n="Repetitive-tasks">   المهام المتكررة</div>
-                                </a>
-                              </li>
-                              <li class="menu-item">
-                                <a
                                   href="Malfunctions-tasks.html"
                                   target="_blank"
                                   class="menu-link">
                                   <i class="menu-icon tf-icons ti ti-file-description"></i>
                                   <div data-i18n="Malfunctions-tasks">    تقرير الأعطال</div>
+                                </a>
+                              </li>
+                              <li class="menu-item">
+                                <a
+                                  href="Repetitive-asks.html"
+                                  target="_blank"
+                                  class="menu-link">
+                                  <i class="menu-icon tf-icons ti ti-file-description"></i>
+                                  <div data-i18n="Repetitive-tasks">    تقرير الأعطال</div>
                                 </a>
                               </li>
                             </ul>
@@ -898,203 +862,205 @@
                 <div class="container-xxl flex-grow-1 container-p-y">
                    <div class="card comonent-hader-top">
                       <div class="card-body py-2 px-md-4 px-2 card-widget-separator">
-                        <div class="row mx-0 d-flex justify-content-between  mb-3 align-items-center pt-4">
-                          <div class="col col-md-8">
-                            <strong class="py-md-3 px-md-3 text-title-hadeer text-tilte-b"><span class="text-muted fw-medium">   الإعدادات العامة </span>  </strong>
+                        <div class="row mx-0 d-flex flex-wrap  justify-content-between  mb-3 align-items-center pt-4">
+                          <div class="col col-md-8 col-12  mb-md-4 mb-2 ">
+                            <strong class="py-md-3 px-md-3 text-title-hadeer text-tilte-b"><span class="text-muted fw-medium">المعدات</span>  </strong>
+
 
                           </div>
-                          <div class="col col-4 text-end">
-                            <a href="GeneralSettings.html" class="btn btn-primary waves-effect waves-light btn-add">اضافه </a>
+                          <div class="col text-end">
+                            <a href="hardware.html" class="btn btn-primary waves-effect waves-light btn-add"> مشاهدة الكل</a>
           
                           </div>
                         </div>
-                       <!---->
-                       <div class="card-datatable text-nowrap  table-responsive pt-3">
                         
-                        <table class=" table table-bordered table-hover rounded table-center">
-                          <thead class="table-light">
-                            <tr>
-                           
-                              <th>م</th>
-                              <th>    خط العرض</th>
-                              <th>   خط الطول</th>
-                              <th>     أقصى مسافة للحضور ( متر )</th>
-                              <th>     إسم الشركة
-                              </th>
-                              
-                              <th>العنوان</th>
-                              <th>رقم التليفون
-                              </th>
-                              <th>الرقم الضريبى</th>
-                              <th>استشارة مسؤول</th>
-                              <th>مبيعات مسؤول</th>
-                              <th>دعم فني مسؤول</th>
-                              <th>الصورة</th>
-                              <th>Action</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                              <tr>
-                                <td>1</td>
-                                <td>  30.119466199999998	</td>
-                                <td>31.341039599999995	</td>
-                                <td> 10	 	</td>
-                                <td>نظام رايتو المحاسبي</td>
-                                <td>مقر الشركة</td>
-                                <td>  010037040225	</td>
-                                <td>111111	</td>
-                                <td> محمد	 	</td>
-                                <td>محمد</td>
-                                <td>محمد</td>
-                                <td>
-                                  <img src="./assets/img/avatars/11.png" alt="img" class="img-table">
-                                </td>
-                                <td>
-                                  <div class="d-flex justify-content-center">
-                                  
-                                    <a class="bg-success text-bg-success p-1 d-flex align-items-center justify-content-center me-3 rounded cursor-pointer" data-bs-target="#edittruck" data-bs-toggle="modal" title="تعديل"><i class="ti ti-pencil  fs-4"></i> </a>
-                                    <a class="bg-danger text-bg-danger p-1 d-flex align-items-center justify-content-center me-3 rounded" href="javascript:void(0);" title="حذف  " data-bs-target="#closeRoleModal"  data-bs-toggle="modal"><i class="ti ti-trash  fs-4"></i> </a>
-                                  
-                                  </div>
-                                </td>
-                              </tr>
-                              
-                          </tbody>
-                        </table>
-                      </div>
-                       <!---->
                       </div>
                     
                    </div>
+                    <div class="card comonent-hader-top p-md-5 p-2 mt-4">
+                      <form class="row component-form">
+                        <div class="col-12 col-lg-4 mb-3">
+                          <label class="form-label" for="basic-default-fullname"> اسم المصنع</label>
+                          <input type="text" class="form-control" id="basic-default-fullname" placeholder=" اسم المصنع" disabled>
+                        </div>
+                        <div class="col-12 col-lg-4 mb-3">
+                          <label class="form-label" for="select-type"> انواع المعدات</label>
+                          <div class="input-groupe">
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleBranch" tabindex="-1">
+                              <i class="fa-solid fa-plus"></i>
+                            </button>
+                            <select id="select-type" class="select2 form-select" data-allow-clear="true">
+                              <option value="AK">   انواع المعدات   </option>
+                             
+                          
+                            </select>
+                        
+                          </div>
+                          
+                        </div>
+                        <div class="col-12 col-lg-4 mb-3">
+                          <label class="form-label" for="select1Basic-driver">اختار المعدة</label>
+                          <div class="input-groupe">
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#He-chosen"data-dismiss="modal">
+                              <i class="fa-solid fa-plus"></i>
+                            </button>
+                            <select id="select1Basic-driver" class="select2 form-select" data-allow-clear="true">
+                              <option value="AK">  اختار المعدة   </option>
+                             
+                          
+                            </select>
+                          </div>
+                        
+                      
+                        </div>
+                        <div class="col-12 col-lg-4 mb-3">
+                          <label class="form-label" for="basic-default-namber">  رقم التسلسلى</label>
+                          <input type="text" class="form-control" id="basic-default-namber" placeholder="  رقم التسلسلى" >
+                        </div>
+                        <div class="col-12 col-lg-4 mb-3">
+                          <label class="form-label" for="basic-default-year">سنة الصنع</label>
+                          <input type="text" class="form-control" id="basic-default-year" placeholder="سنة الصنع ">
+    
+                        </div>
+                        <div class="col-12 col-lg-4 mb-3">
+                          <label class="form-label" for="basic-default-country "> بلد المنشأ</label>
+                          <input type="text" class="form-control" id="basic-default-country " placeholder=" بلد المنشأ ">
+    
+                        </div>
+                        <div class="col-12 col-lg-4 mb-3">
+                          <label class="form-label" for="basic-default-line2"> مدة الصيانة الدورية</label>
+                          <input type="text" class="form-control" id="basic-default-line2" placeholder=" مدة الصيانة الدورية ">
+    
+                        </div>
+                        <div class="col-12 col-lg-4 mb-3">
+                          <label class="form-label" for="select-branch"> اسم الفرع</label>
+                          <div class="input-groupe">
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#add-pranh">
+                              <i class="fa-solid fa-plus"></i>
+                            </button>
+                          <select id="select-branch" class="select2 form-select" data-allow-clear="true">
+                            <option value="AK"> اسم الفرع  </option>
+                           
+                        
+                          </select>
+                        </div>
+                        </div>
+                        <div class="col-12 col-lg-4 mb-3">
+                          <label class="form-label" for="basic-quntenty"> الكمية  </label>
+                          <input type="text" class="form-control" id="basic-quntenty" placeholder=" الكمية">
+    
+                        </div>
+                        <div class="col-12 col-lg-12 mb-3">
+                          <label class="form-label" for="basic-notes"> الملاحظات  </label>
+                          <textarea type="text" class="form-control" id="basic-notes" placeholder="   الملاحظات "></textarea>
+    
+                        </div>
+                        <div class="col-12 col-lg-8">
+                          <button type="submit" class="btn btn-primary  waves-effect waves-light">حفظ</button>
+                          <button type="reset" class="btn btn-outline-secondary waves-effect mx-md-2 mx-1">مسح المحتوى </button>
+    
+                         </div>
+                       
+                      </form>
+                    </div>
+                  
                 </div>
+
+             
               </div>
 
             </div>
           
             <!--/ Content -->
-         
-            <!-- edit Hardware Modal -->
-            <div class="modal fade " id="edittruck" aria-labelledby="exampleModalToggleLabel" tabindex="-1" aria-modal="true" role="dialog">
-              <div class="modal-dialog modal-lg modal-dialog-centered">
-                <div class="modal-content p-3 p-md-3">
+
+             <!---->
+             <!-- Modal  اضافةانوع المعدات-->
+            <div class="modal fade" id="exampleBranch" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"role="dialog" style="z-index: 1600;">
+              <div class="modal-dialog">
+                <div class="modal-content">
                   <div class="modal-header">
-                    <h1 class="modal-title fs-4 fw-bold text-tilte-b">     تعديل اعدادت</h1>
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">اضافة  نوع المعدة</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
-                  <div class="modal-body px-md-2 px-1">
-                    <form class="row component-form">
-                      <div class="col-12 col-md-6  mb-3">
-                        <label class="form-label" for="basic-default-line-x"> خط العرض</label>
-                        <input type="text" class="form-control" id="basic-default-line-x" placeholder="    خط العرض ">
+                  <div class="modal-body">
+                    <form class="row component-form align-items-end mx-0">
+
+                      <div class="col-12 col-lg-12  mb-3">
+                        <label class="form-label" for="basic-name-hardware">   اسم المعدة   (عربى)</label>
+                        <input type="text" class="form-control" id="basic-name-hardware">
+
                       </div>
-                      <div class="col-12 col-md-6  mb-3">
-                        <label class="form-label" for="basic-default-line-y">خط الطول </label>
-                        <input type="text" class="form-control" id="basic-default-line-y" placeholder="   خط الطول ">
+                      <div class="col-12 col-lg-12  mb-3">
+                        <label class="form-label" for="basic-name-hardware-e">    اسم المعدة  (انجيلزي)</label>
+                        <input type="text" class="form-control" id="basic-name-hardware-e">
+
                       </div>
-                      <div class="col-12 col-md-6  mb-3">
-                        <label class="form-label" for="basic-default-user-m"> أقصى مسافة للحضور ( متر )
-                        </label>
-                        <input type="text" class="form-control" id="basic-default-user-m" placeholder="    أقصى مسافة للحضور ( متر ) ">
-                      </div>
-                      <div class="col-12 col-md-6  mb-3">
-                        <label class="form-label" for="basic-default-name">  إسم الشركة
-                        </label>
-                        <input type="text" class="form-control" id="basic-default-name" placeholder="    اسم الشركة  ">
-                      </div>
-                      <div class="col-12 col-md-6  mb-3">
-                        <label class="form-label" for="basic-default-locetion"> العنوان </label>
-                        <input type="text" class="form-control" id="basic-default-locetion" placeholder="   العنوان">
-                      </div>
-                      <div class="col-12 col-md-6  mb-3">
-                        <label class="form-label" for="basic-default-number"> رقم التليفون</label>
-                        <input type="text" class="form-control" id="basic-default-number" placeholder="   رقم التليفون  ">
-                      </div>
-                      <div class="col-12 col-md-6  mb-3">
-                        <label class="form-label" for="basic-default-number-tow">  الرقم الضريبى</label>
-                        <input type="text" class="form-control" id="basic-default-number-tow" placeholder="  الرقم الضريبى ">
-                      </div>
-                      <div class="col-12 col-md-6 mb-3">
-                          
-                        <label for="select1Basic-driver-v" class="form-label">   استشارة مسؤول</label>
-                        <select id="select1Basic-driver-v" class="select2 form-select" data-allow-clear="true">
-                          <option value="AK">  مستخدم تجريبى</option>
-                          <option value="HI">احمد حمدى</option>
-                          <option value="CA">California</option>
-                          <option value="NV">Nevada</option>
-                          <option value="OR">Oregon</option>
-                      
-                        </select>
-                    
-                    </div>
-                    <div class="col-12 col-md-6 mb-3">
-                          
-                      <label for="select1Basic-driver-seles" class="form-label">    مبيعات مسؤول
-                      </label>
-                      <select id="select1Basic-driver-seles" class="select2 form-select" data-allow-clear="true">
-                        <option value="AK">  مستخدم تجريبى</option>
-                        <option value="HI">احمد حمدى</option>
-                        <option value="CA">California</option>
-                        <option value="NV">Nevada</option>
-                        <option value="OR">Oregon</option>
-                    
-                      </select>
-                  
-                  </div>
-                  <div class="col-12 col-md-6 mb-3">
-                          
-                    <label for="select1Basic-driver-u" class="form-label">     دعم فني مسؤول</label>
-                    <select id="select1Basic-driver-u" class="select2 form-select" data-allow-clear="true">
-                      <option value="AK">  مستخدم تجريبى</option>
-                      <option value="HI">احمد حمدى</option>
-                      <option value="CA">California</option>
-                      <option value="NV">Nevada</option>
-                      <option value="OR">Oregon</option>
-                  
-                    </select>
-                
-                </div>
-                <div class="col-12 col-md-6  mb-3">
-                  <label class="form-label" for="basic-default-number-file">   الصورة</label>
-                  <input type="file" class="form-control" id="basic-default-number-file" >
-                </div>
                       <div class="col-12 col-lg-8">
-                        <button type="submit" class="btn btn-primary  waves-effect waves-light">تعديل</button>
-                        <button type="reset" class="btn btn-outline-secondary waves-effect mx-md-2 mx-1">مسح المحتوى </button>
-  
-                       </div>
-                     
+                        <button type="submit" class="btn btn-primary  waves-effect waves-light">حفظ</button>
+                      </div>
                     </form>
-                    
-                  </div>
-                 
                 </div>
               </div>
-            </div>
-             <!---->
-             <!-- delet Modal -->
-           <div class="modal fade" id="closeRoleModal" tabindex="-1" aria-hidden="true">
-            <div class="modal-dialog modal-md modal-dialog-centered modal-add-new-role">
-              <div class="modal-content p-1 p-md-3">
-                <button
-                  type="button"
-                  class="btn-close btn-pinned"
-                  data-bs-dismiss="modal"
-                  aria-label="Close"></button>
-                <div class="modal-body text-center">
-                    <h3 class="role-title mb-2 fs-5">
-                      هل انت متاكد من حذف العنصر؟
-                    </h3>
-                  
-                  <div class="col-11 col-lg-12 mb-3">
-                    <button type="submit" class="btn btn-primary  waves-effect waves-light">نعم</button>
-                    <button  type="submit" class="btn btn-label-secondary waves-effect mx-3"> لا</button>
+            </div> 
+              </div>
+              <!-- Modal  اختار المعدات-->
+              <div class="modal fade" id="He-chosen" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">  اختيار المعدات </h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
-                
-              
+                  <div class="modal-body">
+                    <form class="row component-form align-items-end mx-0">
+
+                      <div class="col-12 col-lg-12  mb-3">
+                        <label class="form-label" for="basic-name-hardware">   اسم المعدة   (عربى)</label>
+                        <input type="text" class="form-control" id="basic-name-hardware">
+
+                      </div>
+                      <div class="col-12 col-lg-12  mb-3">
+                        <label class="form-label" for="basic-name-hardware-e">    اسم المعدة  (انجيلزي)</label>
+                        <input type="text" class="form-control" id="basic-name-hardware-e">
+
+                      </div>
+                      <div class="col-12 col-lg-8">
+                        <button type="submit" class="btn btn-primary  waves-effect waves-light">حفظ</button>
+                      </div>
+                    </form>
                 </div>
               </div>
-            </div>
-          </div>
+            </div> 
+              </div>
+               <!-- Modal  اختار الفرع-->
+               <div class="modal fade" id="add-pranh" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">  اختيار الفرع </h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <form class="row component-form align-items-end mx-0">
+  
+                        <div class="col-12 col-lg-12  mb-3">
+                          <label class="form-label" for="basic-name-hardware">   اسم الفرع   (عربى)</label>
+                          <input type="text" class="form-control" id="basic-name-hardware">
+  
+                        </div>
+                        <div class="col-12 col-lg-12  mb-3">
+                          <label class="form-label" for="basic-name-hardware-e">    اسم الفرع  (انجيلزي)</label>
+                          <input type="text" class="form-control" id="basic-name-hardware-e">
+  
+                        </div>
+                        <div class="col-12 col-lg-8">
+                          <button type="submit" class="btn btn-primary  waves-effect waves-light">حفظ</button>
+                        </div>
+                      </form>
+                  </div>
+                </div>
+              </div> 
+                </div>
             <!-- Footer -->
             <footer class="content-footer footer bg-footer-theme">
               <div class="container-xxl">
@@ -1183,8 +1149,7 @@
     <script src="./assets/vendor/libs/bootstrap-select/bootstrap-select.js"></script>
     <!-- Vendors JS -->
     <script src="./assets/vendor/libs/apex-charts/apexcharts.js"></script>
-    <script src="./assets/vendor/libs/datatables-bs5/datatables-bootstrap5.js"></script>
-
+  
 
     
     <!-- Main JS -->
@@ -1199,7 +1164,7 @@
 
      <script src="./assets/vendor/js/chart.js"></script>
      <script src="./assets/js/dashboards-crm.js"></script>
-     <script src="./assets/js/tables-datatables-basic.js"></script>
+    
 
   </body>
 </html>

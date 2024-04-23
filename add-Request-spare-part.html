@@ -9,7 +9,7 @@
   <meta name="viewport"
     content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
 
-  <title>Work-sites</title>
+  <title>Request-spare-part</title>
 
   <meta name="description" content="" />
 
@@ -478,7 +478,6 @@
                       <span class="align-middle">My Profile</span>
                     </a>
                   </li>
-
                   <li>
                     <a class="dropdown-item" href="Personal-tasks.html">
                       <i class="ti ti-settings me-2 ti-sm"></i>
@@ -531,7 +530,7 @@
                 </li>
 
                 <!-- Apps -->
-                <li class="menu-item active">
+                <li class="menu-item ">
                   <a href="javascript:void(0)" class="menu-link menu-toggle">
                     <i class="menu-icon tf-icons ti ti-apps"></i>
                     <div data-i18n="Apps">الإدارة</div>
@@ -570,13 +569,13 @@
                         <div data-i18n="Reasons-visiting">أسباب الزيارة </div>
                       </a>
                     </li>
-                    <li class="menu-item ">
+                    <li class="menu-item">
                       <a href="employees.html" class="menu-link">
                         <i class="menu-icon tf-icons ti ti-square"></i>
                         <div data-i18n="employees">الموظفين </div>
                       </a>
                     </li>
-                    <li class="menu-item active">
+                    <li class="menu-item">
                       <a href="Work-sites.html" class="menu-link">
                         <i class="menu-icon tf-icons ti ti-square"></i>
                         <div data-i18n="Work sites">مواقع العمل </div>
@@ -597,7 +596,7 @@
                   </ul>
                 </li>
                 <!--employees-->
-                <li class="menu-item">
+                <li class="menu-item ">
                   <a class="menu-link menu-toggle" href="javascript:void(0)">
                     <i class="menu-icon tf-icons ti ti-users-group"></i>
                     <div data-i18n="employees">الموظفين</div>
@@ -638,13 +637,13 @@
                 </li>
                 <!-- Maintenance -->
                 <!-- Maintenance -->
-                <li class="menu-item">
+                <li class="menu-item active">
                   <a href="javascript:void(0)" class="menu-link menu-toggle">
                     <i class="menu-icon tf-icons ti ti-settings"></i>
                     <div data-i18n="Maintenance">الصيانة </div>
                   </a>
                   <ul class="menu-sub">
-                    <li class="menu-item">
+                    <li class="menu-item ">
                       <a href="Maintenance-request.html" class="menu-link">
                         <i class="menu-icon tf-icons ti ti-toggle-left"></i>
                         <div data-i18n="Maintenance-request"> طلب صيانة</div>
@@ -680,7 +679,7 @@
                       </a>
 
                     </li>
-                    <li class="menu-item">
+                    <li class="menu-item active">
                       <a href="Request-spare-part.html" class="menu-link">
                         <i class="menu-icon tf-icons ti ti-settings"></i>
                         <div data-i18n="Request-spare-part"> طلب قطعة غيار </div>
@@ -729,15 +728,15 @@
                       </a>
                     </li>
                     <li class="menu-item">
-                      <a href="Repetitive-asks.html" target="_blank" class="menu-link">
-                        <i class="menu-icon tf-icons ti ti-file-description"></i>
-                        <div data-i18n="Repetitive-tasks"> المهام المتكررة</div>
-                      </a>
-                    </li>
-                    <li class="menu-item">
                       <a href="Malfunctions-tasks.html" target="_blank" class="menu-link">
                         <i class="menu-icon tf-icons ti ti-file-description"></i>
                         <div data-i18n="Malfunctions-tasks"> تقرير الأعطال</div>
+                      </a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="Repetitive-asks.html" target="_blank" class="menu-link">
+                        <i class="menu-icon tf-icons ti ti-file-description"></i>
+                        <div data-i18n="Repetitive-tasks"> تقرير الأعطال</div>
                       </a>
                     </li>
                   </ul>
@@ -803,63 +802,94 @@
           <div class="container-xxl flex-grow-1 container-p-y">
             <div class="card comonent-hader-top">
               <div class="card-body py-2 px-md-4 px-2 card-widget-separator">
-                <div class="row mx-0 d-flex justify-content-between  mb-3 align-items-center pt-4">
-                  <div class="col">
-                    <strong class="py-md-3 px-md-3  text-title-hadeer text-tilte-b"><span class="text-muted fw-medium">
-                        مواقع العمل </span> </strong>
+                <div class="row mx-0 d-flex flex-wrap  justify-content-between  mb-3 align-items-center pt-4">
+                  <div class="col col-md-8 col-12  mb-md-4 mb-2 ">
+                    <strong class="py-md-3 px-md-3 text-title-hadeer text-tilte-b"><span class="text-muted fw-medium">
+                        طلب قطع غيار</span> </strong>
+
 
                   </div>
                   <div class="col text-end">
-                    <a data-bs-target="#addtruck" data-bs-toggle="modal"
-                      class="btn btn-primary waves-effect waves-light btn-add">اضافه موقع</a>
+                    <a href="Request-spare-part.html" class="btn btn-primary waves-effect waves-light btn-add"> مشاهدة
+                      الكل</a>
 
                   </div>
                 </div>
+                <!---->
 
+
+                <!---->
               </div>
 
             </div>
-            <div class="card comonent-hader-top mt-4 p-4">
-              <!---->
-              <div class="card-datatable text-nowrap  table-responsive pt-3">
+            <div class="card comonent-hader-top p-2 mt-4">
+              <form class="form-repeater row mx-0">
+                <div class="mb-3 col-lg-4 col-md-6 col-12 mb-0">
+                  <label class="form-label" for="form-repeater-1-4"> الجهه<span class="start-form">*</span></label>
+                  <div class="input-groupe">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Theside"
+                      tabindex="-1">
+                      <i class="fa-solid fa-plus"></i>
+                    </button>
+                    <select id="form-repeater-1-4" class="form-select">
+                      <option value="all">اختر الجهة</option>
+                      <option value="Developer">Developer</option>
+                      <option value="Tester">Tester</option>
+                      <option value="Manager">Manager</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="mb-3 col-lg-4 col-md-6 col-12 mb-0">
+                  <label class="form-label" for="form-repeater-1-1"> التاريخ<span class="start-form">*</span></label>
+                  <input type="date" id="form-repeater-1-1" class="form-control" placeholder="  التاريخ" />
+                </div>
+                <div data-repeater-list="group-a">
+                  <div data-repeater-item class="col-lg-12">
+                    <div class="row">
 
-                <table class=" table table-bordered table-hover rounded table-center">
-                  <thead class="table-light">
-                    <tr>
 
-                      <th>م</th>
-                      <th> اسم الشركة </th>
-                      <th> الموقع</th>
-                      <th> الشخص المسئول</th>
-                      <th> رقم التليفون</th>
-                      <th>Action</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>1</td>
-                      <td> الرياض </td>
-                      <td>الرياض </td>
-                      <td>مستخدم تجريبى </td>
-                      <td>55555</td>
-                      <td>
-                        <div class="d-flex justify-content-center">
-
-                          <a class="bg-success text-bg-success p-1 d-flex align-items-center justify-content-center me-3 rounded cursor-pointer"
-                            data-bs-target="#edittruck" data-bs-toggle="modal" title="تعديل"><i
-                              class="ti ti-pencil  fs-4"></i> </a>
-                          <a class="bg-danger text-bg-danger p-1 d-flex align-items-center justify-content-center me-3 rounded"
-                            href="javascript:void(0);" title="حذف  " data-bs-target="#closeRoleModal"
-                            data-bs-toggle="modal"><i class="ti ti-trash  fs-4"></i> </a>
-
+                      <div class="mb-3 col-lg-4 col-md-6  col-12 mb-0">
+                        <label class="form-label" for="form-repeater"> الصنف<span class="start-form">*</span></label>
+                        <div class="input-groupe">
+                          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#item"
+                            tabindex="-1">
+                            <i class="fa-solid fa-plus"></i>
+                          </button>
+                          <select id="form-repeater" class="form-select">
+                            <option value="Designer"> اختر الصنف</option>
+                            <option value="Developer">Developer</option>
+                            <option value="Tester">Tester</option>
+                            <option value="Manager">Manager</option>
+                          </select>
                         </div>
-                      </td>
-                    </tr>
+                      </div>
+                      <div class="mb-3 col-md-5 col-lg-4  col-12 mb-0">
+                        <label class="form-label" for="form-repeater-1"> الكمية<span class="start-form">*</span></label>
+                        <input type="text" id="form-repeater-1" class="form-control" placeholder="  الكمية" />
+                      </div>
 
-                  </tbody>
-                </table>
-              </div>
-              <!---->
+                      <div class="mb-3 col-md-2 col-xl-2 col-12 d-flex align-items-center mb-0">
+                        <button class="btn btn-label-danger mt-4" data-repeater-delete>
+                          <i class="ti ti-x ti-xs me-1"></i>
+                          <span class="align-middle">Delete</span>
+                        </button>
+                      </div>
+                    </div>
+                    <hr />
+
+                  </div>
+                  <div class="mb-3">
+                    <button class="btn btn-primary" data-repeater-create>
+                      <i class="ti ti-plus me-1"></i>
+                      <span class="align-middle">Add New</span>
+                    </button>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-8">
+                  <button type="submit" class="btn btn-primary  waves-effect waves-light">حفظ</button>
+                </div>
+
+              </form>
             </div>
           </div>
         </div>
@@ -867,112 +897,66 @@
       </div>
 
       <!--/ Content -->
-      <!-- Add Hardware Modal -->
-      <div class="modal fade " id="addtruck" aria-labelledby="exampleModalToggleLabel" tabindex="-1" aria-modal="true"
-        role="dialog">
-        <div class="modal-dialog modal-lg modal-dialog-centered">
-          <div class="modal-content p-3 p-md-3">
+      <!-- Modal   اضافه الجهة-->
+      <div class="modal fade" id="Theside" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"
+        role="dialog" style="z-index: 1600;">
+        <div class="modal-dialog">
+          <div class="modal-content">
             <div class="modal-header">
-              <h1 class="modal-title fs-4 fw-bold text-tilte-b"> إضافة موقع جديد</h1>
+              <h1 class="modal-title fs-5 fw-bold" id="exampleModalLabel">اضافة الجهة</h1>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body  px-md-3 px-1">
-              <form class="row component-form">
-                <div class="col-12 col-md-6  mb-3">
-                  <label class="form-label" for="basic-default-name">اسم الشركة </label>
-                  <input type="text" class="form-control" id="basic-default-name" placeholder="   اسم الشركة">
-                </div>
-                <div class="col-12 col-md-6  mb-3">
-                  <label class="form-label" for="basic-default-work">الموقع </label>
-                  <input type="text" class="form-control" id="basic-default-work" placeholder="   الموقع">
-                </div>
-                <div class="col-12 col-md-6  mb-3">
-                  <label class="form-label" for="basic-default-user-work">الشخص المسئول </label>
-                  <input type="text" class="form-control" id="basic-default-user-work" placeholder="   الشخص المسئول">
-                </div>
-                <div class="col-12 col-md-6  mb-3">
-                  <label class="form-label" for="basic-default-number"> رقم التليفون</label>
-                  <input type="text" class="form-control" id="basic-default-number" placeholder="   رقم التليفون  ">
-                </div>
+            <div class="modal-body">
+              <form class="row component-form align-items-end mx-0">
 
+                <div class="col-12 col-lg-12  mb-3">
+                  <label class="form-label" for="basic-name-hardware"> اسم الجهة (عربى)</label>
+                  <input type="text" class="form-control" id="basic-name-hardware">
 
+                </div>
+                <div class="col-12 col-lg-12  mb-3">
+                  <label class="form-label" for="basic-name-hardware-e"> اسم الجهة (انجيلزي)</label>
+                  <input type="text" class="form-control" id="basic-name-hardware-e">
+
+                </div>
                 <div class="col-12 col-lg-8">
                   <button type="submit" class="btn btn-primary  waves-effect waves-light">حفظ</button>
-                  <button type="reset" class="btn btn-outline-secondary waves-effect mx-md-2 mx-1">مسح المحتوى </button>
-
                 </div>
-
               </form>
-
-            </div>
-
-          </div>
-        </div>
-      </div>
-      <!---->
-      <!-- edit Hardware Modal -->
-      <div class="modal fade " id="edittruck" aria-labelledby="exampleModalToggleLabel" tabindex="-1" aria-modal="true"
-        role="dialog">
-        <div class="modal-dialog modal-lg modal-dialog-centered">
-          <div class="modal-content p-3 p-md-3">
-            <div class="modal-header">
-              <h1 class="modal-title fs-4 fw-bold text-tilte-b"> تعديل موقع</h1>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body px-md-3 px-1">
-              <form class="row component-form">
-                <div class="col-12 col-md-6  mb-3">
-                  <label class="form-label" for="basic-default-name">اسم الشركة </label>
-                  <input type="text" class="form-control" id="basic-default-name" placeholder="   اسم الشركة">
-                </div>
-                <div class="col-12 col-md-6  mb-3">
-                  <label class="form-label" for="basic-default-work">الموقع </label>
-                  <input type="text" class="form-control" id="basic-default-work" placeholder="   الموقع">
-                </div>
-                <div class="col-12 col-md-6  mb-3">
-                  <label class="form-label" for="basic-default-user-work">الشخص المسئول </label>
-                  <input type="text" class="form-control" id="basic-default-user-work" placeholder="   الشخص المسئول">
-                </div>
-                <div class="col-12 col-md-6  mb-3">
-                  <label class="form-label" for="basic-default-number"> رقم التليفون</label>
-                  <input type="text" class="form-control" id="basic-default-number" placeholder="   رقم التليفون  ">
-                </div>
-
-
-                <div class="col-12 col-lg-8">
-                  <button type="submit" class="btn btn-primary  waves-effect waves-light">تعديل</button>
-                  <button type="reset" class="btn btn-outline-secondary waves-effect mx-md-2 mx-1">مسح المحتوى </button>
-
-                </div>
-
-              </form>
-
-            </div>
-
-          </div>
-        </div>
-      </div>
-      <!---->
-      <!-- delet Modal -->
-      <div class="modal fade" id="closeRoleModal" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog modal-md modal-dialog-centered modal-add-new-role">
-          <div class="modal-content p-1 p-md-3">
-            <button type="button" class="btn-close btn-pinned" data-bs-dismiss="modal" aria-label="Close"></button>
-            <div class="modal-body text-center">
-              <h3 class="role-title mb-2 fs-5">
-                هل انت متاكد من حذف العنصر؟
-              </h3>
-
-              <div class="col-11 col-lg-12 mb-3">
-                <button type="submit" class="btn btn-primary  waves-effect waves-light">نعم</button>
-                <button type="submit" class="btn btn-label-secondary waves-effect mx-3"> لا</button>
-              </div>
-
-
             </div>
           </div>
         </div>
       </div>
+ <!-- Modal   اضافه الصنف-->
+ <div class="modal fade" id="item" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"
+ role="dialog" style="z-index: 1600;">
+ <div class="modal-dialog">
+   <div class="modal-content">
+     <div class="modal-header">
+       <h1 class="modal-title fs-5 fw-bold" id="exampleModalLabel">اضافة الصنف</h1>
+       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+     </div>
+     <div class="modal-body">
+       <form class="row component-form align-items-end mx-0">
+
+         <div class="col-12 col-lg-12  mb-3">
+           <label class="form-label" for="basic-name-hardware"> اسم الصنف (عربى)</label>
+           <input type="text" class="form-control" id="basic-name-hardware">
+
+         </div>
+         <div class="col-12 col-lg-12  mb-3">
+           <label class="form-label" for="basic-name-hardware-e"> اسم الصنف (انجيلزي)</label>
+           <input type="text" class="form-control" id="basic-name-hardware-e">
+
+         </div>
+         <div class="col-12 col-lg-8">
+           <button type="submit" class="btn btn-primary  waves-effect waves-light">حفظ</button>
+         </div>
+       </form>
+     </div>
+   </div>
+ </div>
+</div>
       <!-- Footer -->
       <footer class="content-footer footer bg-footer-theme">
         <div class="container-xxl">
@@ -1062,6 +1046,7 @@
   <!-- Vendors JS -->
   <script src="./assets/vendor/libs/apex-charts/apexcharts.js"></script>
   <script src="./assets/vendor/libs/datatables-bs5/datatables-bootstrap5.js"></script>
+  <script src="./assets/vendor/libs/jquery-repeater/jquery-repeater.js"></script>
 
 
 
@@ -1078,6 +1063,7 @@
   <script src="./assets/vendor/js/chart.js"></script>
   <script src="./assets/js/dashboards-crm.js"></script>
   <script src="./assets/js/tables-datatables-basic.js"></script>
+  <script src="./assets/js/forms-extras.js"></script>
 
 </body>
 

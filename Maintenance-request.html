@@ -589,27 +589,18 @@
 
                             <ul class="menu-sub">
                               <li class="menu-item">
-                                <a href="javascript:void(0)" class="menu-link menu-toggle">
+                                <a href="hardware.html" class="menu-link">
                                   <i class="menu-icon tf-icons ti ti-menu-2"></i>
-                                  <div data-i18n="hardware/car"> الشاحنات/المعدات</div>
+                                  <div data-i18n="hardware"> المعدات</div>
                                 </a>
-                                <ul class="menu-sub">
-                                  <li class="menu-item">
-                                  <a href="hardware.html" class="menu-link">
-                                    <div data-i18n="add-hardware-car"> اضافة/المعدات/الشاحنات</div>
-                                  </a>
-                                  </li>
-                                   <li class="menu-item " >
-                                    <a href="all-hardware.html" class="menu-link">
-                                      <div data-i18n="view-hardware"> مشاهدة/المعدات</div>
-                                    </a>
-                                    </li>
-                                    <li class="menu-item">
-                                      <a href="all-car.html" class="menu-link">
-                                        <div data-i18n="view-car"> مشاهدة/الشاحنات</div>
-                                      </a>
-                                    </li>
-                                </ul>
+                         
+                              </li>
+                              <li class="menu-item">
+                                <a href="car.html" class="menu-link">
+                                  <i class="menu-icon tf-icons ti ti-menu-2"></i>
+                                  <div data-i18n="car"> الشاحنات</div>
+                                </a>
+                               
                               </li>
                               <li class="menu-item ">
                                 <a href="Programming-permissions.html" class="menu-link" target="_blank">
@@ -703,24 +694,11 @@
                           </a>
                           <ul class="menu-sub">
                             <li class="menu-item active">
-                              <a href="javascript:void(0)" class="menu-link menu-toggle">
+                              <a href="Maintenance-request.html" class="menu-link">
                                 <i class="menu-icon tf-icons ti ti-toggle-left"></i>
                                 <div data-i18n="Maintenance-request">     طلب صيانة</div>
                               </a>
-                              <ul class="menu-sub">
-                                  <li class="menu-item active">
-                                    <a href="Maintenance-request.html" class="menu-link">
-                                    
-                                      <div data-i18n="Maintenance-request-form">    نموذج طلب صيانة</div>
-                                    </a>
-                                  </li>
-                                  <li class="menu-item">
-                                    <a href="all-maintenance.html" class="menu-link">
-                                    
-                                      <div data-i18n="view-Maintenance-request">    عرض طلب صيانة</div>
-                                    </a>
-                                  </li>
-                              </ul>
+                             
                             </li>
                             <li class="menu-item">
                               <a href="javascript:void(0)" class="menu-link menu-toggle">
@@ -745,22 +723,11 @@
                             </ul>
                             </li>
                             <li class="menu-item">
-                              <a href="javascript:void(0)" class="menu-link menu-toggle">
+                              <a href="Add-Review-Maintenance.html" class="menu-link">
                                 <i class="menu-icon tf-icons ti ti-settings"></i>
                                 <div data-i18n="Maintenance-checklist">  قائمة-مراجعه الصيانة </div>
                               </a>
-                              <ul class="menu-sub">
-                                <li class="menu-item">
-                                  <a href="Add-Review-Maintenance.html" class="menu-link">
-                                    <div data-i18n="Add-Review-Maintenance">    اضافه -مراجعه -الصيانة  </div>
-                                  </a>
-                                </li>
-                                <li class="menu-item">
-                                  <a href="show-Review-Maintenance.html" class="menu-link">
-                                    <div data-i18n="show-Review-Maintenance">    عرض -مراجعه -الصيانة  </div>
-                                  </a>
-                                </li>
-                              </ul>
+                            
                             </li>
                             <li class="menu-item">
                               <a href="Request-spare-part.html" class="menu-link">
@@ -899,142 +866,93 @@
                       <div class="card-body py-2 px-md-4 px-2 card-widget-separator">
                        
                         <strong class="py-md-3 px-md-1 text-title-hadeer text-tilte-b"><span class="text-muted fw-medium">   طلب صيانة </span>  </strong>
-
-                       <!---->
-                       <form class="row component-form mt-5 mb-5">
-                        <div class="col-12 col-lg-4  mb-3">
-                          <label class="form-label" for="basic-default-name">  إسم المشروع
-                          </label>
-                          <div class="input-groupe">
-                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#name-project">
-                              <i class="fa-solid fa-plus"></i>
-                            </button>
-                            <select id="basic-default-name" class="select2 form-select" data-allow-clear="true">
-                              <option value="Ab">     ابو هيثم للعقارات</option>
-                              <option value="Ac">      العاصم للعقارات</option>
-                          
-                            </select>  
+                        <div class="row  mx-0 justify-content-center  py-3 px-md-3 px-2">
+                          <div class="col-xl-6 col-lg-6 col-md-6 mb-md-0 mb-2">
+                            <div class="card h-100 ">
+                              <div class="row h-100">
+                                <div class="col-sm-5 col-12">
+                                  <div class="d-flex align-items-end h-100 justify-content-center mt-sm-0 mt-3">
+                                    <img src="./assets/img/illustrations/add-icon.png" class="img-fluid mt-sm-4 mt-md-0" alt="add-new-roles" width="100">
+  
+                                  </div>
+                                </div>
+                                <div class="col-sm-7 col-12">
+                                  <div class="card-body text-sm-end text-center ps-sm-0">
+                                    <a href="add-Maintenance-request.html" class="btn btn-primary mb-2 text-nowrap add-new-role waves-effect waves-light">
+                                        اضافه الطلب
+                                    </a>
+                                    <p class="mb-0 mt-1">Add Maintenance, if it does not exist</p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
                           </div>
-                                        
-                        
+                          <!---->
+                         
+                          <!---->
                         </div>
-                        <div class="col-12 col-lg-4 mb-3">
-                          <label class="form-label" for="basic-default-date">   تاريخ البداء</label>
-                          <input type="date" class="form-control" id="basic-default-date">
-    
-                        </div>
-                        <div class="col-12 col-lg-4 mb-3">
-                          <label class="form-label" for="basic-Malfunction-number">   رقم العطل</label>
-                          <input type="text" class="form-control" id="basic-Malfunction-number">
-    
-                        </div>
-                        <div class="col-12 col-lg-4 mb-3">
-                          <label for="validationCustom03" class="form-label">المدينة</label>
-                          <input type="text" class="form-control" id="validationCustom03" required="">
-                          
-                        </div>
-                        <div class="col-12 col-lg-4 mb-3">
-                          <label for="validationCustom04" class="form-label">المنطقة	</label>
-                          <input type="text" class="form-control" id="validationCustom04" required="">
-                          
-                        </div>
-                        <div class="col-12 col-lg-4 mb-3">
-                          <label for="validationCustom05" class="form-label">فریق صیانة أو مقاول	</label>
-                          <input type="text" class="form-control" id="validationCustom05" required="">
-                          
-                        </div>
-                        <div class="col-12 col-lg-4  mb-3">
-                          <label class="form-label" for="basic-technician-name"> 
-                            فني صیانة
-                          </label>
-                          <select id="basic-technician-name" class="select2 form-select" data-allow-clear="true">
-                            <option value="Ab">     محمد	</option>
-                            <option value="Ac">     احمد </option>
-                        
-                          </select>                
-                        
-                        </div>
-                        <div class="col-12 col-lg-4 mb-3">
-                          <label for="validationCustom06" class="form-label">  رقم امر العمل</label>
-                          <input type="text" class="form-control" id="validationCustom06" required="">
-                          
-                        </div>
-                        <div class="col-12 col-lg-4  mb-3">
-                          <label class="form-label" for="basic-technician-type"> 
-                            نوع الصيانه
-                          </label>
-                          <div class="input-groupe">
-                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleBranch">
-                              <i class="fa-solid fa-plus"></i>
-                            </button>
-                          <select id="basic-technician-type" class="select2 form-select" data-allow-clear="true">
-                            <option value="pm">    pm	</option>
-                            <option value="CM">      cm </option>
-                            <option value="TUV">TUV </option>
-                            <option value="Other"> Other </option>
-    
-                          </select>                
-                          </div>
-                        </div>
-                        <div class="col-12 col-lg-4 mb-3">
-                          <label for="validation-number5" class="form-label"> المبلغ المدفوع</label>
-                          <input type="text" class="form-control" id="validation-number5" required="">
-                          
-                        </div>
-                        
-                      <div class="col-12 col-lg-4 mb-3">
-                        <label class="form-label" for="basic-comment-one">   تفصيل العطل
-                        </label>
-                        <textarea type="text" class="form-control" id="basic-comment-one " rows="1"></textarea>
-                      </div>
-                       
                      
-                      <div class="col-12 col-lg-4 mb-3">
-                        <label class="form-label" for="basic-comment">   سبب العطل</label>
-                        <textarea type="text" class="form-control" id="basic-comment " rows="1"></textarea>
-                      </div>
-                      <div class="col-12 col-lg-4 mb-3">
-                        <label class="form-label" for="basic-Work "> 
-                          نوع موقع العمل
-    
-                        </label>
-                        <div class="input-groupe">
-                          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#type-work">
-                            <i class="fa-solid fa-plus"></i>
-                          </button>
-                          <select id="basic-Work" class="select2 form-select" data-allow-clear="true">
-                            <option value="pm">    pm	</option>
-                            <option value="CM">      cm </option>
-                            <option value="TUV">TUV </option>
-                            <option value="Other"> Other </option>
-      
-                          </select>  
-                        </div>
-                                     
-                      
-                      </div>
-                      <div class="col-12 col-lg-4 mb-3">
-                        <label for="validation-time" class="form-label">   ساعات العمل المنجزة </label>
-                        <input type="time" class="form-control" id="validation-time" required="">
-                        
-                      </div>
-                      <div class="col-12 col-lg-4 mb-3">
-                        <label class="form-label" for="basic-comment-one">   العمل المنجز
-                        </label>
-                        <textarea type="text" class="form-control" id="basic-comment-one " rows="1"></textarea>
-                      </div>
-                       
-                        <div class="col-12 col-lg-12">
-                          <button type="submit" class="btn btn-primary  waves-effect waves-light">حفظ</button>
-                          <button type="reset" class="btn btn-outline-secondary waves-effect mx-md-2 mx-1">مسح المحتوى </button>
-                          <a href="all-maintenance.html" class="btn btn-label-secondary waves-effect mt-md-0 mt-2 ">مشاهدة الكل</a>
-                         </div>
-                       
-                      </form>
-                       <!---->
                       </div>
                     
                    </div>
+                   <div class="card comonent-hader-top p-2 mt-4">
+                    <div class="card-datatable text-nowrap  table-responsive pt-3">
+                        
+                      <table class=" table table-bordered table-hover rounded table-center">
+                        <thead class="table-light">
+                          <tr>
+                         
+                            <th>م</th>
+                            <th>      اسم المشروع</th>
+                            <th>     التاريخ</th>
+                            <th>     رقم العطل</th>
+                            <th>     المنطقة</th>
+                            <th>     المدينة</th>
+                            <th>     فني صیانة </th>
+                            <th>     رقم امر العمل</th>
+                            <th>     نوع الصيانة</th>
+                            <th>      المبلغ المدفوع</th>
+                            <th>    تفصيل العطل  </th>
+                            <th>      سبب العطل</th>
+                            <th>     نوع موقع العمل</th>
+                            <th> ساعات العمل المنجزة </th>
+                            <th>      العمل المنجز </th>
+                            <th>Action</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                              <td>1</td>
+                              <td>	رايتو</td>
+                              <td>  	</td>
+                              <td>  	</td>
+                              <td>  	</td>
+                              <td>  	</td>
+                              <td>  	</td>
+                              <td>  	</td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              
+                              
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td>
+                                <div class="d-flex justify-content-center">
+                                
+                                  <a class="bg-success text-bg-success p-1 d-flex align-items-center justify-content-center me-3 rounded cursor-pointer" data-bs-target="#edittruck" data-bs-toggle="modal" title="تعديل"><i class="ti ti-pencil  fs-4"></i> </a>
+                                  <a class="bg-danger text-bg-danger p-1 d-flex align-items-center justify-content-center me-3 rounded" href="javascript:void(0);" title="حذف  " data-bs-target="#closeRoleModal"  data-bs-toggle="modal"><i class="ti ti-trash  fs-4"></i> </a>
+                                
+                                </div>
+                              </td>
+                            </tr>
+                            
+                        </tbody>
+                      </table>
+                    </div>
+                    </div>
                 </div>
               </div>
 
@@ -1042,93 +960,160 @@
           
             <!--/ Content -->
            
-        <!-- Modal   نوع الصيانة-->
-        <div class="modal fade" id="exampleBranch" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h1 class="modal-title fs-5" id="exampleModalLabel">  نوع الصيانة </h1>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        
+            <!-- edit Hardware Modal -->
+            <div class="modal fade " id="edittruck" aria-labelledby="exampleModalToggleLabel" tabindex="-1" aria-modal="true" role="dialog">
+              <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content p-3 p-md-3">
+                  <div class="modal-header px-md-2 px-1">
+                    <h1 class="modal-title fs-4 fw-bold text-tilte-b">  تعديل طلب الصيانة    </h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body px-md-2 px-1">
+                    <form class="row component-form">
+                      <div class="col-12 col-lg-4  mb-3">
+                        <label class="form-label" for="basic-default-name">  إسم المشروع
+                        </label>
+                        <select id="basic-default-name" class="select2 form-select" data-allow-clear="true">
+                          <option value="Ab">     ابو هيثم للعقارات</option>
+                          <option value="Ac">      العاصم للعقارات</option>
+                      
+                        </select>                
+                      
+                      </div>
+                      <div class="col-12 col-lg-4 mb-3">
+                        <label class="form-label" for="basic-default-date">   تاريخ البداء</label>
+                        <input type="date" class="form-control" id="basic-default-date">
+  
+                      </div>
+                      <div class="col-12 col-lg-4 mb-3">
+                        <label class="form-label" for="basic-Malfunction-number">   رقم العطل</label>
+                        <input type="text" class="form-control" id="basic-Malfunction-number">
+  
+                      </div>
+                      <div class="col-12 col-lg-4 mb-3">
+                        <label for="validationCustom03" class="form-label">المدينة</label>
+                        <input type="text" class="form-control" id="validationCustom03" required="">
+                        
+                      </div>
+                      <div class="col-12 col-lg-4 mb-3">
+                        <label for="validationCustom04" class="form-label">المنطقة	</label>
+                        <input type="text" class="form-control" id="validationCustom04" required="">
+                        
+                      </div>
+                      <div class="col-12 col-lg-4 mb-3">
+                        <label for="validationCustom05" class="form-label">فریق صیانة أو مقاول	</label>
+                        <input type="text" class="form-control" id="validationCustom05" required="">
+                        
+                      </div>
+                      <div class="col-12 col-lg-4  mb-3">
+                        <label class="form-label" for="basic-technician-name"> 
+                          فني صیانة
+                        </label>
+                        <select id="basic-technician-name" class="select2 form-select" data-allow-clear="true">
+                          <option value="Ab">     محمد	</option>
+                          <option value="Ac">     احمد </option>
+                      
+                        </select>                
+                      
+                      </div>
+                      <div class="col-12 col-lg-4 mb-3">
+                        <label for="validationCustom06" class="form-label">  رقم امر العمل</label>
+                        <input type="text" class="form-control" id="validationCustom06" required="">
+                        
+                      </div>
+                      <div class="col-12 col-lg-4  mb-3">
+                        <label class="form-label" for="basic-technician-type"> 
+                          نوع الصيانه
+                        </label>
+                        <select id="basic-technician-type" class="select2 form-select" data-allow-clear="true">
+                          <option value="pm">    pm	</option>
+                          <option value="CM">      cm </option>
+                          <option value="TUV">TUV </option>
+                          <option value="Other"> Other </option>
+  
+                        </select>                
+                      
+                      </div>
+                    
+                      <div class="col-12 col-lg-4 mb-3">
+                        <label for="validation-number5" class="form-label"> المبلغ المدفوع</label>
+                        <input type="text" class="form-control" id="validation-number5" required="">
+                        
+                      </div>
+                    <div class="col-12 col-lg-4 mb-3">
+                      <label class="form-label" for="basic-comment-one">   تفصيل العطل
+                      </label>
+                      <textarea type="text" class="form-control" id="basic-comment-one " rows="1"></textarea>
+                    </div>
+                     
+                   
+                    <div class="col-12 col-lg-4 mb-3">
+                      <label class="form-label" for="basic-comment">   سبب العطل</label>
+                      <textarea type="text" class="form-control" id="basic-comment " rows="1"></textarea>
+                    </div>
+                    <div class="col-12 col-lg-4 mb-3">
+                      <label class="form-label" for="basic-Work "> 
+                        نوع موقع العمل
+  
+                      </label>
+                      <select id="basic-Work" class="select2 form-select" data-allow-clear="true">
+                        <option value="pm">    pm	</option>
+                        <option value="CM">      cm </option>
+                        <option value="TUV">TUV </option>
+                        <option value="Other"> Other </option>
+  
+                      </select>                
+                    
+                    </div>
+                    <div class="col-12 col-lg-4 mb-3">
+                      <label for="validation-time" class="form-label">   ساعات العمل المنجزة </label>
+                      <input type="time" class="form-control" id="validation-time" required="">
+                      
+                    </div>
+                    <div class="col-12 col-lg-4 mb-3">
+                      <label class="form-label" for="basic-comment-one">   العمل المنجز
+                      </label>
+                      <textarea type="text" class="form-control" id="basic-comment-one " rows="1"></textarea>
+                    </div>
+                     
+                      <div class="col-12 col-lg-12">
+                        <button type="submit" class="btn btn-primary  waves-effect waves-light">تعديل</button>
+                        <button type="reset" class="btn btn-outline-secondary waves-effect mx-md-2 mx-1">مسح المحتوى </button>
+                       </div>
+                     
+                    </form>
+                    
+                  </div>
+                 
+                </div>
               </div>
-              <div class="modal-body">
-                <form class="row component-form align-items-end mx-0">
-
-                  <div class="col-12 col-lg-12  mb-3">
-                    <label class="form-label" for="basic-name-hardware">    نوع الصيانة   (عربى)</label>
-                    <input type="text" class="form-control" id="basic-name-hardware">
-
+            </div>
+             
+             <!-- delet Modal -->
+           <div class="modal fade" id="closeRoleModal" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-md modal-dialog-centered modal-add-new-role">
+              <div class="modal-content p-1 p-md-3">
+                <button
+                  type="button"
+                  class="btn-close btn-pinned"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"></button>
+                <div class="modal-body text-center">
+                    <h3 class="role-title mb-2 fs-5">
+                      هل انت متاكد من حذف العنصر؟
+                    </h3>
+                  
+                  <div class="col-11 col-lg-12 mb-3">
+                    <button type="submit" class="btn btn-primary  waves-effect waves-light">نعم</button>
+                    <button  type="submit" class="btn btn-label-secondary waves-effect mx-3"> لا</button>
                   </div>
-                  <div class="col-12 col-lg-12 mb-3">
-                    <label class="form-label" for="basic-name-hardware-e">     نوع الصيانة  (انجيلزي)</label>
-                    <input type="text" class="form-control" id="basic-name-hardware-e">
-
-                  </div>
-                  <div class="col-12 col-lg-8">
-                    <button type="submit" class="btn btn-primary  waves-effect waves-light">حفظ</button>
-                  </div>
-                </form>
+                
+              
+                </div>
+              </div>
             </div>
           </div>
-        </div> 
-           </div>
-           <!-- Modal    اسم المشروع-->
-        <div class="modal fade" id="name-project" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h1 class="modal-title fs-5" id="exampleModalLabel">   اسم المشروع </h1>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body">
-                <form class="row component-form align-items-end mx-0">
-
-                  <div class="col-12 col-lg-12  mb-3">
-                    <label class="form-label" for="basic-name-hardware">     اسم المشروع   (عربى)</label>
-                    <input type="text" class="form-control" id="basic-name-hardware">
-
-                  </div>
-                  <div class="col-12 col-lg-12 mb-3">
-                    <label class="form-label" for="basic-name-hardware-e">      اسم المشروع  (انجيلزي)</label>
-                    <input type="text" class="form-control" id="basic-name-hardware-e">
-
-                  </div>
-                  <div class="col-12 col-lg-8">
-                    <button type="submit" class="btn btn-primary  waves-effect waves-light">حفظ</button>
-                  </div>
-                </form>
-            </div>
-          </div>
-        </div> 
-           </div>
-            <!-- Modal     نوع موقع العمل-->
-        <div class="modal fade" id="type-work" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h1 class="modal-title fs-5" id="exampleModalLabel">    موقع العمل </h1>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body">
-                <form class="row component-form align-items-end mx-0">
-
-                  <div class="col-12 col-lg-12  mb-3">
-                    <label class="form-label" for="basic-name-hardware">      موقع العمل   (عربى)</label>
-                    <input type="text" class="form-control" id="basic-name-hardware">
-
-                  </div>
-                  <div class="col-12 col-lg-12 mb-3">
-                    <label class="form-label" for="basic-name-hardware-e">       موقع العمل  (انجيلزي)</label>
-                    <input type="text" class="form-control" id="basic-name-hardware-e">
-
-                  </div>
-                  <div class="col-12 col-lg-8">
-                    <button type="submit" class="btn btn-primary  waves-effect waves-light">حفظ</button>
-                  </div>
-                </form>
-            </div>
-          </div>
-        </div> 
-           </div>
             <!-- Footer -->
             <footer class="content-footer footer bg-footer-theme">
               <div class="container-xxl">
