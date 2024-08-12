@@ -63,7 +63,7 @@ padding: 10px !important;
     right: 0px;
     left: 0px;
      }
-.component-progress .progress {
+/* .component-progress .progress {
      width: 90%;
      margin: auto;
      height: 90px;
@@ -113,7 +113,16 @@ padding: 10px !important;
   animation: move 10s infinite -5s linear;
   -webkit-animation: move 10s infinite -5s linear;
   z-index: 20;
-}
+} */
+ .bg-info{
+  background-color: #00bad1;
+ }
+ .bg-danger{
+  background-color: #EA5455 !important;
+ }
+ .bg-warning{
+  background-color: #F79426;
+ }
 @keyframes move{
   50%{
     transform:translateX(-50%) rotate(180deg);
