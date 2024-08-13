@@ -519,3 +519,8 @@ color: #dbdade !important;
   flex-wrap: wrap;
   align-items: stretch;
 }
+.table-left .table-light th,
+.table:not(.table-dark) thead:not(.table-dark) th
+{
+  color: #444050 !important;
+}
