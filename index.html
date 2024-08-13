@@ -38,6 +38,9 @@
   <link rel="stylesheet" href="./assets/vendor/libs/typeahead-js/typeahead.css" />
   <link rel="stylesheet" href="./assets/vendor/libs/apex-charts/apex-charts.css" />
 
+  <link rel="stylesheet" href="./assets/vendor/libs/datatables-bs5/datatables.bootstrap5.css" />
+  <link rel="stylesheet" href="./assets/vendor/libs/datatables-responsive-bs5/responsive.bootstrap5.css" />
+  <link rel="stylesheet" href="./assets/vendor/libs/datatables-checkboxes-jquery/datatables.checkboxes.css" />
 
 
 
@@ -50,6 +53,35 @@
   <script src="./assets/vendor/js/template-customizer.js"></script>
   <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
   <script src="./assets/js/config.js"></script>
+  <style>
+    .alert-primary .alert-icon {
+    background-color: #7367f0;
+    color: #fff;
+}
+.alert .alert-icon {
+    color: #fff;
+    height: 1.875rem;
+    width: 1.875rem;
+    padding: .75rem;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.alert-secondary .alert-icon {
+    background-color: #808390;
+}
+.alert-success .alert-icon {
+    background-color: #28c76f;
+}
+[dir="rtl"] .table-left th{
+  text-align: right !important;
+}
+[dir="ltr"] .table-left th{
+  text-align: left !important;
+}
+  </style>
 </head>
 
 <body>
@@ -964,151 +996,345 @@
 
               <!-- المهام الطارئة-->
               <div class="col-lg-6 mb-4 order-md-0 order-lg-0">
-                <div class="card comonent-hader-top h-100">
-                  <div class="card-header">
-                    <div class="card-title mb-0">
-                      <h5 class="mb-0"> المهام الطارئة </h5>
+                <div class="card h-100">
+                  <div class="card-header d-flex justify-content-between">
+                    <h5 class="card-title m-0 me-2">المهام الطارئة
+                    </h5>
+                    <div class="dropdown">
+                      <button
+                        class="btn p-0"
+                        type="button"
+                        id="teamMemberList"
+                        data-bs-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false">
+                        <i class="ti ti-dots-vertical ti-sm text-muted"></i>
+                      </button>
+                      <div class="dropdown-menu dropdown-menu-end" aria-labelledby="teamMemberList">
+                        <a class="dropdown-item" href="javascript:void(0);">Download</a>
+                        <a class="dropdown-item" href="javascript:void(0);">Refresh</a>
+                        <a class="dropdown-item" href="javascript:void(0);">Share</a>
+                      </div>
                     </div>
                   </div>
-                  <div class="card-body scrollable-c">
-                    <div class="card-datatable text-nowrap  table-responsive">
-
-                      <table class=" table table-bordered table-hover rounded table-center">
-                        <thead class="table-light">
-                          <tr>
-
-
-
-                            <th> الشركة</th>
-                            <th>نوع المهمه</th>
-
-                            <th>الوصف</th>
-                            <th>عرض المهمه</th>
-
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-
-                            <td> </td>
-                            <td></td>
-                            <td></td>
-
-                            <td>
-                              <a class=" p-1 d-flex align-items-center justify-content-center me-3 rounded cursor-pointer"
-                                data-bs-target="#viewtasks" data-bs-toggle="modal" title="عرض"><i
-                                  class="fas fa-eye"></i> </a>
-
-                            </td>
-
-                          </tr>
-
-                        </tbody>
-                      </table>
-                    </div>
+                  <div class="table-responsive">
+                    <table class="table table-borderless border-top table-left">
+                      <thead class="border-bottom table-light">
+                        <tr>
+                          <th>CARD</th>
+                          <th>DATE</th>
+                          <th>STATUS</th>
+                          <th>TREND</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>
+                            <div class="d-flex justify-content-start align-items-center">
+                              <div class="me-3">
+                                <img src="../../assets/img/icons/payments/visa-img.png" alt="Visa" height="30" />
+                              </div>
+                              <div class="d-flex flex-column">
+                                <p class="mb-0 fw-medium">*4230</p>
+                                <small class="text-muted">Credit</small>
+                              </div>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <p class="mb-0 fw-medium">Sent</p>
+                              <small class="text-muted text-nowrap">17 Mar 2022</small>
+                            </div>
+                          </td>
+                          <td><span class="badge bg-label-success">Verified</span></td>
+                          <td>
+                            <p class="mb-0 fw-medium">+$1,678</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="d-flex justify-content-start align-items-center">
+                              <div class="me-3">
+                                <img
+                                  src="../../assets/img/icons/payments/master-card-img.png"
+                                  alt="Visa"
+                                  height="30" />
+                              </div>
+                              <div class="d-flex flex-column">
+                                <p class="mb-0 fw-medium">*5578</p>
+                                <small class="text-muted">Credit</small>
+                              </div>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <p class="mb-0 fw-medium">Sent</p>
+                              <small class="text-muted text-nowrap">12 Feb 2022</small>
+                            </div>
+                          </td>
+                          <td><span class="badge bg-label-danger">Rejected</span></td>
+                          <td>
+                            <p class="mb-0 fw-medium">-$839</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="d-flex justify-content-start align-items-center">
+                              <div class="me-3">
+                                <img
+                                  src="../../assets/img/icons/payments/american-express-img.png"
+                                  alt="Visa"
+                                  height="30" />
+                              </div>
+                              <div class="d-flex flex-column">
+                                <p class="mb-0 fw-medium">*4567</p>
+                                <small class="text-muted">Credit</small>
+                              </div>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <p class="mb-0 fw-medium">Sent</p>
+                              <small class="text-muted text-nowrap">28 Feb 2022</small>
+                            </div>
+                          </td>
+                          <td><span class="badge bg-label-success">Verified</span></td>
+                          <td>
+                            <p class="mb-0 fw-medium">+$435</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="d-flex justify-content-start align-items-center">
+                              <div class="me-3">
+                                <img src="../../assets/img/icons/payments/visa-img.png" alt="Visa" height="30" />
+                              </div>
+                              <div class="d-flex flex-column">
+                                <p class="mb-0 fw-medium">*5699</p>
+                                <small class="text-muted">Credit</small>
+                              </div>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <p class="mb-0 fw-medium">Sent</p>
+                              <small class="text-muted text-nowrap">8 Jan 2022</small>
+                            </div>
+                          </td>
+                          <td><span class="badge bg-label-secondary">Pending</span></td>
+                          <td>
+                            <p class="mb-0 fw-medium">+$2,345</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="d-flex justify-content-start align-items-center">
+                              <div class="me-3">
+                                <img src="../../assets/img/icons/payments/visa-img.png" alt="Visa" height="30" />
+                              </div>
+                              <div class="d-flex flex-column">
+                                <p class="mb-0 fw-medium">*5699</p>
+                                <small class="text-muted">Credit</small>
+                              </div>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <p class="mb-0 fw-medium">Sent</p>
+                              <small class="text-muted text-nowrap">8 Jan 2022</small>
+                            </div>
+                          </td>
+                          <td><span class="badge bg-label-danger">Rejected</span></td>
+                          <td>
+                            <p class="mb-0 fw-medium">-$234</p>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
                   </div>
                 </div>
               </div>
               <!--المهام الشخصيه-->
               <!--الطلبات-->
-              <div class="col-lg-6 mb-4 order-md-0 order-lg-0">
-                <div class="card comonent-hader-top h-100">
-                  <div class="card-header">
-                    <div class="card-title  mb-0">
-                      <h5 class="mb-0">المهام التي تم تأخيرها عن مدة </h5>
+              <div class="col-lg-6 mb-4">
+                <div class="card h-100">
+                  <div class="card-header d-flex justify-content-between">
+                    <h5 class="card-title m-0 me-2"> 
+                      المهام التي تم تأخيرها عن مدة
 
+                    </h5>
+                    <div class="dropdown">
+                      <button
+                        class="btn p-0"
+                        type="button"
+                        id="teamMemberList"
+                        data-bs-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false">
+                        <i class="ti ti-dots-vertical ti-sm text-muted"></i>
+                      </button>
+                      <div class="dropdown-menu dropdown-menu-end" aria-labelledby="teamMemberList">
+                        <a class="dropdown-item" href="javascript:void(0);">Download</a>
+                        <a class="dropdown-item" href="javascript:void(0);">Refresh</a>
+                        <a class="dropdown-item" href="javascript:void(0);">Share</a>
+                      </div>
                     </div>
                   </div>
-
-                  <div class="card-body scrollable-c">
-                    <div class="card-datatable text-nowrap  table-responsive">
-                      <table class=" table table-bordered table-hover rounded table-center">
-                        <thead class="table-light">
-                          <tr>
-
-                            <th>م</th>
-                            <th> وصف المهمه </th>
-                            <th> اسم الشركة</th>
-                            <th> النوع </th>
-
-                            <th> الحالة</th>
-                            <th> عرض</th>
-
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td>1</td>
-                            <td>Lorem ipsum dolor </td>
-                            <td> رايتو </td>
-
-                            <td> </td>
-                            <td></td>
-                            <td></td>
-                          </tr>
-
-                        </tbody>
-                      </table>
-                    </div>
+                  <div class="table-responsive">
+                    <table class="table table-borderless border-top table-left">
+                      <thead class="border-bottom table-light">
+                        <tr>
+                          <th>CARD</th>
+                          <th>DATE</th>
+                          <th>STATUS</th>
+                          <th>TREND</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>
+                            <div class="d-flex justify-content-start align-items-center">
+                              <div class="me-3">
+                                <img src="../../assets/img/icons/payments/visa-img.png" alt="Visa" height="30" />
+                              </div>
+                              <div class="d-flex flex-column">
+                                <p class="mb-0 fw-medium">*4230</p>
+                                <small class="text-muted">Credit</small>
+                              </div>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <p class="mb-0 fw-medium">Sent</p>
+                              <small class="text-muted text-nowrap">17 Mar 2022</small>
+                            </div>
+                          </td>
+                          <td><span class="badge bg-label-success">Verified</span></td>
+                          <td>
+                            <p class="mb-0 fw-medium">+$1,678</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="d-flex justify-content-start align-items-center">
+                              <div class="me-3">
+                                <img
+                                  src="../../assets/img/icons/payments/master-card-img.png"
+                                  alt="Visa"
+                                  height="30" />
+                              </div>
+                              <div class="d-flex flex-column">
+                                <p class="mb-0 fw-medium">*5578</p>
+                                <small class="text-muted">Credit</small>
+                              </div>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <p class="mb-0 fw-medium">Sent</p>
+                              <small class="text-muted text-nowrap">12 Feb 2022</small>
+                            </div>
+                          </td>
+                          <td><span class="badge bg-label-danger">Rejected</span></td>
+                          <td>
+                            <p class="mb-0 fw-medium">-$839</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="d-flex justify-content-start align-items-center">
+                              <div class="me-3">
+                                <img
+                                  src="../../assets/img/icons/payments/american-express-img.png"
+                                  alt="Visa"
+                                  height="30" />
+                              </div>
+                              <div class="d-flex flex-column">
+                                <p class="mb-0 fw-medium">*4567</p>
+                                <small class="text-muted">Credit</small>
+                              </div>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <p class="mb-0 fw-medium">Sent</p>
+                              <small class="text-muted text-nowrap">28 Feb 2022</small>
+                            </div>
+                          </td>
+                          <td><span class="badge bg-label-success">Verified</span></td>
+                          <td>
+                            <p class="mb-0 fw-medium">+$435</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="d-flex justify-content-start align-items-center">
+                              <div class="me-3">
+                                <img src="../../assets/img/icons/payments/visa-img.png" alt="Visa" height="30" />
+                              </div>
+                              <div class="d-flex flex-column">
+                                <p class="mb-0 fw-medium">*5699</p>
+                                <small class="text-muted">Credit</small>
+                              </div>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <p class="mb-0 fw-medium">Sent</p>
+                              <small class="text-muted text-nowrap">8 Jan 2022</small>
+                            </div>
+                          </td>
+                          <td><span class="badge bg-label-secondary">Pending</span></td>
+                          <td>
+                            <p class="mb-0 fw-medium">+$2,345</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="d-flex justify-content-start align-items-center">
+                              <div class="me-3">
+                                <img src="../../assets/img/icons/payments/visa-img.png" alt="Visa" height="30" />
+                              </div>
+                              <div class="d-flex flex-column">
+                                <p class="mb-0 fw-medium">*5699</p>
+                                <small class="text-muted">Credit</small>
+                              </div>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <p class="mb-0 fw-medium">Sent</p>
+                              <small class="text-muted text-nowrap">8 Jan 2022</small>
+                            </div>
+                          </td>
+                          <td><span class="badge bg-label-danger">Rejected</span></td>
+                          <td>
+                            <p class="mb-0 fw-medium">-$234</p>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
                   </div>
-
-
                 </div>
               </div>
               <!--الطلبات-->
               <!--المهام المفتوحة-->
               <div class="col-lg-12 mb-4 order-md-0 order-lg-0">
-                <div class="card comonent-hader-top h-100">
-                  <div class="card-header">
-                    <div class="card-title mb-0">
-                      <h5 class="mb-0"> طلبات الصيانة المفتوحة </h5>
-                    </div>
-                  </div>
-                  <div class="card-body scrollable-c">
-                    <div class="card-datatable text-nowrap  table-responsive">
-
-                      <table class=" table table-bordered table-hover rounded table-center">
-                        <thead class="table-light">
-                          <tr>
-
-
-                            <th> م </th>
-                            <th> الشركة</th>
-                            <th>رقم الطلب</th>
-
-
-                            <th> التاريخ</th>
-                            <th> رقم العطل</th>
-                            <th> المنطقة</th>
-                            <th>المدينة</th>
-                            <th>فنى الصيانة</th>
-                            <th>رقم امر العمل</th>
-                            <th>نوع الصيانة</th>
-                            <th>سبب العطل</th>
-                            <th>موقع العمل</th>
-
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-
-                            <td> 1 </td>
-                            <td> </td>
-                            <td> </td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td> </td>
-                            <td> </td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                          </tr>
-
-                        </tbody>
-                      </table>
-                    </div>
+                <div class="card">
+                  <div class="card-datatable table-responsive">
+                    <table class="datatables-projects table border-top table-left">
+                      <thead class="table-light text-left">
+                        <tr>
+                          <th></th>
+                          <th></th>
+                          <th>Name</th>
+                          <th>Leader</th>
+                          <th>Team</th>
+                          <th class="w-px-200">Status</th>
+                          <th>Action</th>
+                        </tr>
+                      </thead>
+                    </table>
                   </div>
                 </div>
               </div>
@@ -1404,6 +1630,46 @@
 
                 </div>
               </div>
+              <div class="col-lg-6 mb-4 mb-md-0">
+                <div class="card">
+                  <h5 class="card-header">Alert headings with icon</h5>
+                  <div class="card-body">
+                    <div class="alert alert-primary alert-dismissible d-flex" role="alert">
+                      <span class="alert-icon rounded">
+                        <i class="ti ti-user"></i>
+                      </span>
+                      <div class="d-flex flex-column ps-1">
+                        <h5 class="alert-heading mb-2">This is a primary alert — check it out!</h5>
+                        <p class="mb-0">Sugar plum apple pie sesame snaps croissant marshmallow apple pie liquorice. Cheesecake bear claw tiramisu shortbread cupcake. Sugar plum candy canes jujubes liquorice tiramisu gummi bears muffin dragée gingerbread.</p>
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
+                        </button>
+                      </div>
+                    </div>
+                    <div class="alert alert-secondary alert-dismissible d-flex" role="alert">
+                      <span class="alert-icon rounded">
+                        <i class="ti ti-bookmark"></i>
+                      </span>
+                      <div class="d-flex flex-column ps-1">
+                        <h5 class="alert-heading mb-2">This is a secondary alert — check it out!</h5>
+                        <p class="mb-0">Sugar plum apple pie sesame snaps croissant marshmallow apple pie liquorice. Cheesecake bear claw tiramisu shortbread cupcake. Sugar plum candy canes jujubes liquorice tiramisu gummi bears muffin dragée gingerbread.</p>
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
+                        </button>
+                      </div>
+                    </div>
+                    <div class="alert alert-success alert-dismissible d-flex" role="alert">
+                      <span class="alert-icon rounded">
+                        <i class="ti ti-check"></i>
+                      </span>
+                      <div class="d-flex flex-column ps-1">
+                        <h5 class="alert-heading mb-2">This is a success alert — check it out!</h5>
+                        <p class="mb-0">Sugar plum apple pie sesame snaps croissant marshmallow apple pie liquorice. Cheesecake bear claw tiramisu shortbread cupcake. Sugar plum candy canes jujubes liquorice tiramisu gummi bears muffin dragée gingerbread.</p>
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
 
 
@@ -1642,6 +1908,8 @@
   <script src="./assets/vendor/js/dropdown-hover.js"></script>
   <script src="./assets/vendor/js/mega-dropdown.js"></script>
   <!-- Vendors JS -->
+  <script src="./assets/vendor/libs/datatables-bs5/datatables-bootstrap5.js"></script>
+
   <script src="./assets/vendor/libs/apex-charts/apexcharts.js"></script>
 
   <script src="./assets/vendor/libs/chartjs/chartjs.js"></script>
@@ -1656,6 +1924,7 @@
   <!-- Page JS -->
   <script src="./assets/js/charts-apex.js"></script>
   <script src="./assets/js/cards-advance.js"></script>
+  <script src="./assets/js/dashboards-analytics.js"></script>
 
   <script src="./assets/vendor/js/chart.js"></script>
   <script src="./assets/js/dashboards-crm.js"></script>
