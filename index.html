@@ -86,7 +86,11 @@
   --bs-table-bg:#fff !important;
   
 }
-
+.fs-title{
+  font-size: 14px;
+  height: calc(2*18px);
+  line-height: 18px;
+}
   </style>
 </head>
 
@@ -836,169 +840,150 @@
 
           <div class="container-xxl flex-grow-1 container-p-y">
             <div class=" comonent-hader-top p-2 mt-4">
-              <div class="row">
-                <div class="col-sm-6 col-lg-3 mb-4">
-                  <div class="card card-border-shadow-primary">
-                    <div class="card-body">
-                      <div class="d-flex align-items-center mb-2 pb-1">
-                        <div class="avatar me-2">
-                          <span class="avatar-initial rounded bg-label-primary"><i class="fa-solid fa-car"></i></span>
-                        </div>
-                        <h6 class="ms-1 mb-0 fs-3">258</h6>
-                      </div>
-                      <h6 class="mb-1 fw-bold fs-5">عدد المعدات</h6>
-                      <div class="mb-0 d-flex justify-content-between pt-2">
-                        <div class="progress w-100 me-3" style="height: 6px;">
-                          <div class="progress-bar" style="width: 38%" aria-valuenow="38%" aria-valuemin="0"
-                            aria-valuemax="100"></div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-6 col-lg-3 mb-4">
-                  <div class="card card-border-shadow-warning">
-                    <div class="card-body">
-                      <div class="d-flex align-items-center mb-2 pb-1">
-                        <div class="avatar me-2">
-                          <span class="avatar-initial rounded bg-label-warning"><i
-                              class="fa-solid fa-truck"></i></i></span>
-                        </div>
-                        <h6 class="ms-1 mb-0 fs-3">100</h6>
-                      </div>
-                      <h6 class="mb-1 fw-bold fs-5">عدد الشاحنات </h6>
-                      <div class="mb-0 d-flex justify-content-between pt-2">
-                        <div class="progress w-100 me-3" style="height: 6px;">
-                          <div class="progress-bar bg-warning" style="width: 38%" aria-valuenow="38%" aria-valuemin="0"
-                            aria-valuemax="100"></div>
+              <div class="row mx-0">
+                <div class="col-lg-6 mb-4">
+                  <div class="row mx-0">
+                    <div class="col-sm-6 col-lg-4 mb-2">
+                      <div class="card card-border-shadow-primary">
+                        <div class="card-body">
+                            <div class="avatar me-2 mb-2">
+                              <span class="avatar-initial rounded bg-label-primary"><i class="fa-solid fa-car"></i></span>
+                            </div>
+                          
+                          <h5 class="card-title fw-bold mb-1 fs-title">عدد المعدات</h5>
+                          <p class="card-subtitle ">Last week</p>
+                          <p class="text-heading fw-bold mb-2 mt-1">$4,673</p>
+                          <div>
+                            <span class="badge fw-bold bg-label-primary">+25.2%</span>
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
-                </div>
-                <div class="col-sm-6 col-lg-3 mb-4">
-                  <div class="card card-border-shadow-danger">
-                    <div class="card-body">
-                      <div class="d-flex align-items-center mb-2 pb-1">
-                        <div class="avatar me-2">
-                          <span class="avatar-initial rounded bg-label-danger"><i
-                              class="fa-solid fa-user-nurse"></i></span>
-                        </div>
-                        <h6 class="ms-1 mb-0 fs-3">200</h6>
-                      </div>
-                      <h6 class="mb-1 fw-bold fs-5">عدد الفنيين
-                      </h6>
-                      <div class="mb-0 d-flex justify-content-between pt-2">
-                        <div class="progress w-100 me-3" style="height: 6px;">
-                          <div class="progress-bar bg-danger" style="width: 38%" aria-valuenow="38%" aria-valuemin="0"
-                            aria-valuemax="100"></div>
+                    <div class="col-sm-6 col-lg-4 mb-2">
+                      <div class="card card-border-shadow-warning">
+                        <div class="card-body">
+                            <div class="avatar mb-2 me-2">
+                              <span class="avatar-initial rounded bg-label-warning"><i
+                                  class="fa-solid fa-truck"></i></i></span>
+                            </div>
+                          
+                          <h5 class="mb-1 fw-bold fs-title">عدد الشاحنات </h5>
+                          <p class="card-subtitle ">Last week</p>
+                          <p class="text-heading fw-bold mb-2 mt-1">$4,673</p>
+                          <div>
+                            <span class="badge fw-bold bg-label-warning">+25.2%</span>
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
-                </div>
-                <div class="col-sm-6 col-lg-3 mb-4">
-                  <div class="card card-border-shadow-info">
-                    <div class="card-body">
-                      <div class="d-flex align-items-center mb-2 pb-1">
-                        <div class="avatar me-2">
-                          <span class="avatar-initial rounded bg-label-info"><i
-                              class="fa-solid fa-list-check"></i></span>
-                        </div>
-                        <h6 class="ms-1 mb-0 fs-3">185</h6>
-                      </div>
-                      <h6 class="mb-1 fw-bold fs-5">عدد الطلبات المفتوحة</h6>
-                      <div class="mb-0 d-flex justify-content-between pt-2">
-                        <div class="progress w-100 me-3" style="height: 6px;">
-                          <div class="progress-bar bg-info" style="width: 38%" aria-valuenow="38%" aria-valuemin="0"
-                            aria-valuemax="100"></div>
+                    <div class="col-sm-6 col-lg-4 mb-2">
+                      <div class="card card-border-shadow-danger">
+                        <div class="card-body">
+                            <div class="avatar mb-2 me-2">
+                              <span class="avatar-initial rounded bg-label-danger"><i
+                                  class="fa-solid fa-user-nurse"></i></span>
+                            </div>
+                         
+                          <h5 class="mb-1 fw-bold fs-title">عدد الفنيين
+                          </h5>
+                          <p class="card-subtitle ">Last week</p>
+                          <p class="text-heading fw-bold mb-2 mt-1">$4,673</p>
+                          <div>
+                            <span class="badge fw-bold bg-label-danger">+25.2%</span>
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
-                </div>
-                <div class="col-sm-6 col-lg-3 mb-4">
-                  <div class="card card-border-shadow-info">
-                    <div class="card-body">
-                      <div class="d-flex align-items-center mb-2 pb-1">
-                        <div class="avatar me-2">
-                          <span class="avatar-initial rounded bg-label-info"><i class="fa-solid fa-plus"></i></span>
-                        </div>
-                        <h6 class="ms-1 mb-0 fs-3">185</h6>
-                      </div>
-                      <h6 class="mb-1 fw-bold fs-5">إجمالي عدد الطلبات </h6>
-                      <div class="mb-0 d-flex justify-content-between pt-2">
-                        <div class="progress w-100 me-3" style="height: 6px;">
-                          <div class="progress-bar" style="width: 38%" aria-valuenow="38%" aria-valuemin="0"
-                            aria-valuemax="100"></div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-6 col-lg-3 mb-4">
-                  <div class="card card-border-shadow-warning">
-                    <div class="card-body">
-                      <div class="d-flex align-items-center mb-2 pb-1">
-                        <div class="avatar me-2">
-                          <span class="avatar-initial rounded bg-label-warning"><i
-                              class="fa-solid fa-list-check"></i></span>
-                        </div>
-                        <h6 class="ms-1 mb-0 fs-3">185</h6>
-                      </div>
-                      <h6 class="mb-1 fw-bold fs-5"> عدد الطلبات المنتهيه </h6>
-                      <div class="mb-0 d-flex justify-content-between pt-2">
-
-                        <div class="progress w-100 me-3" style="height: 6px;">
-                          <div class="progress-bar bg-warning" style="width: 38%" aria-valuenow="38%" aria-valuemin="0"
-                            aria-valuemax="100"></div>
+                    <div class="col-sm-6 col-lg-4 mb-2">
+                      <div class="card card-border-shadow-info">
+                        <div class="card-body">
+                            <div class="avatar mb-2 me-2">
+                              <span class="avatar-initial rounded bg-label-info"><i
+                                  class="fa-solid fa-list-check"></i></span>
+                            </div>
+                            
+                         
+                          <h5 class="mb-1 fw-bold fs-title">عدد الطلبات المفتوحة</h5>
+                          <p class="card-subtitle ">Last week</p>
+                          <p class="text-heading fw-bold mb-2 mt-1">$4,673</p>
+                          <div>
+                            <span class="badge fw-bold bg-label-info">+25.2%</span>
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
-                </div>
-                <div class="col-sm-6 col-lg-3 mb-4">
-                  <div class="card card-border-shadow-danger">
-                    <div class="card-body">
-                      <div class="d-flex align-items-center mb-2 pb-1">
-                        <div class="avatar me-2">
-                          <span class="avatar-initial rounded bg-label-danger"><i class="fa-solid fa-list"></i></span>
-                        </div>
-                        <h6 class="ms-1 mb-0 fs-3">185</h6>
-                      </div>
-                      <h6 class="mb-1 fw-bold fs-5"> عدد الطلبات اخر 30 يوم</h6>
-                      <div class="mb-0 d-flex justify-content-between pt-2">
-                        <div class="progress w-100 me-3" style="height: 6px;">
-                          <div class="progress-bar bg-danger" style="width: 38%" aria-valuenow="38%" aria-valuemin="0"
-                            aria-valuemax="100"></div>
+                    <div class="col-sm-6 col-lg-4 mb-2">
+                      <div class="card card-border-shadow-warning">
+                        <div class="card-body">
+                            <div class="avatar mb-2 me-2">
+                              <span class="avatar-initial rounded bg-label-warning"><i class="fa-solid fa-plus"></i></span>
+                            </div>
+                          
+                          <h6 class="mb-1 fw-bold fs-title">إجمالي عدد الطلبات </h6>
+                          <p class="card-subtitle ">Last week</p>
+                          <p class="text-heading fw-bold mb-2 mt-1">$4,673</p>
+                          <div>
+                            <span class="badge fw-bold bg-label-warning">+25.2%</span>
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
-                </div>
-                <div class="col-sm-6 col-lg-3 mb-4">
-                  <div class="card card-border-shadow-info">
-                    <div class="card-body">
-                      <div class="d-flex align-items-center mb-2 pb-1">
-                        <div class="avatar me-2">
-                          <span class="avatar-initial rounded bg-label-info"><i
-                              class="fa-solid fa-list-check"></i></span>
-                        </div>
-                        <h6 class="ms-1 mb-0 fs-3">185</h6>
-                      </div>
-                      <h6 class="mb-1 fw-bold fs-5"> عدد الطلبات المنتهية أخر 30 يوم</h6>
-                      <div class="mb-0 d-flex justify-content-between pt-2">
-                        <div class="progress w-100 me-3" style="height: 6px;">
-                          <div class="progress-bar bg-info" style="width: 38%" aria-valuenow="38%" aria-valuemin="0"
-                            aria-valuemax="100"></div>
+                    <div class="col-sm-6 col-lg-4 mb-2">
+                      <div class="card card-border-shadow-danger">
+                        <div class="card-body">
+                            <div class="avatar mb-2 me-2">
+                              <span class="avatar-initial rounded bg-label-danger"><i
+                                  class="fa-solid fa-list-check"></i></span>
+                            </div>
+                          
+                          <h5 class="mb-1 fw-bold fs-title"> عدد الطلبات المنتهيه </h5>
+                          <p class="card-subtitle ">Last week</p>
+                          <p class="text-heading fw-bold mb-2 mt-1">$4,673</p>
+                          <div>
+                            <span class="badge fw-bold bg-label-danger">+25.2%</span>
+                          </div>
                         </div>
                       </div>
                     </div>
+                    <div class="col-sm-6 col-lg-4 mb-2">
+                      <div class="card card-border-shadow-primary h-100">
+                        <div class="card-body">
+                            <div class="avatar mb-2 me-2">
+                              <span class="avatar-initial rounded bg-label-primary"><i class="fa-solid fa-list"></i></span>
+                            </div>
+                          
+                          <h5 class="mb-1 fw-bold fs-title"> عدد الطلبات اخر 30 يوم</h5>
+                          <p class="card-subtitle ">Last week</p>
+                          <p class="text-heading fw-bold mb-2 mt-1">$4,673</p>
+                          <div>
+                            <span class="badge fw-bold bg-label-primary">+25.2%</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 mb-2">
+                      <div class="card card-border-shadow-info">
+                        <div class="card-body">
+                            <div class="avatar me-2 mb-3">
+                              <span class="avatar-initial rounded bg-label-info"><i
+                                  class="fa-solid fa-list-check"></i></span>
+                            </div>
+                          
+                          <h5 class="mb-1 fw-bold fs-title"> عدد الطلبات المنتهية أخر 30 يوم</h5>
+                          <p class="card-subtitle ">Last week</p>
+                          <p class="text-heading fw-bold mb-2 mt-1">$4,673</p>
+                          <div>
+                            <span class="badge fw-bold bg-label-primary">+25.2%</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div> 
                   </div>
+                 
                 </div>
-              </div>
-            </div>
-            <div class="row mx-0">
+              
+             
+           
 
               <!-- المهام الطارئة-->
               <div class="col-lg-6 mb-4 order-md-0 order-lg-0">
@@ -1324,56 +1309,6 @@
                 </div>
               </div>
               <!--الطلبات-->
-              <!--المهام المفتوحة-->
-              <div class="col-lg-12 mb-4 order-md-0 order-lg-0">
-                <div class="card">
-                  <div class="card-datatable table-responsive">
-                    <table class="datatables-projects table border-top table-left">
-                      <thead class="table-light text-left">
-                        <tr>
-                          <th></th>
-                          <th></th>
-                          <th>Name</th>
-                          <th>Leader</th>
-                          <th>Team</th>
-                          <th class="w-px-200">Status</th>
-                          <th>Action</th>
-                        </tr>
-                      </thead>
-                    </table>
-                  </div>
-                </div>
-              </div>
-              <!-- الطلبات شهريا-->
-              <div class="col-lg-6 mb-4">
-                <div class="card comonent-hader-top h-100">
-                  <div class="card-header">
-                    <div class="card-title mb-0">
-                      <h5 class="mb-0"> لعدد الطلبات شهريا </h5>
-                    </div>
-                  </div>
-                  <div class="card-body">
-                    <canvas id="ordersChart" width="400" height="200"></canvas>
-
-                  </div>
-                </div>
-              </div>
-              <!-- الطلبات المعدات والشاحنات-->
-              <div class="col-lg-6 mb-4">
-                <div class="card comonent-hader-top h-100">
-                  <div class="card-header">
-                    <div class="card-title mb-0">
-                      <h5 class="mb-0"> لعدد الطلبات المعدات والشاحنات </h5>
-                    </div>
-                  </div>
-                  <div class="card-body">
-                    <canvas id="ordersChart2" width="400" height="200"></canvas>
-
-
-
-                  </div>
-                </div>
-              </div>
               <!--الاشعارات-->
               <div class="col-lg-6 mb-4 order-md-0 order-lg-0">
                 <div class="card comonent-hader-top h-100">
@@ -1577,6 +1512,57 @@
 
                 </div>
               </div>
+              <!--المهام المفتوحة-->
+              <div class="col-lg-12 mb-4 order-md-0 order-lg-0">
+                <div class="card">
+                  <div class="card-datatable table-responsive">
+                    <table class="datatables-projects table border-top table-left">
+                      <thead class="table-light text-left">
+                        <tr>
+                          <th></th>
+                          <th></th>
+                          <th>Name</th>
+                          <th>Leader</th>
+                          <th>Team</th>
+                          <th class="w-px-200">Status</th>
+                          <th>Action</th>
+                        </tr>
+                      </thead>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <!-- الطلبات شهريا-->
+              <div class="col-lg-6 mb-4">
+                <div class="card comonent-hader-top h-100">
+                  <div class="card-header">
+                    <div class="card-title mb-0">
+                      <h5 class="mb-0"> لعدد الطلبات شهريا </h5>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <canvas id="ordersChart" width="400" height="200"></canvas>
+
+                  </div>
+                </div>
+              </div>
+              <!-- الطلبات المعدات والشاحنات-->
+              <div class="col-lg-6 mb-4">
+                <div class="card comonent-hader-top h-100">
+                  <div class="card-header">
+                    <div class="card-title mb-0">
+                      <h5 class="mb-0"> لعدد الطلبات المعدات والشاحنات </h5>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <canvas id="ordersChart2" width="400" height="200"></canvas>
+
+
+
+                  </div>
+                </div>
+              </div>
+              
               <!--التعميممات-->
               <div class="col-lg-6 mb-4 order-md-0 order-lg-0">
                 <div class="card comonent-hader-top h-100">
@@ -1853,7 +1839,7 @@
           <!-- / Footer -->
 
           <div class="content-backdrop fade"></div>
-        </div>
+           </div>
         <!--/ Content wrapper -->
       </div>
 
