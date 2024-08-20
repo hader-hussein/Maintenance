@@ -7,7 +7,7 @@ body {
     overflow: auto;
     border-radius: 8px;
     -webkit-print-color-adjust: exact;
-    print-color-adjust: exact;
+ 
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -132,41 +132,36 @@ p {
     padding: 8px 0px;
 }
 
-.item-r .name-item:last-child {
-    grid-column: span 3;
-}
 
+.item-r .name-item:nth-child(22){
+    grid-column: span 3;
+ 
+}
+.item-r .name-item:nth-child(22) .span-date-i{
+    width: 90%;
+}
 .item-r .name-item:last-child .span-date-i {
     width: 90%;
 }
-
+.item-r .name-item:last-child {
+    grid-column: span 3;
+}
 .item-namber {
     grid-column: span 2;
 }
 #content-invoic {
-    padding: 20px 10px 20px 10px;
+    padding: 10px 10px 20px 10px;;
     margin-top: 6px;
-    /* margin-bottom: 100px; */
-    page-break-inside: avoid;
+   
 }
-.component-footer {
-        
-        bottom: 0;
-        left: 0;
-        right: 0;
-        z-index: 9999;
-     
-    } 
+
+  
 @media print {
+/* جعل الفوتر ثابتًا في أسفل الصفحة */
+.component-footer {
+   position: fixed;
+   bottom: 0;
+   width: 100%;
    
-
-
-    /* #content-invoic {
-        page-break-after: always;
-        page-break-before: avoid;
-        margin-top: 8px;
- 
-    } */
-
-   
+}
 }
