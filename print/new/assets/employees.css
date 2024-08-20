@@ -40,7 +40,7 @@ width: 100%;
 
 }
 }
---root{
+:root{
 --color-back:#4E465C;
 --color-bac2:#E9B252
 }
@@ -52,4 +52,11 @@ body {
 }
 .component-footer .item-right{
      background-color: #4E465C;
+     height: 60px;
+}
+.component-footer {
+     position: relative;
+}
+.component-footer .item-left{
+background-color: var(--color-bac2);
 }
