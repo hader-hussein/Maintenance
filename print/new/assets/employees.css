@@ -54,9 +54,118 @@ body {
      background-color: #4E465C;
      height: 60px;
 }
-.component-footer {
-     position: relative;
+.component-hader{
+     background-color: #4E465C;   
+}
+.component-hader .div-grid{
+     display: grid;
+     grid-template-columns: 1fr 0.75fr;
+}
+.component-hader  .item-left{
+     background-color: var(--color-bac2);
+    
+     height: 95px;
+    
+     left: 0px;
+     width: 100%;
+     border-radius: 0px 41px 41px 0px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+
+}
+.item-left-right{
+     background-color: var(--color-bac2);
+    
+     height: 95px;
+    
+     left: 0px;
+     width: 80%;
+     border-radius: 41px 0px 0px 41px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+.component-hader  .item-left img{
+     width: 197px;
+     height: auto;
+     
+}
+.component-hader .item-right{
+     color: #fff;
+     text-align: center;
+     padding: 20px;
+}
+.item-right h6{
+     font-size: 25px;
+     font-weight: 600;
+     line-height: 16px;
+     padding-bottom: 5px;
+}
+.item-right p{
+     font-size: 20px;
+     font-weight: 400;
 }
 .component-footer .item-left{
-background-color: var(--color-bac2);
+     background-color: var(--color-bac2);
+     position: absolute;
+     height: 95px;
+     top: -34px;
+     left: 0px;
+     width: 40%;
+     border-radius: 0px 41px 41px 0px;
 }
+.component-footer .content-container{
+     position: relative;
+}
+ /* جعل الهيدر ثابتًا في أعلى الصفحة */
+ .component-hader {
+     position: fixed;
+     top: 0;
+     width: 100%;
+    
+}
+ /* ترك مساحة في الأعلى والأسفل للمحتوى لتجنب التداخل مع الهيدر والفوتر */
+ body {
+     margin-top: 137px; /* تعديل الارتفاع حسب حجم الهيدر */
+     margin-bottom: 50px; /* تعديل الارتفاع حسب حجم الفوتر */
+}
+.component-content-item{
+     padding: 5% 2%;
+}
+.item-left-right img{
+     position: absolute;
+     height: 127px;
+     bottom: -68px;
+     border: 2px solid #4E465C;
+     width: 156px;
+     border-radius: 8px;
+}
+.body-item{
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     grid-gap: 16px;
+     padding-top: 80px;
+}
+.body-item .item:first-child{
+     grid-column: span 2;
+}
+.item span {
+     margin: 0px 10px;
+     padding-bottom: 10px;
+ }
+.span-back{
+     padding: 10px 30px;
+     margin: 0px 10px;
+     background-color: #c7ccce3b;
+     margin-top: 10px;
+}
+@media print {
+     /* جعل الفوتر ثابتًا في أسفل الصفحة */
+     .component-footer {
+          position: fixed;
+          bottom: 0;
+          width: 100%;
+        
+     }
+     }
