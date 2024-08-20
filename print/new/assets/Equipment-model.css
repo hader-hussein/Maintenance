@@ -93,17 +93,20 @@ p {
           margin-bottom: 50px; /* تعديل الارتفاع حسب حجم الفوتر */
      }
      .component-body-item{
-          padding: 0px 50px;
+          padding: 0px 10px;
      
           
      }
      .item{
           padding: 16px 0px;
           display: grid;
-    grid-template-columns: 0.30fr 1fr;
-    align-items: center;
+    
  
    
+}
+.item span{
+     margin: 0px 10px;
+     padding-bottom: 5px;
 }
 
      .body-item{
@@ -111,11 +114,11 @@ p {
           display: grid;
           grid-template-columns: repeat(3, 1fr); /* عمودين لكل الصفوف باستثناء الصف الأخير */
      }
-     .body-item .item:nth-child(3) {
-          grid-column: span 2; /* يجعل العنصر الثالث يمتد عبر العمودين */
+     .body-item .item:nth-child(4) {
+          grid-column: span 3; /* يجعل العنصر الثالث يمتد عبر العمودين */
       }
-      .body-item .item:nth-child(9),.item-link {
-          grid-column: span 2; /* يجعل العنصر الثالث يمتد عبر العمودين */
+      .body-item .item:nth-child(11){
+          grid-column: span 3; /* يجعل العنصر الثالث يمتد عبر العمودين */
       }
       .item-link .item:nth-child(3) {
           grid-column: span 1; 
@@ -142,6 +145,6 @@ p {
      .span-back{
           padding: 10px 30px;
           margin: 0px 10px;
-          background-color: #24aae342;
+          background-color: #c7ccce3b;
      }
     
