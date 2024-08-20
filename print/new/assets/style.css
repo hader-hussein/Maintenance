@@ -1,0 +1,147 @@
+body{
+     margin: 0px;
+     padding: 0px;
+     box-sizing: border-box;
+     font-family: 'Inter', sans-serif;
+     font-size: 16px;
+    overflow: auto;
+}
+
+ h1,h2,h3,h4,h5,h6{
+     margin: 0px;
+ }
+ a{
+     text-decoration: none;
+}
+p {
+  
+    margin-block-start: 0.25em;
+    margin-block-end: 0.25em;
+}
+.d-flex{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     flex-wrap: wrap
+}
+:root{
+     --back-color:#adbccb9e;
+     --back-color-on:#24AAE3;
+     --back-color-tow:#1A3252;
+     --color-text:#F2F3F3;
+}
+.component-hader,.component-footer{
+     background-color: var(--back-color);
+}
+.component-hader .content-container{
+     padding: 30px  0px 20px;
+}
+.component-footer .content-container{
+     padding: 10px  0px 30px;
+}
+.div-grid{
+     display: grid;
+     grid-template-columns: 70% 30%;  
+     grid-gap: 16px;
+}
+.item-right{
+     background-color: var(--back-color-tow);
+    
+     clip-path: polygon(2% 0, 100% 0, 100% 100%, 0% 100%);
+     padding: 20px;
+}
+.item-left{
+     background-color: var(--back-color-on);
+     clip-path: polygon(0 0, 100% 0, 95% 100%, 0% 100%);
+}
+.item-right h5{
+     font-size: 20px;
+     color: #fff;
+     text-align: center;
+     text-transform: capitalize;
+}
+.item-right h6{
+     color: #ADBCCB;
+     text-align: center;
+     font-size: 16px;
+}
+.item-right h6 span{
+     color:var(--back-color-on)
+}
+
+     /* جعل الهيدر ثابتًا في أعلى الصفحة */
+     .component-hader {
+          position: fixed;
+          top: 0;
+          width: 100%;
+          background-color: var(--back-color); /* يمكن تعديل اللون حسب الحاجة */
+     }
+@media print {
+/* جعل الفوتر ثابتًا في أسفل الصفحة */
+.component-footer {
+     position: fixed;
+     bottom: 0;
+     width: 100%;
+     background-color: var(--back-color); /* يمكن تعديل اللون حسب الحاجة */
+}
+}
+     
+
+     /* ترك مساحة في الأعلى والأسفل للمحتوى لتجنب التداخل مع الهيدر والفوتر */
+     body {
+          margin-top: 137px; /* تعديل الارتفاع حسب حجم الهيدر */
+          margin-bottom: 50px; /* تعديل الارتفاع حسب حجم الفوتر */
+     }
+     .component-body-item{
+          padding: 0px 50px;
+     
+          
+     }
+     .item{
+          padding: 16px 0px;
+          display: grid;
+    grid-template-columns: 0.30fr 1fr;
+    align-items: center;
+ 
+   
+}
+
+     .body-item{
+          margin-top: 20px;
+          display: grid;
+          grid-template-columns: repeat(2, 1fr); /* عمودين لكل الصفوف باستثناء الصف الأخير */
+     }
+     .body-item .item:nth-child(3) {
+          grid-column: span 2; /* يجعل العنصر الثالث يمتد عبر العمودين */
+      }
+      .body-item .item:nth-child(9),.item-link {
+          grid-column: span 2; /* يجعل العنصر الثالث يمتد عبر العمودين */
+      }
+      .item-link .item:nth-child(3) {
+          grid-column: span 1; 
+      }
+      .item-link{
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);  
+      }
+     .item>div{
+          display: flex;
+     }
+  
+          
+      
+      
+     .header-item{
+          background-color: var(--back-color-tow);
+          padding: 10px;
+          color: #fff;
+          font-weight: 800;
+          font-size: 16px;
+          border-left: 8px solid #24AAE3;
+     }
+     .span-back{
+          padding: 10px 30px;
+          margin: 0px 10px;
+          background-color: #24aae342;
+     }
+    
