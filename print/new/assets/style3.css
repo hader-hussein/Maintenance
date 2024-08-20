@@ -1,0 +1,55 @@
+body{
+     margin: 0px;
+     padding: 1px;
+     box-sizing: border-box;
+     font-family: 'Inter', sans-serif;
+     font-size: 16px;
+    overflow: auto;
+    border-radius: 8px;
+}
+
+ h1,h2,h3,h4,h5,h6{
+     margin: 0px;
+ }
+ a{
+     text-decoration: none;
+}
+p {
+  
+    margin-block-start: 0.25em;
+    margin-block-end: 0.25em;
+}
+.d-flex{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     flex-wrap: wrap
+}
+* جعل الهيدر ثابتًا في أعلى الصفحة */
+.component-hader {
+     position: fixed;
+     top: 0;
+     width: 100%;
+}
+@media print {
+/* جعل الفوتر ثابتًا في أسفل الصفحة */
+.component-footer {
+position: fixed;
+bottom: 0;
+width: 100%;
+
+}
+}
+--root{
+--color-back:#4E465C;
+--color-bac2:#E9B252
+}
+
+/* ترك مساحة في الأعلى والأسفل للمحتوى لتجنب التداخل مع الهيدر والفوتر */
+body {
+     margin-top: 137px; /* تعديل الارتفاع حسب حجم الهيدر */
+     margin-bottom: 50px; /* تعديل الارتفاع حسب حجم الفوتر */
+}
+.component-footer .item-right{
+     background-color: #4E465C;
+}
