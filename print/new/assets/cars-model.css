@@ -42,7 +42,9 @@ p {
     top: 0px;
     left: 0px;
 }
-
+.component-footer .div-grid {
+    position: relative;
+}
 .item-left-buttom {
     position: absolute;
     bottom: 0px;
@@ -150,11 +152,16 @@ p {
     grid-column: span 2;
 }
 #content-invoic {
-    padding: 10px 10px 20px 10px;;
+    padding: 10px 10px 70px 10px;;
     margin-top: 6px;
    
 }
-
+.item-left img{
+    width: 150px;
+    height: auto;
+    max-height: 150px;
+    border-radius: 8px;
+}
   
 @media print {
 /* جعل الفوتر ثابتًا في أسفل الصفحة */
@@ -162,6 +169,15 @@ p {
    position: fixed;
    bottom: 0;
    width: 100%;
+   height: 80px;
+   
+}
+.component-footer .div-grid {
+    position:inherit;
+}
+#content-invoic {
+    padding: 10px 10px 20px 10px;;
+    margin-top: 6px;
    
 }
 }

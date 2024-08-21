@@ -27,17 +27,17 @@ p {
 :root{
      --back-color:#adbccb9e;
      --back-color-on:#24AAE3;
-     --back-color-tow:#1A3252;
+     --back-color-tow:#1a3252b8;
      --color-text:#F2F3F3;
 }
 .component-hader,.component-footer{
      background-color: var(--back-color);
 }
 .component-hader .content-container{
-     padding: 30px  0px 20px;
+     padding: 20px  0px 20px;
 }
 .component-footer .content-container{
-     padding: 10px  0px 30px;
+     padding: 10px  0px 10px;
 }
 .div-grid{
      display: grid;
@@ -48,11 +48,19 @@ p {
      background-color: var(--back-color-tow);
     
      clip-path: polygon(2% 0, 100% 0, 100% 100%, 0% 100%);
-     padding: 20px;
+     padding:10px 20px;
 }
 .item-left{
      background-color: var(--back-color-on);
      clip-path: polygon(0 0, 100% 0, 95% 100%, 0% 100%);
+     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.item-left img{
+     width: 180px;
+     height: auto;
+     max-height: 150px;
 }
 .item-right h5{
      font-size: 20px;
@@ -61,9 +69,19 @@ p {
      text-transform: capitalize;
 }
 .item-right h6{
-     color: #ADBCCB;
+     color: #fff;
      text-align: center;
+     font-size: 25px;
+     padding-top: 10px;
+
+}
+.component-footer .content-box{
+     color:#fff;
      font-size: 16px;
+
+}
+.component-footer .contact-content{
+     padding-bottom: 8px;
 }
 .item-right h6 span{
      color:var(--back-color-on)
@@ -93,7 +111,7 @@ p {
           margin-bottom: 50px; /* تعديل الارتفاع حسب حجم الفوتر */
      }
      .component-body-item{
-          padding: 0px 10px;
+          padding:8px 10px;
      
           
      }
@@ -139,7 +157,7 @@ p {
           padding: 10px;
           color: #fff;
           font-weight: 800;
-          font-size: 16px;
+          font-size: 20px;
           border-left: 8px solid #24AAE3;
      }
      .span-back{

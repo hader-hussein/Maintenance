@@ -89,6 +89,7 @@ body {
 .component-hader  .item-left img{
      width: 197px;
      height: auto;
+     max-height: 150px;
      
 }
 .component-hader .item-right{
@@ -109,7 +110,7 @@ body {
 .component-footer .item-left{
      background-color: var(--color-bac2);
      position: absolute;
-     height: 95px;
+     padding: 10px 15px;
      top: -34px;
      left: 0px;
      width: 40%;
@@ -117,6 +118,14 @@ body {
 }
 .component-footer .content-container{
      position: relative;
+}
+.component-footer .content-box{
+     color:#fff;
+     font-size: 16px;
+
+}
+.component-footer .contact-content{
+     padding-bottom: 8px;
 }
  /* جعل الهيدر ثابتًا في أعلى الصفحة */
  .component-hader {
