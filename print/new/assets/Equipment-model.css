@@ -34,7 +34,7 @@ p {
      background-color: var(--back-color);
 }
 .component-hader .content-container{
-     padding: 20px  0px 20px;
+     padding: 10px  0px 10px;
 }
 .component-footer .content-container{
      padding: 10px  0px 10px;
@@ -57,31 +57,36 @@ p {
     justify-content: center;
     align-items: center;
 }
-.item-left img{
+.img-form img{
      width: 180px;
      height: auto;
      max-height: 150px;
 }
-.item-right h5{
+.title-title,.title-p{
      font-size: 20px;
-     color: #fff;
+     color: #171717;
      text-align: center;
      text-transform: capitalize;
 }
-.item-right h6{
-     color: #fff;
-     text-align: center;
-     font-size: 25px;
-     padding-top: 10px;
-
+.component--right{
+     padding:8px 16px;
+     display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #4c5f79;
 }
-.component-footer .content-box{
-     color:#fff;
-     font-size: 16px;
-
+.component--right .content-box{
+     color:#000000;
+     font-size: 20px;
+     margin-bottom: 10px;
+   
 }
-.component-footer .contact-content{
+
+.component--right .contact-content{
      padding-bottom: 8px;
+     padding:8px 16px;
+}
+.p-4{
+padding: 4px 25px;
 }
 .item-right h6 span{
      color:var(--back-color-on)
@@ -96,19 +101,22 @@ p {
      }
 @media print {
 /* جعل الفوتر ثابتًا في أسفل الصفحة */
-.component-footer {
+.footer-content {
      position: fixed;
      bottom: 0;
      width: 100%;
-     background-color: var(--back-color); /* يمكن تعديل اللون حسب الحاجة */
+     
+}
+body {
+     margin-top: 50px; 
+     margin-bottom: 50px; 
 }
 }
      
 
-     /* ترك مساحة في الأعلى والأسفل للمحتوى لتجنب التداخل مع الهيدر والفوتر */
      body {
-          margin-top: 137px; /* تعديل الارتفاع حسب حجم الهيدر */
-          margin-bottom: 50px; /* تعديل الارتفاع حسب حجم الفوتر */
+          margin-top: 61px; 
+          margin-bottom: 50px; 
      }
      .component-body-item{
           padding:8px 10px;

@@ -52,7 +52,7 @@ body {
 }
 .component-footer .item-right{
      background-color: #4E465C;
-     height: 60px;
+     height: 70px;
 }
 .component-hader{
      background-color: #4E465C;   
@@ -64,7 +64,7 @@ body {
 .component-hader  .item-left{
      background-color: var(--color-bac2);
     
-     height: 95px;
+     height: 50px;
     
      left: 0px;
      width: 100%;
@@ -74,10 +74,10 @@ body {
      align-items: center;
 
 }
-.item-left-right{
+.item-right-right{
      background-color: var(--color-bac2);
     
-     height: 95px;
+     height: 35px;
     
      left: 0px;
      width: 80%;
@@ -93,9 +93,12 @@ body {
      
 }
 .component-hader .item-right{
+     justify-content: center;
      color: #fff;
      text-align: center;
-     padding: 20px;
+     padding: 10px;
+    
+     align-items: center;
 }
 .item-right h6{
      font-size: 25px;
@@ -110,7 +113,7 @@ body {
 .component-footer .item-left{
      background-color: var(--color-bac2);
      position: absolute;
-     padding: 10px 15px;
+     padding: 10px 30px;
      top: -34px;
      left: 0px;
      width: 40%;
@@ -121,7 +124,8 @@ body {
 }
 .component-footer .content-box{
      color:#fff;
-     font-size: 16px;
+     font-size: 18px;
+     font-weight: 500;
 
 }
 .component-footer .contact-content{
@@ -142,19 +146,19 @@ body {
 .component-content-item{
      padding: 5% 2%;
 }
-.item-left-right img{
+.item-left img{
      position: absolute;
-     height: 127px;
-     bottom: -68px;
-     border: 2px solid #4E465C;
-     width: 156px;
+     height: 127px !important;
+     bottom: -77px;
+     border: 1px solid #4E465C;
+     width: 156px !important;
      border-radius: 8px;
 }
 .body-item{
      display: grid;
      grid-template-columns: 1fr 1fr;
      grid-gap: 16px;
-     padding-top: 80px;
+     /* padding-top: 80px; */
 }
 .body-item .item:first-child{
      grid-column: span 2;
@@ -168,6 +172,12 @@ body {
      margin: 0px 10px;
      background-color: #c7ccce3b;
      margin-top: 10px;
+}
+.item-right-img img{
+     width: 185px;
+     height: 131px;
+     border: 1px solid #c7ccce;
+     border-radius: 8px;
 }
 @media print {
      /* جعل الفوتر ثابتًا في أسفل الصفحة */
