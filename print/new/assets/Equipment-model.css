@@ -26,29 +26,36 @@ p {
 }
 :root{
      --back-color:#adbccb9e;
-     --back-color-on:#24AAE3;
-     --back-color-tow:#1a3252b8;
+     --back-color-on:#28C76F;
+     --back-color-tow:#0B555E;
      --color-text:#F2F3F3;
 }
 .component-hader,.component-footer{
-     background-color: var(--back-color);
+     background-color: #f2f3f4;
 }
 .component-hader .content-container{
      padding: 10px  0px 10px;
 }
 .component-footer .content-container{
-     padding: 10px  0px 10px;
+     padding: 6px  0px 6px;
 }
 .div-grid{
      display: grid;
-     grid-template-columns: 70% 30%;  
-     grid-gap: 16px;
+     grid-template-columns: 69% 30%;  
+     grid-gap: 14px;
 }
 .item-right{
-     background-color: var(--back-color-tow);
+     background-color: #28c76f;
     
      clip-path: polygon(2% 0, 100% 0, 100% 100%, 0% 100%);
      padding:10px 20px;
+}
+.hr-c{
+     background-color: #28c76f;
+    margin: 1px;
+    color: #28c76f;
+    height: 2px;
+    border: 0px;
 }
 .item-left{
      background-color: var(--back-color-on);
@@ -58,25 +65,28 @@ p {
     align-items: center;
 }
 .img-form img{
-     width: 180px;
-     height: auto;
-     max-height: 150px;
+     width: 158px;
+     height: 129px;
+   
+     object-fit: fill;
+     border:2px solid #e6e7e9;
 }
 .title-title,.title-p{
-     font-size: 20px;
+     font-size: 18px;
      color: #171717;
      text-align: center;
      text-transform: capitalize;
+     font-weight: 600;
 }
 .component--right{
-     padding:8px 16px;
+     padding:1px 16px;
      display: flex;
     justify-content: space-between;
-    border-top: 1px solid #4c5f79;
+    border-top: 0.5px solid #87878788;
 }
 .component--right .content-box{
      color:#000000;
-     font-size: 20px;
+     font-size: 16px;
      margin-bottom: 10px;
    
 }
@@ -86,7 +96,7 @@ p {
      padding:8px 16px;
 }
 .p-4{
-padding: 4px 25px;
+     padding: 0px 14px;
 }
 .item-right h6 span{
      color:var(--back-color-on)
@@ -97,7 +107,7 @@ padding: 4px 25px;
           position: fixed;
           top: 0;
           width: 100%;
-          background-color: var(--back-color); /* يمكن تعديل اللون حسب الحاجة */
+          background-color: #f2f3f4; /* يمكن تعديل اللون حسب الحاجة */
      }
 @media print {
 /* جعل الفوتر ثابتًا في أسفل الصفحة */
@@ -115,28 +125,44 @@ body {
      
 
      body {
-          margin-top: 61px; 
+          margin-top: 45px; 
           margin-bottom: 50px; 
      }
      .component-body-item{
-          padding:8px 10px;
+          padding:3px 10px;
      
           
      }
-     .item{
+     .item,.item-truck,.item-truck2,.item-contracts{
           padding: 16px 0px;
           display: grid;
-    
- 
    
 }
-.item span{
+.item-visit{
+     padding: 8px 0px;
+     display: grid;
+}
+.item-truck,.item-truck2{
+     padding: 2px 0px;  
+     grid-template-columns: 0.40fr 1fr;
+     align-items: center;
+}
+.item span,.item-contracts span,.item-visit span{
      margin: 0px 10px;
      padding-bottom: 5px;
 }
-
+.item-truck span{
+    
+     font-size: 14px;
+}
+.body-item .item-truck:last-child,.body-item  .item-contracts:last-child,.body-item .item-visit:last-child{
+     grid-column: span 3; 
+}
+.body-item .item-truck:nth-child(22) ,.body-item .item-contracts:nth-child(7){
+     grid-column: span 3; /* يجعل العنصر الثالث يمتد عبر العمودين */
+ }
      .body-item{
-          margin-top: 20px;
+          margin-top: 8px;
           display: grid;
           grid-template-columns: repeat(3, 1fr); /* عمودين لكل الصفوف باستثناء الصف الأخير */
      }
@@ -161,16 +187,44 @@ body {
       
       
      .header-item{
-          background-color: var(--back-color-tow);
+          background-color: #acb1b74d;
           padding: 10px;
-          color: #fff;
+          color: #000000;
           font-weight: 800;
           font-size: 20px;
-          border-left: 8px solid #24AAE3;
+          border-left: 8px solid #28C76F;
      }
      .span-back{
           padding: 10px 30px;
-          margin: 0px 10px;
+          margin: 0px 5px;
           background-color: #c7ccce3b;
+          height: 18px;
      }
-    
+     .body-item .item-truck2:first-child,.body-item-task .item-visit:nth-child(7){
+grid-column: span 3;
+     }
+    /*employees*/
+    .body-item-employes{
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+    }
+    .body-item-employes .item:first-child,
+    .body-item-employes .item:nth-child(2)
+    {
+     grid-column:  span 2;
+    }
+    .img-employes{
+     width: 162px;
+     height: auto;
+     max-height: 100px;
+    }
+  .ul-contracts li{
+     margin-bottom: 4px;
+  }
+  .body-item-supplier{
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+  }
+  .body-item-supplier .item:last-child{
+     grid-column: span 2;
+  }
