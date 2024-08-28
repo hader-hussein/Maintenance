@@ -272,7 +272,8 @@ grid-column: span 3;
      grid-column: span 2;  
 }
 .body-item-accidents .item:nth-child(4),.body-item-works .item:last-child,
-.body-item-works .item:nth-child(14)
+.body-item-works .item:nth-child(14),
+.body-ReportMalfunctions .item:nth-child(13)
 {
      grid-column: span 3;
 }
