@@ -65,8 +65,8 @@ p {
     align-items: center;
 }
 .img-form img{
-     width: 158px;
-     height: 129px;
+     width: 130px;
+     height: 90px;
    
      object-fit: fill;
      border:2px solid #e6e7e9;
@@ -133,8 +133,8 @@ body {
      
           
      }
-     .item,.item-truck,.item-truck2,.item-contracts{
-          padding: 16px 0px;
+     .item,.item-truck,.item-truck2,.item-contracts,.item-maint{
+          padding: 10px 0px;
           display: grid;
    
 }
@@ -147,7 +147,12 @@ body {
      grid-template-columns: 0.40fr 1fr;
      align-items: center;
 }
-.item span,.item-contracts span,.item-visit span{
+.body-item .item-truck:nth-child(3){
+     grid-row: span 2;
+     grid-column: span 1;
+     grid-template-columns: 1fr;
+}
+.item span,.item-contracts span,.item-visit span,.item-maint span{
      margin: 0px 10px;
      padding-bottom: 5px;
 }
@@ -155,27 +160,37 @@ body {
     
      font-size: 14px;
 }
-.body-item .item-truck:last-child,.body-item  .item-contracts:last-child,.body-item .item-visit:last-child{
+.img-equip-c{
+     border: 2px solid #e6e7e9;
+}
+.img-equip{
+     height: 80px;
+     width: 100%;
+     object-fit: fill;
+    display: flex;
+    margin: auto;
+}
+.body-item  .item-contracts:last-child,.body-item .item-visit:last-child{
      grid-column: span 3; 
 }
-.body-item .item-truck:nth-child(22) ,.body-item .item-contracts:nth-child(7){
+.body-item .item-contracts:nth-child(7){
      grid-column: span 3; /* يجعل العنصر الثالث يمتد عبر العمودين */
  }
-     .body-item{
+     .body-item,.body-item-ex,.body-item-risk{
           margin-top: 8px;
           display: grid;
           grid-template-columns: repeat(3, 1fr); /* عمودين لكل الصفوف باستثناء الصف الأخير */
      }
-     .body-item .item:nth-child(4) {
-          grid-column: span 3; /* يجعل العنصر الثالث يمتد عبر العمودين */
+     .body-item .item:nth-child(3) {
+          grid-row: span 2; /* يجعل العنصر الثالث يمتد عبر العمودين */
       }
-      .body-item .item:nth-child(11){
+      .body-item .item:nth-child(12){
           grid-column: span 3; /* يجعل العنصر الثالث يمتد عبر العمودين */
       }
       .item-link .item:nth-child(3) {
           grid-column: span 1; 
       }
-      .item-link{
+      .item-link,.body-item-works{
           display: grid;
           grid-template-columns: repeat(3, 1fr);  
       }
@@ -187,12 +202,12 @@ body {
       
       
      .header-item{
-          background-color: #acb1b74d;
+          background-color: #28c76f;
           padding: 10px;
           color: #000000;
           font-weight: 800;
           font-size: 20px;
-          border-left: 8px solid #28C76F;
+          border-left: 8px solid #f2f3f4;
      }
      .span-back{
           padding: 10px 30px;
@@ -200,24 +215,25 @@ body {
           background-color: #c7ccce3b;
           height: 18px;
      }
-     .body-item .item-truck2:first-child,.body-item-task .item-visit:nth-child(7){
+     .body-item .item-truck2:first-child,.body-item-task .item-visit:nth-child(7),
+     .body-item .item-visit:nth-child(10)
+     {
 grid-column: span 3;
      }
     /*employees*/
-    .body-item-employes{
+    .body-item-employes,.body-item-work,.body-item-suppliers{
      display: grid;
      grid-template-columns: 1fr 1fr;
     }
-    .body-item-employes .item:first-child,
-    .body-item-employes .item:nth-child(2)
-    {
-     grid-column:  span 2;
-    }
+  .body-item-suppliers .item-contracts:last-child{
+     grid-column: span 2;
+  }
     .img-employes{
-     width: 162px;
-     height: auto;
-     max-height: 100px;
+     width: 100px;
+     height: 100px;
+   
     }
+    
   .ul-contracts li{
      margin-bottom: 4px;
   }
@@ -228,3 +244,39 @@ grid-column: span 3;
   .body-item-supplier .item:last-child{
      grid-column: span 2;
   }
+.body-item-employes .item{
+     display: block;
+}
+.body-item-employes .item:nth-child(2){
+     grid-row: span 2;
+}
+.body-item-employes .item:last-child{
+     grid-column: span 2;
+}
+.body-item-external .item:last-child,.body-item .item-maint:last-child{
+     grid-column: span 3;
+
+}
+.body-item .item-maint:nth-child(14),.body-item .item-maint:nth-child(15){
+     grid-column: span 3;  
+}
+.img-employes-d{
+     justify-content: end;
+}
+.body-item-risk .item:nth-child(+7),.body-item-risk .item:nth-child(+8),.body-item-risk .item:nth-child(+9),
+.body-item-risk .item:last-child
+{
+     grid-column: span 3;    
+}
+.body-item-risk .item:nth-child(+11),.body-item-accidents .item:nth-child(6){
+     grid-column: span 2;  
+}
+.body-item-accidents .item:nth-child(4),.body-item-works .item:last-child,
+.body-item-works .item:nth-child(14)
+{
+     grid-column: span 3;
+}
+.d-grid{
+     display: grid !important;
+     grid-template-columns: 1fr 1fr;
+}
