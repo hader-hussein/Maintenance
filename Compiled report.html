@@ -1034,6 +1034,42 @@
                   </div>
                 </div>
               </div>
+              <div class="col-lg-6 col-md-12 mb-3">
+                <div class="card">
+                  <div class="card-header">
+                    <h5 class="card-title m-0 me-2 fw-bold fs-6">  لعرض المقارنات بين البيانات المختلفة</h5>
+
+                  </div>
+                  <div class="card-body">
+                    <canvas id="monthlyRequestsChart"></canvas>
+
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-12 mb-3">
+                <div class="card">
+                  <div class="card-header">
+                    <h5 class="card-title m-0 me-2 fw-bold fs-6"> تتبع متوسط وقت الاستجابة للطلبات</h5>
+
+                  </div>
+                  <div class="card-body">
+                    <canvas id="responseTimeChart"></canvas>
+
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-12 mb-3">
+                <div class="card">
+                  <div class="card-header">
+                    <h5 class="card-title m-0 me-2 fw-bold fs-6">  البيانات المكانية: تحديد مواقع الأعطال الأكثر شيوعًا</h5>
+
+                  </div>
+                  <div class="card-body">
+                    <div id="map" style="height: 400px;"></div>
+
+                  </div>
+                </div>
+              </div>
             </div>
                
           </div>
@@ -1264,6 +1300,53 @@
       }
   });
 </script>
+<script>
+  var ctx = document.getElementById('monthlyRequestsChart').getContext('2d');
+  var monthlyRequestsChart = new Chart(ctx, {
+      type: 'bar',
+      data: {
+          labels: ['January', 'February', 'March', 'April', 'May', 'June'],
+          datasets: [{
+              label: 'Closed Requests',
+              data: [120, 150, 130, 170, 200, 160],
+              backgroundColor: 'rgba(75, 192, 192, 0.2)',
+              borderColor: 'rgba(75, 192, 192, 1)',
+              borderWidth: 1
+          }]
+      },
+      options: {
+          scales: {
+              y: {
+                  beginAtZero: true
+              }
+          }
+      }
+  });
+</script>
+<script>
+  var ctx = document.getElementById('responseTimeChart').getContext('2d');
+  var responseTimeChart = new Chart(ctx, {
+      type: 'line',
+      data: {
+          labels: ['January', 'February', 'March', 'April', 'May', 'June'],
+          datasets: [{
+              label: 'Average Response Time (hours)',
+              data: [4.5, 4.0, 5.0, 3.8, 4.2, 3.5],
+              backgroundColor: 'rgba(255, 159, 64, 0.2)',
+              borderColor: 'rgba(255, 159, 64, 1)',
+              borderWidth: 1
+          }]
+      },
+      options: {
+          scales: {
+              y: {
+                  beginAtZero: true
+              }
+          }
+      }
+  });
+</script>
+
 </body>
 
 </html>
