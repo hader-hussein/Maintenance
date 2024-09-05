@@ -46,6 +46,7 @@
   <link rel="stylesheet" href="../assets/vendor/css/rtl/theme-default.css" class="template-customizer-theme-css" />
   <link rel="stylesheet" href="../assets/css/style.css" />
   <link rel="stylesheet" href="../print/new/assets/Equipment-model.css">
+  <link rel="stylesheet" href="./css/report.css">
 
   <!-- Helpers -->
   <script src="../assets/vendor/js/helpers.js"></script>
@@ -54,135 +55,6 @@
   <script src="../assets/vendor/js/template-customizer.js"></script>
   <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
   <script src="../assets/js/config.js"></script>
-  <style>
-    body{
-      background-color: #fff;
-      direction: rtl !important;
-    }
-    .fs-title-report {
-      font-size: 14px;
-    }
-
-    @media print {
-      .fs-title-report {
-        font-size: 8px;
-      }
-
-      /* إخفاء عناصر غير ضرورية */
-      #map,
-      nav,
-      aside,
-      .layout-navbar-fixed .layout-navbar,
-      .compoent-color {
-        display: none !important;
-      }
-
-      /* ضبط التباعد والهوامش */
-      body {
-        margin-top: 18px;
-        font-size: 10pt;
-      }
-
-      /* تحسين مظهر الجداول */
-      table {
-        width: 100%;
-        border-collapse: collapse;
-      }
-
-      table,
-      th,
-      td {
-        border: 1px solid black;
-      }
-
-      th,
-      td {
-        padding: 5px;
-        text-align: left;
-        word-wrap: break-word;
-
-      }
-
-      /* منع كسر الصفحات داخل الجدول */
-      table ,.card-malfunctions{
-        page-break-inside: avoid;
-      }
-
-      /* تحسين مظهر رأس الجدول */
-      thead {
-        display: table-header-group;
-        /* تأكد من أن رأس الجدول يظهر في كل صفحة */
-      }
-
-      thead tr th {
-        color: #fff;
-      }
-
-      /* ضبط حجم الخط داخل الجداول للطباعة */
-      table {
-        font-size: 12pt !important;
-      }
-
-      /* ضبط حجم الرسوم البيانية للطباعة */
-      canvas {
-        max-width: 100%;
-        height: 150px !important;
-      }
-      #assetStatusChart{
-        width: 200px !important;
-        height: 200px !important;
-      }
-    }
-  
-
-.fault-tree {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 50px;
-}
-
-.level {
-    display: flex;
-    justify-content: center;
-    margin: 10px 0;
-}
-
-.node {
-    padding: 10px 20px;
-    background-color: #3498db;
-    color: white;
-    border-radius: 5px;
-    margin: 0 10px;
-    text-align: center;
-    position: relative;
-}
-
-.node::before {
-    content: '';
-    position: absolute;
-    top: -20px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 2px;
-    height: 20px;
-    background-color: #3498db;
-}
-
-.root::before {
-    content: none;
-}
-
-.level:first-child .node::before {
-    content: none;
-}
-.collapsed {
-    display: none;
-}
-.p-4{
-     padding: 0px 14px !important;
-}
-  </style>
 
 </head>
 
@@ -201,7 +73,7 @@
             </div>
            </div>
            <div class="component-content-hadeer">
-            <div class="d-flex p-4">
+            <div class="d-flex pr-4">
                  <div class="">
                       <h5 class="title-title">شركة بابكو للصيانة</h5>
                       <hr class="hr-c">
