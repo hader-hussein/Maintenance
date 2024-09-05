@@ -20,6 +20,9 @@ p {
 }
 .d-flex{
      display: flex;
+    
+}
+.component-content-hadeer .d-flex{
      justify-content: space-between;
      align-items: center;
      flex-wrap: wrap
@@ -96,7 +99,7 @@ p {
      padding:8px 16px;
 }
 .p-4{
-     padding: 0px 14px;
+     padding: 0px 14px !important;
 }
 .item-right h6 span{
      color:var(--back-color-on)
@@ -109,6 +112,10 @@ p {
           width: 100%;
           background-color: #f2f3f4; /* يمكن تعديل اللون حسب الحاجة */
      }
+     body {
+          margin-top: 45px !important; 
+          margin-bottom: 50px !important; 
+     }
 @media print {
 /* جعل الفوتر ثابتًا في أسفل الصفحة */
 .footer-content {
@@ -117,17 +124,15 @@ p {
      width: 100%;
      
 }
+
 body {
-     margin-top: 50px; 
-     margin-bottom: 50px; 
+     margin-top: 50px !important; 
+     margin-bottom: 50px !important; 
 }
 }
      
 
-     body {
-          margin-top: 45px; 
-          margin-bottom: 50px; 
-     }
+    
      .component-body-item{
           padding:3px 10px;
      
