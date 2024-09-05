@@ -130,3 +130,6 @@ display: none;
   color: #fff !important;
   background-color: #28c76f;
 }
+.card-header .fs-4{
+  font-size: 12px !important;
+}
