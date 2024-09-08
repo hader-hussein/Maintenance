@@ -80,7 +80,7 @@
                       <hr class="hr-c">
                       <p>c.r.4030494846-Vat:311495055600003</p>
                        <hr class="hr-c">
-                       <h6 class="title-p"> تقرير الاصول التى تطلب  صيانة عاجلة</h6> 
+                       <h6 class="title-p"> تقرير تكاليف الصيانة</h6> 
                  </div>
                 
                  <div class="img-form">
@@ -93,38 +93,26 @@
           <div class="container-xxl flex-grow-1 container-p-y">
 
             <div class="row mx-0">
-              <div class="col-lg-6 col-md-6 mb-3">
-                <div class="card h-100">
-                  <div class="card-header p-1">
-                    <h5 class="card-title m-0 me-2 fw-bold fs-4">  عدد الأصول حسب درجة الطوارئ </h5>
-
-                  </div>
-                  <div class="card-body">
-                    <canvas id="urgentMaintenanceChart"></canvas>
-
-                  </div>
-                </div>
               
-              </div>
-              <div class="col-lg-6 col-md-6 mb-3">
+              <div class="col-lg-12 col-md-12 mb-3">
                 
                 <div class="card h-100">
                   <div class="card-header p-1">
-                    <h5 class="card-title m-0 me-2 fw-bold fs-4">   لتوزيع الأصول حسب سبب الصيانة العاجلة.</h5>
+                    <h5 class="card-title m-0 me-2 fw-bold fs-4"> مخطط واحدة للتكاليف الفعلية</h5>
 
                   </div>
                   <div class="card-body">
-                    <canvas id="urgentMaintenanceReasonsChart"></canvas>
+                    <canvas id="maintenanceCostBarChart"></canvas>
 
                   </div>
                 </div>
                
               </div>
-              
+             
               <div class="col-lg-12 col-md-12 mb-3 px-1 card-malfunctions">
                 <div class="card h-100">
                   <div class="card-header">
-                    <h5 class="card-title m-0 me-2 fw-bold fs-6">	تقرير  الأصول المتوقفة</h5>
+                    <h5 class="card-title m-0 me-2 fw-bold fs-6">	تقرير تكاليف الصيانة</h5>
 
                   </div>
                   <div class="card-body">
@@ -133,49 +121,47 @@
                         <thead class="table-light">
                           <tr>
                             <th>#</th>
-                            <th>اسم الاصل </th>
-                            <th>تاريخ التوقف </th>
-                            <th>سبب الصيانة </th>
-                            <th> درجة الطوارى </th>
+                            <th> التاريخ </th>
+                            <th>  التكلفة الفعلية </th>
+                            <th>  الميزانية </th>
 
-                            <th>تاريخ التقييم </th>
-                            <th>  الاجراء المقترح </th>
+                            <th> الفارق </th>
                           </tr>
                         </thead>
                         <tbody>
                           <tr>
                             <td>1</td>
-                            <td>الاصل 1</td>
-                            <td>2024-08-15</td>
-                            <td>عطل ميكانيكي</td>
-                            <td>عالى</td>
-                            <td>2024-08-15</td>
+                            <td> 2024-09-01</td>
+                            <td>300</td>
+                            <td>250</td>
+                            <td>-50</td>
 
-                            <td> استبدال الأجزاء المتضررة
-                            </td>
                           </tr>
                           <tr>
-                            <td>2</td>
-                            <td>الاصل 2</td>
-                            <td>2024-08-15</td>
-                            <td>تسرب المياة</td>
-                            <td>عالى</td>
+                            <td>1</td>
+                            <td> 2024-09-01</td>
+                            <td>300</td>
+                            <td>250</td>
+                            <td>-50</td>
 
-                            <td>2024-07-22</td>
-
-                            <td>قيد الاصلاح</td>
                           </tr>
                           <tr>
-                            <td>3</td>
-                            <td> الاصل 3</td>
-                            <td>2024-08-15</td>
-                            <td>عطل كهرباء</td>
-                            <td>متوسط</td>
+                            <td>1</td>
+                            <td> 2024-09-01</td>
+                            <td>300</td>
+                            <td>250</td>
+                            <td>-50</td>
 
-                            <td>2024-08-01</td>
-                            <td> غير محدد</td>
                           </tr>
                         </tbody>
+                        <tfoot>
+                          <tr>
+                              <th colspan="2">الإجمالي</th>
+                              <th>1150</th> <!-- مجموع التكاليف الفعلية -->
+                              <th>1000</th> <!-- مجموع الميزانية -->
+                              <th>150</th> <!-- مجموع الفارق -->
+                          </tr>
+                      </tfoot>
                       </table>
                     </div>
                   </div>
@@ -268,75 +254,51 @@
 
     <script src="../assets/vendor/js/chart.js"></script>
     <script src="../assets/js/dashboards-crm.js"></script>
-    <script>
-      const ctx = document.getElementById('urgentMaintenanceChart').getContext('2d');
-    
-      const urgentMaintenanceChart = new Chart(ctx, {
-          type: 'bar',
-          data: {
-              labels: ['عالي', 'متوسط', 'منخفض'], // درجات الطوارئ
-              datasets: [{
-                  label: 'عدد الأصول حسب درجة الطوارئ',
-                  data: [2, 1, 1], // عدد الأصول في كل درجة طوارئ
-                  backgroundColor: 'rgba(255, 99, 132, 0.2)',
-                  borderColor: 'rgba(255, 99, 132, 1)',
-                  borderWidth: 1
-              }]
-          },
-          options: {
-              scales: {
-                  y: {
-                      beginAtZero: true
-                  }
-              },
-              responsive: true
-          }
-      });
-      </script>
-      <script>
-        const ctx2 = document.getElementById('urgentMaintenanceReasonsChart').getContext('2d');
-        ctx.canvas.width = 150;  // تعيين العرض
-        ctx.canvas.height = 150;  // تعيين الارتفاع
-        const urgentMaintenanceReasonsChart = new Chart(ctx2, {
-            type: 'pie',
-            data: {
-                labels: ['تسرب كبير', 'اهتزاز غير طبيعي', 'ارتفاع درجة الحرارة', 'ضعف الأداء'], // أسباب الصيانة العاجلة
-                datasets: [{
-                    label: 'توزيع الأصول حسب سبب الصيانة العاجلة',
-                    data: [1, 1, 1, 1], // عدد الأصول في كل سبب
-                    backgroundColor: [
-                        'rgba(75, 192, 192, 0.2)',
-                        'rgba(255, 159, 64, 0.2)',
-                        'rgba(255, 99, 132, 0.2)',
-                        'rgba(54, 162, 235, 0.2)'
-                    ],
-                    borderColor: [
-                        'rgba(75, 192, 192, 1)',
-                        'rgba(255, 159, 64, 1)',
-                        'rgba(255, 99, 132, 1)',
-                        'rgba(54, 162, 235, 1)'
-                    ],
-                    borderWidth: 1
-                }]
-            },
-            options: {
-                responsive: true,
-                plugins: {
-                    legend: {
-                        display: true,
-                        position: 'top'
-                    },
-                    tooltip: {
-                        callbacks: {
-                            label: function(context) {
-                                return context.label + ': ' + context.raw + ' أصل';
-                            }
-                        }
-                    }
+    <canvas id="maintenanceCostBarChart"></canvas>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script>
+var ctx = document.getElementById('maintenanceCostBarChart').getContext('2d');
+var maintenanceCostBarChart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+        labels: ['2024-09-01', '2024-09-02', '2024-09-03', '2024-09-04'], // التواريخ
+        datasets: [{
+            label: 'التكلفة الفعلية (بالدولار)',
+            data: [200, 300, 250, 400], // التكاليف الفعلية لكل يوم
+            backgroundColor: '#36A2EB',
+            borderWidth: 1
+        },
+        {
+            label: 'الميزانية (بالدولار)',
+            data: [250, 250, 250, 250], // الميزانية لكل يوم
+            backgroundColor: '#FF6384',
+            borderWidth: 1
+        }]
+    },
+    options: {
+        scales: {
+            y: {
+                beginAtZero: true,
+                title: {
+                    display: true,
+                    text: 'التكلفة (بالدولار)'
                 }
             }
-        });
-        </script>
+        },
+        responsive: true,
+        plugins: {
+            title: {
+                display: true,
+                text: 'مقارنة تكاليف الصيانة مع الميزانية'
+            }
+        }
+    }
+});
+</script>
+
+   
 </body>
 
 </html>

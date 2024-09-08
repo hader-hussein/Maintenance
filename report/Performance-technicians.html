@@ -80,7 +80,7 @@
                       <hr class="hr-c">
                       <p>c.r.4030494846-Vat:311495055600003</p>
                        <hr class="hr-c">
-                       <h6 class="title-p"> تقرير الاصول التى تطلب  صيانة عاجلة</h6> 
+                       <h6 class="title-p"> تقرير اداء  الفنيين</h6> 
                  </div>
                 
                  <div class="img-form">
@@ -93,38 +93,53 @@
           <div class="container-xxl flex-grow-1 container-p-y">
 
             <div class="row mx-0">
-              <div class="col-lg-6 col-md-6 mb-3">
-                <div class="card h-100">
-                  <div class="card-header p-1">
-                    <h5 class="card-title m-0 me-2 fw-bold fs-4">  عدد الأصول حسب درجة الطوارئ </h5>
-
-                  </div>
-                  <div class="card-body">
-                    <canvas id="urgentMaintenanceChart"></canvas>
-
-                  </div>
-                </div>
               
-              </div>
-              <div class="col-lg-6 col-md-6 mb-3">
+              <div class="col-lg-4 col-md-4 mb-3">
                 
                 <div class="card h-100">
                   <div class="card-header p-1">
-                    <h5 class="card-title m-0 me-2 fw-bold fs-4">   لتوزيع الأصول حسب سبب الصيانة العاجلة.</h5>
+                    <h5 class="card-title m-0 me-2 fw-bold fs-4"> عدد المهام المنجزة لكل فني</h5>
 
                   </div>
                   <div class="card-body">
-                    <canvas id="urgentMaintenanceReasonsChart"></canvas>
+                    <canvas id="tasksCompletedChart"></canvas>
+                  </div>
+                </div>
+               
+              </div>
+              <div class="col-lg-4 col-md-4 mb-3">
+                
+                <div class="card h-100">
+                  <div class="card-header p-1">
+                    <h5 class="card-title m-0 me-2 fw-bold fs-4">متوسط وقت الإنجاز لكل فني.</h5>
+
+                  </div>
+                  <div class="card-body">
+                    <canvas id="timeTakenChart"></canvas>
 
                   </div>
                 </div>
                
               </div>
-              
+              <div class="col-lg-4 col-md-4 mb-3">
+                
+                <div class="card h-100">
+                  <div class="card-header p-1">
+                    <h5 class="card-title m-0 me-2 fw-bold fs-4"> نسبة رضا العملاء عن جودة العمل.</h5>
+
+                  </div>
+                  <div class="card-body">
+                    <canvas id="qualityChart"></canvas>
+
+                  </div>
+                </div>
+               
+              </div>
+             
               <div class="col-lg-12 col-md-12 mb-3 px-1 card-malfunctions">
                 <div class="card h-100">
                   <div class="card-header">
-                    <h5 class="card-title m-0 me-2 fw-bold fs-6">	تقرير  الأصول المتوقفة</h5>
+                    <h5 class="card-title m-0 me-2 fw-bold fs-6">	تقريراداء الفنيين</h5>
 
                   </div>
                   <div class="card-body">
@@ -133,49 +148,46 @@
                         <thead class="table-light">
                           <tr>
                             <th>#</th>
-                            <th>اسم الاصل </th>
-                            <th>تاريخ التوقف </th>
-                            <th>سبب الصيانة </th>
-                            <th> درجة الطوارى </th>
+                            <th> اسم  الفنى </th>
+                            <th>   عدد المهام المنجزة </th>
+                            <th>  متوسط وقت الانجاز </th>
 
-                            <th>تاريخ التقييم </th>
-                            <th>  الاجراء المقترح </th>
+                            <th> تقييم نوعية العمل </th>
+                            <th>التقييم النهائي</th>
                           </tr>
                         </thead>
                         <tbody>
                           <tr>
-                            <td>1</td>
-                            <td>الاصل 1</td>
-                            <td>2024-08-15</td>
-                            <td>عطل ميكانيكي</td>
-                            <td>عالى</td>
-                            <td>2024-08-15</td>
+                            <tr>
+                              <td>1</td>
+                              <td>فني 1</td>
+                              <td>15</td>
+                              <td>45</td>
+                              <td>جيد</td>
+                              <td>75%</td>
+                          </tr>
 
-                            <td> استبدال الأجزاء المتضررة
-                            </td>
                           </tr>
                           <tr>
                             <td>2</td>
-                            <td>الاصل 2</td>
-                            <td>2024-08-15</td>
-                            <td>تسرب المياة</td>
-                            <td>عالى</td>
+                            <td>فني 2</td>
+                            <td>25</td>
+                            <td>35</td>
+                            <td>ممتاز</td>
+                            <td>85%</td>
 
-                            <td>2024-07-22</td>
-
-                            <td>قيد الاصلاح</td>
                           </tr>
                           <tr>
                             <td>3</td>
-                            <td> الاصل 3</td>
-                            <td>2024-08-15</td>
-                            <td>عطل كهرباء</td>
-                            <td>متوسط</td>
+                            <td>فني 3</td>
+                            <td>25</td>
+                            <td>35</td>
+                            <td>ممتاز</td>
+                            <td>85%</td>
 
-                            <td>2024-08-01</td>
-                            <td> غير محدد</td>
                           </tr>
                         </tbody>
+                       
                       </table>
                     </div>
                   </div>
@@ -268,75 +280,55 @@
 
     <script src="../assets/vendor/js/chart.js"></script>
     <script src="../assets/js/dashboards-crm.js"></script>
-    <script>
-      const ctx = document.getElementById('urgentMaintenanceChart').getContext('2d');
-    
-      const urgentMaintenanceChart = new Chart(ctx, {
-          type: 'bar',
-          data: {
-              labels: ['عالي', 'متوسط', 'منخفض'], // درجات الطوارئ
-              datasets: [{
-                  label: 'عدد الأصول حسب درجة الطوارئ',
-                  data: [2, 1, 1], // عدد الأصول في كل درجة طوارئ
-                  backgroundColor: 'rgba(255, 99, 132, 0.2)',
-                  borderColor: 'rgba(255, 99, 132, 1)',
-                  borderWidth: 1
-              }]
-          },
-          options: {
-              scales: {
-                  y: {
-                      beginAtZero: true
-                  }
-              },
-              responsive: true
-          }
-      });
-      </script>
-      <script>
-        const ctx2 = document.getElementById('urgentMaintenanceReasonsChart').getContext('2d');
-        ctx.canvas.width = 150;  // تعيين العرض
-        ctx.canvas.height = 150;  // تعيين الارتفاع
-        const urgentMaintenanceReasonsChart = new Chart(ctx2, {
-            type: 'pie',
-            data: {
-                labels: ['تسرب كبير', 'اهتزاز غير طبيعي', 'ارتفاع درجة الحرارة', 'ضعف الأداء'], // أسباب الصيانة العاجلة
-                datasets: [{
-                    label: 'توزيع الأصول حسب سبب الصيانة العاجلة',
-                    data: [1, 1, 1, 1], // عدد الأصول في كل سبب
-                    backgroundColor: [
-                        'rgba(75, 192, 192, 0.2)',
-                        'rgba(255, 159, 64, 0.2)',
-                        'rgba(255, 99, 132, 0.2)',
-                        'rgba(54, 162, 235, 0.2)'
-                    ],
-                    borderColor: [
-                        'rgba(75, 192, 192, 1)',
-                        'rgba(255, 159, 64, 1)',
-                        'rgba(255, 99, 132, 1)',
-                        'rgba(54, 162, 235, 1)'
-                    ],
-                    borderWidth: 1
-                }]
-            },
-            options: {
-                responsive: true,
-                plugins: {
-                    legend: {
-                        display: true,
-                        position: 'top'
-                    },
-                    tooltip: {
-                        callbacks: {
-                            label: function(context) {
-                                return context.label + ': ' + context.raw + ' أصل';
-                            }
-                        }
-                    }
-                }
-            }
-        });
-        </script>
+    <canvas id="maintenanceCostBarChart"></canvas>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
+<script>
+    var ctx1 = document.getElementById('tasksCompletedChart').getContext('2d');
+    var tasksCompletedChart = new Chart(ctx1, {
+        type: 'bar',
+        data: {
+            labels: ['فني 1', 'فني 2', 'فني 3', 'فني 4'],
+            datasets: [{
+                label: 'عدد المهام المنجزة',
+                data: [30, 25, 35, 20],
+                backgroundColor: ['red', 'blue', 'green', 'orange']
+            }]
+        }
+    });
+
+    var ctx2 = document.getElementById('timeTakenChart').getContext('2d');
+    var timeTakenChart = new Chart(ctx2, {
+        type: 'line',
+        data: {
+            labels: ['فني 1', 'فني 2', 'فني 3', 'فني 4'],
+            datasets: [{
+                label: 'متوسط وقت الإنجاز (ساعات)',
+                data: [5, 3.5, 4.2, 6],
+                borderColor: 'blue',
+                fill: false
+            }]
+        }
+    });
+
+    var ctx3 = document.getElementById('qualityChart').getContext('2d');
+    var qualityChart = new Chart(ctx3, {
+        type: 'pie',
+        data: {
+            labels: ['راضٍ', 'غير راضٍ'],
+            datasets: [{
+                label: 'نسبة رضا العملاء',
+                data: [80, 20],
+                backgroundColor: ['green', 'red']
+            }]
+        }
+    });
+</script>
+
+
+   
 </body>
 
 </html>

@@ -80,7 +80,7 @@
                       <hr class="hr-c">
                       <p>c.r.4030494846-Vat:311495055600003</p>
                        <hr class="hr-c">
-                       <h6 class="title-p"> تقرير الاصول التى تطلب  صيانة عاجلة</h6> 
+                       <h6 class="title-p"> تقرير تكلفة دورة حياة الأصول</h6> 
                  </div>
                 
                  <div class="img-form">
@@ -93,38 +93,26 @@
           <div class="container-xxl flex-grow-1 container-p-y">
 
             <div class="row mx-0">
-              <div class="col-lg-6 col-md-6 mb-3">
-                <div class="card h-100">
-                  <div class="card-header p-1">
-                    <h5 class="card-title m-0 me-2 fw-bold fs-4">  عدد الأصول حسب درجة الطوارئ </h5>
-
-                  </div>
-                  <div class="card-body">
-                    <canvas id="urgentMaintenanceChart"></canvas>
-
-                  </div>
-                </div>
               
-              </div>
-              <div class="col-lg-6 col-md-6 mb-3">
+              <div class="col-lg-12 col-md-12 mb-3">
                 
                 <div class="card h-100">
                   <div class="card-header p-1">
-                    <h5 class="card-title m-0 me-2 fw-bold fs-4">   لتوزيع الأصول حسب سبب الصيانة العاجلة.</h5>
+                    <h5 class="card-title m-0 me-2 fw-bold fs-4">  	تقرير تكلفة دورة حياة الأصول</h5>
 
                   </div>
                   <div class="card-body">
-                    <canvas id="urgentMaintenanceReasonsChart"></canvas>
-
+                    <canvas id="lifecycleCostChart"></canvas>
                   </div>
                 </div>
                
               </div>
-              
+          
+             
               <div class="col-lg-12 col-md-12 mb-3 px-1 card-malfunctions">
                 <div class="card h-100">
                   <div class="card-header">
-                    <h5 class="card-title m-0 me-2 fw-bold fs-6">	تقرير  الأصول المتوقفة</h5>
+                    <h5 class="card-title m-0 me-2 fw-bold fs-6">		تقرير لتكلفة دورة حياة الأصول</h5>
 
                   </div>
                   <div class="card-body">
@@ -133,49 +121,55 @@
                         <thead class="table-light">
                           <tr>
                             <th>#</th>
-                            <th>اسم الاصل </th>
-                            <th>تاريخ التوقف </th>
-                            <th>سبب الصيانة </th>
-                            <th> درجة الطوارى </th>
+                            <th>    الاصل </th>
+                            <th>  تكلفة الشراء</th>
+                            <th> تكاليف الصيانة</th>
 
-                            <th>تاريخ التقييم </th>
-                            <th>  الاجراء المقترح </th>
+                            <th> تكاليف الاصلاح</th>
+                            <th> تكاليف التشغيل</th>
+
+                            <th> تكاليف التخلص</th>
+                            <th>  اجمالى التكلفة</th>
+
                           </tr>
                         </thead>
                         <tbody>
                           <tr>
-                            <td>1</td>
-                            <td>الاصل 1</td>
-                            <td>2024-08-15</td>
-                            <td>عطل ميكانيكي</td>
-                            <td>عالى</td>
-                            <td>2024-08-15</td>
+                            <tr>
+                              <td>1</td>
+                              <td> مركبة نقل	 </td>
+                              <td>20000</td>
+                              <td>8000</td>
+                              <td>3000</td>
+                              <td>5000</td>
+                              <td>500</td>
+                              <td>36500</td>
+                          </tr>
 
-                            <td> استبدال الأجزاء المتضررة
-                            </td>
                           </tr>
                           <tr>
                             <td>2</td>
-                            <td>الاصل 2</td>
-                            <td>2024-08-15</td>
-                            <td>تسرب المياة</td>
-                            <td>عالى</td>
+                            <td>  جهاز كهربائى</td>
+                            <td>1500</td>
+                            <td>3000</td>
+                            <td>1500</td>
+                            <td>1200</td>
+                            <td>300</td>
+                            <td>21000</td>
 
-                            <td>2024-07-22</td>
-
-                            <td>قيد الاصلاح</td>
                           </tr>
                           <tr>
                             <td>3</td>
-                            <td> الاصل 3</td>
-                            <td>2024-08-15</td>
-                            <td>عطل كهرباء</td>
-                            <td>متوسط</td>
-
-                            <td>2024-08-01</td>
-                            <td> غير محدد</td>
-                          </tr>
+                            <td> مركبة نقل	 </td>
+                            <td>20000</td>
+                            <td>8000</td>
+                            <td>3000</td>
+                            <td>5000</td>
+                            <td>500</td>
+                            <td>36500</td>
+                        </tr>
                         </tbody>
+                       
                       </table>
                     </div>
                   </div>
@@ -268,75 +262,69 @@
 
     <script src="../assets/vendor/js/chart.js"></script>
     <script src="../assets/js/dashboards-crm.js"></script>
-    <script>
-      const ctx = document.getElementById('urgentMaintenanceChart').getContext('2d');
-    
-      const urgentMaintenanceChart = new Chart(ctx, {
-          type: 'bar',
-          data: {
-              labels: ['عالي', 'متوسط', 'منخفض'], // درجات الطوارئ
-              datasets: [{
-                  label: 'عدد الأصول حسب درجة الطوارئ',
-                  data: [2, 1, 1], // عدد الأصول في كل درجة طوارئ
-                  backgroundColor: 'rgba(255, 99, 132, 0.2)',
-                  borderColor: 'rgba(255, 99, 132, 1)',
-                  borderWidth: 1
-              }]
-          },
-          options: {
-              scales: {
-                  y: {
-                      beginAtZero: true
+    <canvas id="maintenanceCostBarChart"></canvas>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script>
+  const ctx = document.getElementById('lifecycleCostChart').getContext('2d');
+  const lifecycleCostChart = new Chart(ctx, {
+      type: 'bar',
+      data: {
+          labels: ['آلة صناعية 1', 'مركبة نقل', 'جهاز كهربائي'],
+          datasets: [{
+              label: 'تكلفة الشراء',
+              data: [50000, 20000, 15000],
+              backgroundColor: 'rgba(54, 162, 235, 0.2)',
+              borderColor: 'rgba(54, 162, 235, 1)',
+              borderWidth: 1
+          }, {
+              label: 'تكاليف الصيانة',
+              data: [10000, 8000, 3000],
+              backgroundColor: 'rgba(75, 192, 192, 0.2)',
+              borderColor: 'rgba(75, 192, 192, 1)',
+              borderWidth: 1
+          }, {
+              label: 'تكاليف الإصلاح',
+              data: [5000, 3000, 1500],
+              backgroundColor: 'rgba(255, 206, 86, 0.2)',
+              borderColor: 'rgba(255, 206, 86, 1)',
+              borderWidth: 1
+          }, {
+              label: 'تكاليف التشغيل',
+              data: [2000, 5000, 1200],
+              backgroundColor: 'rgba(153, 102, 255, 0.2)',
+              borderColor: 'rgba(153, 102, 255, 1)',
+              borderWidth: 1
+          }, {
+              label: 'تكاليف التخلص',
+              data: [1000, 500, 300],
+              backgroundColor: 'rgba(255, 99, 132, 0.2)',
+              borderColor: 'rgba(255, 99, 132, 1)',
+              borderWidth: 1
+          }]
+      },
+      options: {
+          scales: {
+              y: {
+                  beginAtZero: true,
+                  title: {
+                      display: true,
+                      text: 'التكلفة بالوحدات المالية'
                   }
-              },
-              responsive: true
+              }
+          },
+          plugins: {
+              title: {
+                  display: true,
+                  text: 'تقرير تكلفة دورة حياة الأصول'
+              }
           }
-      });
-      </script>
-      <script>
-        const ctx2 = document.getElementById('urgentMaintenanceReasonsChart').getContext('2d');
-        ctx.canvas.width = 150;  // تعيين العرض
-        ctx.canvas.height = 150;  // تعيين الارتفاع
-        const urgentMaintenanceReasonsChart = new Chart(ctx2, {
-            type: 'pie',
-            data: {
-                labels: ['تسرب كبير', 'اهتزاز غير طبيعي', 'ارتفاع درجة الحرارة', 'ضعف الأداء'], // أسباب الصيانة العاجلة
-                datasets: [{
-                    label: 'توزيع الأصول حسب سبب الصيانة العاجلة',
-                    data: [1, 1, 1, 1], // عدد الأصول في كل سبب
-                    backgroundColor: [
-                        'rgba(75, 192, 192, 0.2)',
-                        'rgba(255, 159, 64, 0.2)',
-                        'rgba(255, 99, 132, 0.2)',
-                        'rgba(54, 162, 235, 0.2)'
-                    ],
-                    borderColor: [
-                        'rgba(75, 192, 192, 1)',
-                        'rgba(255, 159, 64, 1)',
-                        'rgba(255, 99, 132, 1)',
-                        'rgba(54, 162, 235, 1)'
-                    ],
-                    borderWidth: 1
-                }]
-            },
-            options: {
-                responsive: true,
-                plugins: {
-                    legend: {
-                        display: true,
-                        position: 'top'
-                    },
-                    tooltip: {
-                        callbacks: {
-                            label: function(context) {
-                                return context.label + ': ' + context.raw + ' أصل';
-                            }
-                        }
-                    }
-                }
-            }
-        });
-        </script>
+      }
+  });
+</script>
+
+   
 </body>
 
 </html>

@@ -6,7 +6,18 @@ body{
 .fs-title-report {
   font-size: 14px;
 }
-
+#urgentMaintenanceReasonsChart,#statusChart,#technicianPieChart,#kpiChart{
+  width: 300px !important;
+    height: 300px !important;
+    margin: auto;
+}
+table tr td{
+  text-align: center;
+}
+#maintenanceCostBarChart{
+  height: 500px !important;
+  width: 100% !important;
+}
 @media print {
   .fs-title-report {
     font-size: 8px;
@@ -41,12 +52,14 @@ body{
 
   th,
   td {
-    padding: 5px;
-    text-align: left;
+    padding: 3px 2px !important;
+    text-align: center !important;
     word-wrap: break-word;
 
   }
-
+  table tr td{
+    padding: 2px !important;
+  }
   /* منع كسر الصفحات داخل الجدول */
   table ,.card-malfunctions{
     page-break-inside: avoid;
@@ -68,11 +81,11 @@ body{
   }
 
   /* ضبط حجم الرسوم البيانية للطباعة */
-  canvas {
+  canvas ,#maintenanceCostBarChart{
     max-width: 100%;
     height: 150px !important;
   }
-  #assetStatusChart{
+  #assetStatusChart,#urgentMaintenanceReasonsChart,#statusChart,#technicianPieChart,#kpiChart{
     width: 200px !important;
     height: 200px !important;
   }

@@ -80,7 +80,7 @@
                       <hr class="hr-c">
                       <p>c.r.4030494846-Vat:311495055600003</p>
                        <hr class="hr-c">
-                       <h6 class="title-p"> تقرير الاصول التى تطلب  صيانة عاجلة</h6> 
+                       <h6 class="title-p">تقرير مهام الصيانة المنجزة</h6> 
                  </div>
                 
                  <div class="img-form">
@@ -93,38 +93,52 @@
           <div class="container-xxl flex-grow-1 container-p-y">
 
             <div class="row mx-0">
-              <div class="col-lg-6 col-md-6 mb-3">
+              <div class="col-lg-4 col-md-4 mb-3">
                 <div class="card h-100">
                   <div class="card-header p-1">
-                    <h5 class="card-title m-0 me-2 fw-bold fs-4">  عدد الأصول حسب درجة الطوارئ </h5>
+                    <h5 class="card-title m-0 me-2 fw-bold fs-4">مخطط لعرض الوقت المستغرق لى كل فنى</h5>
 
                   </div>
                   <div class="card-body">
-                    <canvas id="urgentMaintenanceChart"></canvas>
+                    <canvas id="technicianTimeBarChart"></canvas>
+
 
                   </div>
                 </div>
               
               </div>
-              <div class="col-lg-6 col-md-6 mb-3">
+              <div class="col-lg-4 col-md-4 mb-3">
                 
                 <div class="card h-100">
                   <div class="card-header p-1">
-                    <h5 class="card-title m-0 me-2 fw-bold fs-4">   لتوزيع الأصول حسب سبب الصيانة العاجلة.</h5>
+                    <h5 class="card-title m-0 me-2 fw-bold fs-4"> مخطط لتوزيع الفنيين بناءعلى عدد المهام</h5>
 
                   </div>
                   <div class="card-body">
-                    <canvas id="urgentMaintenanceReasonsChart"></canvas>
+                    <canvas id="technicianPieChart"></canvas>
 
                   </div>
                 </div>
                
               </div>
-              
+              <div class="col-lg-4 col-md-4 mb-3">
+                
+                <div class="card h-100">
+                  <div class="card-header p-1">
+                    <h5 class="card-title m-0 me-2 fw-bold fs-4">مخطط لتكاليف الصيانة على مدار فترة زمنية</h5>
+
+                  </div>
+                  <div class="card-body">
+                    <canvas id="maintenanceCostLineChart"></canvas>
+
+                  </div>
+                </div>
+               
+              </div>
               <div class="col-lg-12 col-md-12 mb-3 px-1 card-malfunctions">
                 <div class="card h-100">
                   <div class="card-header">
-                    <h5 class="card-title m-0 me-2 fw-bold fs-6">	تقرير  الأصول المتوقفة</h5>
+                    <h5 class="card-title m-0 me-2 fw-bold fs-6">	تقرير مهام الصيانة المنجزة</h5>
 
                   </div>
                   <div class="card-body">
@@ -133,47 +147,40 @@
                         <thead class="table-light">
                           <tr>
                             <th>#</th>
-                            <th>اسم الاصل </th>
-                            <th>تاريخ التوقف </th>
-                            <th>سبب الصيانة </th>
-                            <th> درجة الطوارى </th>
+                            <th>  الفنى </th>
+                            <th> التاريخ </th>
+                            <th> المدة الزمنية </th>
+                            <th>  الوصف </th>
 
-                            <th>تاريخ التقييم </th>
-                            <th>  الاجراء المقترح </th>
+                            <th> التكلفة </th>
                           </tr>
                         </thead>
                         <tbody>
                           <tr>
                             <td>1</td>
-                            <td>الاصل 1</td>
+                            <td> احمد</td>
                             <td>2024-08-15</td>
-                            <td>عطل ميكانيكي</td>
-                            <td>عالى</td>
-                            <td>2024-08-15</td>
+                            <td> 2</td>
+                            <td>تغيير فلتر	</td>
+                            <td>دولار</td>
 
-                            <td> استبدال الأجزاء المتضررة
-                            </td>
                           </tr>
                           <tr>
                             <td>2</td>
-                            <td>الاصل 2</td>
+                            <td> خالد</td>
                             <td>2024-08-15</td>
-                            <td>تسرب المياة</td>
-                            <td>عالى</td>
+                            <td>3 </td>
+                            <td>اصلاح مضخة</td>
 
-                            <td>2024-07-22</td>
-
-                            <td>قيد الاصلاح</td>
+                            <td>دولار</td>
                           </tr>
                           <tr>
                             <td>3</td>
-                            <td> الاصل 3</td>
+                            <td>  محمد</td>
                             <td>2024-08-15</td>
-                            <td>عطل كهرباء</td>
-                            <td>متوسط</td>
-
-                            <td>2024-08-01</td>
-                            <td> غير محدد</td>
+                            <td> 4</td>
+                            <td>اصلاح اسطوانة</td>
+                            <td>  دولار</td>
                           </tr>
                         </tbody>
                       </table>
@@ -268,75 +275,93 @@
 
     <script src="../assets/vendor/js/chart.js"></script>
     <script src="../assets/js/dashboards-crm.js"></script>
-    <script>
-      const ctx = document.getElementById('urgentMaintenanceChart').getContext('2d');
-    
-      const urgentMaintenanceChart = new Chart(ctx, {
-          type: 'bar',
-          data: {
-              labels: ['عالي', 'متوسط', 'منخفض'], // درجات الطوارئ
-              datasets: [{
-                  label: 'عدد الأصول حسب درجة الطوارئ',
-                  data: [2, 1, 1], // عدد الأصول في كل درجة طوارئ
-                  backgroundColor: 'rgba(255, 99, 132, 0.2)',
-                  borderColor: 'rgba(255, 99, 132, 1)',
-                  borderWidth: 1
-              }]
-          },
-          options: {
-              scales: {
-                  y: {
-                      beginAtZero: true
+   <script>
+
+var ctx = document.getElementById('technicianPieChart').getContext('2d');
+var technicianPieChart = new Chart(ctx, {
+    type: 'pie',
+    data: {
+        labels: ['أحمد', 'خالد', 'محمد'], // أسماء الفنيين
+        datasets: [{
+            label: 'عدد المهام',
+            data: [5, 3, 7], // عدد المهام لكل فني
+            backgroundColor: ['#FF6384', '#36A2EB', '#FFCE56'],
+        }]
+    },
+    options: {
+        responsive: true
+    }
+});
+
+
+   </script>
+   <script>
+
+var ctx = document.getElementById('technicianTimeBarChart').getContext('2d');
+var technicianTimeBarChart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+        labels: ['أحمد', 'خالد', 'محمد'], // أسماء الفنيين
+        datasets: [{
+            label: 'الوقت المستغرق (بالساعات)',
+            data: [10, 8, 12], // عدد الساعات لكل فني
+            backgroundColor: ['#FF6384', '#36A2EB', '#FFCE56'],
+        }]
+    },
+    options: {
+        scales: {
+            y: {
+                beginAtZero: true
+            }
+        }
+    }
+});
+
+   </script>
+<script>
+  
+ 
+  var ctx = document.getElementById('maintenanceCostLineChart').getContext('2d');
+  var maintenanceCostLineChart = new Chart(ctx, {
+      type: 'line',
+      data: {
+          labels: ['2024-09-01', '2024-09-02', '2024-09-03', '2024-09-04'], // التواريخ
+          datasets: [{
+              label: 'التكلفة (بالدولار)',
+              data: [200, 150, 300, 250], // تكاليف كل يوم
+              borderColor: '#36A2EB',
+              backgroundColor: 'rgba(54, 162, 235, 0.2)',
+              borderWidth: 2,
+              fill: true
+          }]
+      },
+      options: {
+          scales: {
+              x: {
+                  title: {
+                      display: true,
+                      text: 'التاريخ'
                   }
               },
-              responsive: true
+              y: {
+                  beginAtZero: true,
+                  title: {
+                      display: true,
+                      text: 'التكلفة (بالدولار)'
+                  }
+              }
+          },
+          responsive: true,
+          plugins: {
+              title: {
+                  display: true,
+                  text: 'تكاليف الصيانة على مدار فترة زمنية'
+              }
           }
-      });
-      </script>
-      <script>
-        const ctx2 = document.getElementById('urgentMaintenanceReasonsChart').getContext('2d');
-        ctx.canvas.width = 150;  // تعيين العرض
-        ctx.canvas.height = 150;  // تعيين الارتفاع
-        const urgentMaintenanceReasonsChart = new Chart(ctx2, {
-            type: 'pie',
-            data: {
-                labels: ['تسرب كبير', 'اهتزاز غير طبيعي', 'ارتفاع درجة الحرارة', 'ضعف الأداء'], // أسباب الصيانة العاجلة
-                datasets: [{
-                    label: 'توزيع الأصول حسب سبب الصيانة العاجلة',
-                    data: [1, 1, 1, 1], // عدد الأصول في كل سبب
-                    backgroundColor: [
-                        'rgba(75, 192, 192, 0.2)',
-                        'rgba(255, 159, 64, 0.2)',
-                        'rgba(255, 99, 132, 0.2)',
-                        'rgba(54, 162, 235, 0.2)'
-                    ],
-                    borderColor: [
-                        'rgba(75, 192, 192, 1)',
-                        'rgba(255, 159, 64, 1)',
-                        'rgba(255, 99, 132, 1)',
-                        'rgba(54, 162, 235, 1)'
-                    ],
-                    borderWidth: 1
-                }]
-            },
-            options: {
-                responsive: true,
-                plugins: {
-                    legend: {
-                        display: true,
-                        position: 'top'
-                    },
-                    tooltip: {
-                        callbacks: {
-                            label: function(context) {
-                                return context.label + ': ' + context.raw + ' أصل';
-                            }
-                        }
-                    }
-                }
-            }
-        });
-        </script>
+      }
+  });
+</script>
+   
 </body>
 
 </html>
