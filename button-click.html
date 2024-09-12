@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modal on Hover and Click</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* إخفاء المودال في البداية */
+    .custom-modal {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container mt-5">
+  <!-- زر لفتح المودال بالنقر أو التمرير -->
+  <button type="button" class="btn btn-primary hover-trigger" id="triggerButton">
+    اضغط أو مرر بالماوس فوقي
+  </button>
+
+  <!-- المودال المخصص -->
+  <div class="modal custom-modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">عنوان المودال</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          هذا هو محتوى المودال.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">إغلاق</button>
+          <button type="button" class="btn btn-primary">حفظ التغييرات</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  var triggerButton = document.getElementById('triggerButton');
+  var modalElement = document.getElementById('exampleModal');
+  var bootstrapModal = new bootstrap.Modal(modalElement);
+  var timeoutId;
+
+  // إظهار المودال عند التمرير (hover)
+  triggerButton.addEventListener('mouseenter', function() {
+    clearTimeout(timeoutId); // إلغاء أي تأخير لإخفاء المودال
+    bootstrapModal.show();
+  });
+
+  // إضافة تأخير عند مغادرة الماوس قبل إخفاء المودال
+  triggerButton.addEventListener('mouseleave', function() {
+    timeoutId = setTimeout(function() {
+      bootstrapModal.hide();
+    }, 200); // تأخير قدره 200 ميلي ثانية قبل الإخفاء
+  });
+
+  // إظهار المودال عند الضغط
+  triggerButton.addEventListener('click', function() {
+    bootstrapModal.show();
+  });
+
+  // إلغاء الإخفاء عند دخول الماوس مرة أخرى داخل المودال
+  modalElement.addEventListener('mouseenter', function() {
+    clearTimeout(timeoutId); // منع إخفاء المودال إذا دخل الماوس المودال
+  });
+
+  // إخفاء المودال إذا خرج الماوس من المودال
+  modalElement.addEventListener('mouseleave', function() {
+    timeoutId = setTimeout(function() {
+      bootstrapModal.hide();
+    }, 200); // تأخير قدره 200 ميلي ثانية قبل الإخفاء
+  });
+</script>
+</body>
+</html>

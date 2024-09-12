@@ -75,30 +75,11 @@
     right: 0;
     left: auto;
 }
+.hover-trigger{
+  cursor: pointer;
+}
 
-/* Show modal on hover */
-.hover-trigger:hover + .modal {
-      display: block;
-      opacity: 1;
-      pointer-events: auto; /* Allow interaction with modal */
-      transform: translateY(0) scale(1);
-
-    }
-
-    /* Initially hide the modal (overridden by Bootstrap JS on click) */
-    .modal {
-      opacity: 0;
-      transition: opacity 0.3s ease;
-      pointer-events: none; /* Disable interaction when hidden */
-    }
-
-    /* Bootstrap's show class (triggered on click) */
-    .modal.show {
-      opacity: 1;
-      pointer-events: auto; /* Allow interaction with modal */
-    }
-    .modal.show .modal-dialog{
-    }
+    
     </style>
 
   </head>
@@ -2983,31 +2964,35 @@
                       </div>
                     </div>
                   </div>
-                  <!--/ Add New Credit Card Modal -->
+                  <!--/ Add New button detiles Modal -->
                   <div class="compoent-detiles position-fixed">
-                      <!-- Button trigger modal -->
-                      <button type="button" class="btn btn-primary hover-trigger" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                        Launch demo modal
-                      </button>
+                    <!-- زر لفتح المودال بالنقر أو التمرير -->
+                          <button type="button" class="btn btn-primary hover-trigger" id="triggerButton" title="مساعدة لى معرفة محتوى الصفحة">
+                            <i class="fa-solid fa-circle-question"></i>
+                          
+                          </button>
 
-                        <!-- Modal -->
-                        <div class="modal fade hover-modal-content" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                          <div class="modal-dialog">
-                            <div class="modal-content">
-                              <div class="modal-header">
-                                <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                              </div>
-                              <div class="modal-body">
-                                ...
-                              </div>
-                              <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-primary">Save changes</button>
+                          <!-- المودال المخصص -->
+                          <div class="modal custom-modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title" id="exampleModalLabel"> محتويات الصفحة </h5>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                  <h6 class="fs-4 fw-bold">العنوان</h6>
+                                  <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam harum sint placeat provident molestias aliquid consequuntur fugiat sed molestiae fugit quos quae reprehenderit veniam 
+                                  </p>
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">إغلاق</button>
+                                  <button type="button" class="btn btn-primary">حفظ التغييرات</button>
+                                </div>
                               </div>
                             </div>
                           </div>
-                        </div>
                   </div>
               <!-- /Modal -->
             </div>
@@ -3214,6 +3199,42 @@
             }
         }
     });
+</script>
+<script>
+  var triggerButton = document.getElementById('triggerButton');
+  var modalElement = document.getElementById('exampleModal');
+  var bootstrapModal = new bootstrap.Modal(modalElement);
+  var timeoutId;
+
+  // إظهار المودال عند التمرير (hover)
+  triggerButton.addEventListener('mouseenter', function() {
+    clearTimeout(timeoutId); // إلغاء أي تأخير لإخفاء المودال
+    bootstrapModal.show();
+  });
+
+  // إضافة تأخير عند مغادرة الماوس قبل إخفاء المودال
+  triggerButton.addEventListener('mouseleave', function() {
+    timeoutId = setTimeout(function() {
+      bootstrapModal.hide();
+    }, 200); // تأخير قدره 200 ميلي ثانية قبل الإخفاء
+  });
+
+  // إظهار المودال عند الضغط
+  triggerButton.addEventListener('click', function() {
+    bootstrapModal.show();
+  });
+
+  // إلغاء الإخفاء عند دخول الماوس مرة أخرى داخل المودال
+  modalElement.addEventListener('mouseenter', function() {
+    clearTimeout(timeoutId); // منع إخفاء المودال إذا دخل الماوس المودال
+  });
+
+  // إخفاء المودال إذا خرج الماوس من المودال
+  modalElement.addEventListener('mouseleave', function() {
+    timeoutId = setTimeout(function() {
+      bootstrapModal.hide();
+    }, 200); // تأخير قدره 200 ميلي ثانية قبل الإخفاء
+  });
 </script>
     </body>
 
