@@ -92,6 +92,11 @@
   line-height: 18px;
 }
   </style>
+  <style>
+    .img-nav{
+      width: 25px;
+    }
+  </style>
 </head>
 
 <body>
@@ -560,7 +565,100 @@
           <aside id="layout-menu" class="layout-menu-horizontal menu-horizontal menu bg-menu-theme flex-grow-0">
             <div class="container-xxl d-flex h-100">
               <ul class="menu-inner">
-                <!-- Dashboards -->
+                <li class="menu-item active">
+                  <a href="index.html" class="menu-link ">
+                    <img class="menu-icon img-nav" src="./assets/img/nav-icon/home.png" alt="icon">
+                    <div data-i18n="Dashboards">Dashboards</div>
+                  </a>
+
+                </li>
+                <li class="menu-item">
+                  <a href="javascript:void(0)" class="menu-link menu-toggle">
+                    <img class="menu-icon img-nav" src="./assets/img/nav-icon/management.png" alt="icon">
+                    <div data-i18n="management">management</div>
+                  </a>
+
+                  <ul class="menu-sub">
+
+                    <li class="menu-item">
+                        <a href="https://demo-maintenance.raitosystem.com/en/employees/all" class="menu-link">
+                          <img class="menu-icon img-nav" src="./assets/img/nav-icon/employees.png" alt="icon">
+                          <div>employees </div>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="https://demo-maintenance.raitosystem.com/en/equipments/index_hardware" class="menu-link">
+                          <img class="menu-icon img-nav" src="./assets/img/nav-icon/equipments.png" alt="icon">
+                            <div>equipments</div>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="https://demo-maintenance.raitosystem.com/en/Truck/all" class="menu-link">
+                            <img class="menu-icon img-nav" src="./assets/img/nav-icon/cars.png" alt="icon">
+
+                            <div>cars</div>
+                        </a>
+                    </li>
+
+                    <li class="menu-item">
+                        <a href="https://demo-maintenance.raitosystem.com/en/branch/create" class="menu-link">
+                            <img class="menu-icon img-nav" src="./assets/img/nav-icon/branches.png" alt="icon">
+
+                            <div>branches</div>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="https://demo-maintenance.raitosystem.com/en/work-sites/create" class="menu-link">
+                          <img class="menu-icon img-nav" src="./assets/img/nav-icon/sites.png" alt="icon">
+
+                            <div>sites  </div>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="https://demo-maintenance.raitosystem.com/en/roles" class="menu-link">
+                            <img class="menu-icon img-nav" src="./assets/img/nav-icon/permissions.png" alt="icon">
+
+                            <div>  permissions</div>
+                        </a>
+                    </li>
+
+                    <li class="menu-item">
+                        <a href="https://demo-maintenance.raitosystem.com/en/causesmalfunctions/create" class="menu-link">
+                           
+                          <img class="menu-icon img-nav" src="./assets/img/nav-icon/causes.jpg" alt="icon">
+
+                            <div> causes malfunctions</div>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="https://demo-maintenance.raitosystem.com/en/VisitReason/index" class="menu-link">
+                            <img class="menu-icon img-nav" src="./assets/img/nav-icon/visiting.png" alt="icon">
+
+                            <div>visiting reasons </div>
+                        </a>
+                    </li>
+
+
+                    <li class="menu-item">
+                        <a href="https://demo-maintenance.raitosystem.com/en/generalizations" class="menu-link">
+                            <img class="menu-icon img-nav" src="./assets/img/nav-icon/Generalization.png" alt="icon">
+
+                            <div>Generalization </div>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="https://demo-maintenance.raitosystem.com/en/general-setting/create" class="menu-link">
+                            <img class="menu-icon img-nav" src="./assets/img/nav-icon/main Settings.png" alt="icon">
+
+                            <div>main Settings </div>
+                        </a>
+                    </li>
+
+
+                </ul>
+                </li>
+              </ul>
+              <!-- <ul class="menu-inner">
                 <li class="menu-item active">
                   <a href="index.html" class="menu-link ">
                     <i class="menu-icon tf-icons ti ti-smart-home"></i>
@@ -569,7 +667,6 @@
 
                 </li>
 
-                <!-- Apps -->
                 <li class="menu-item">
                   <a href="javascript:void(0)" class="menu-link menu-toggle">
                     <i class="menu-icon tf-icons ti ti-apps"></i>
@@ -635,7 +732,6 @@
                     </li>
                   </ul>
                 </li>
-                <!--employees-->
                 <li class="menu-item">
                   <a class="menu-link menu-toggle" href="javascript:void(0)">
                     <i class="menu-icon tf-icons ti ti-users-group"></i>
@@ -675,7 +771,6 @@
 
                   </ul>
                 </li>
-                <!-- Maintenance -->
                 <li class="menu-item">
                   <a href="javascript:void(0)" class="menu-link menu-toggle">
                     <i class="menu-icon tf-icons ti ti-settings"></i>
@@ -741,7 +836,6 @@
                   </ul>
                 </li>
 
-                <!-- Reports -->
                 <li class="menu-item">
                   <a href="javascript:void(0)" class="menu-link menu-toggle">
                     <i class="menu-icon tf-icons ti ti-file-description"></i>
@@ -780,7 +874,6 @@
                     </li>
                   </ul>
                 </li>
-                <!-- Ratings-->
                 <li class="menu-item">
                   <a href="javascript:void(0)" class="menu-link menu-toggle">
                     <i class="menu-icon tf-icons ti ti-list-check"></i>
@@ -831,7 +924,6 @@
                     </li>
                   </ul>
                 </li>
-                <!--Compiled report-->
                 <li class="menu-item">
                   <a href="javascript:void(0)" class="menu-link menu-toggle">
                     <i class="menu-icon tf-icons ti ti-file-description"></i>
@@ -941,7 +1033,7 @@
                     </div>
                   </a>
                  </li>
-              </ul>
+              </ul> -->
             </div>
           </aside>
           <!-- / Menu -->
