@@ -59,7 +59,7 @@
 
 </head>
 
-<body onpageshow="window.print()" onafterprint="history.go(-1);">
+<body onpageshow="setTimeout(function() { window.print(); }, 1000)" onafterprint="history.go(-1);">
  
            <div class="component-hader">
             <div class="content-container">
@@ -294,7 +294,7 @@
             datasets: [{
                 label: 'عدد المهام المنجزة',
                 data: [30, 25, 35, 20],
-                backgroundColor: ['red', 'blue', 'green', 'orange']
+                backgroundColor: ['red', 'blue', '#8bc34a', 'orange']
             }]
         }
     });
@@ -321,7 +321,7 @@
             datasets: [{
                 label: 'نسبة رضا العملاء',
                 data: [80, 20],
-                backgroundColor: ['green', 'red']
+                backgroundColor: ['#8bc34a', 'red']
             }]
         }
     });

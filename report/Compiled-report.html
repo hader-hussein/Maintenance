@@ -58,7 +58,7 @@
 
 </head>
 
-<body onpageshow="window.print()" onafterprint="history.go(-1);">
+<body onpageshow="setTimeout(function() { window.print(); }, 1000)" onafterprint="history.go(-1);">
  
            <div class="component-hader">
             <div class="content-container">

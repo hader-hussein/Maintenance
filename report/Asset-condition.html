@@ -59,7 +59,7 @@
 
 </head>
 
-<body onpageshow="window.print()" onafterprint="history.go(-1);">
+<body onpageshow="setTimeout(function() { window.print(); }, 1000)" onafterprint="history.go(-1);">
  
            <div class="component-hader">
             <div class="content-container">
@@ -342,16 +342,16 @@ const maintenanceDatesChart = new Chart(ctx, {
                     label: 'Samsung',
                     data: [85, 100, 30, 40, 95],
                     backgroundColor: ['#d2b0ff', '#d2b0ff', '#d2b0ff', '#d2b0ff', '#d2b0ff'],
-                    borderRadius: {
-                      topLeft: 10,
-                      topRight: 10
-                    }
+                   
                 },
                 {
                     label: 'Background',
                     data: [240, 240, 240, 240, 240], // اللون الخلفي للعمود الأساسي
                     backgroundColor: ['#f8d3ff', '#f8d3ff', '#f8d3ff', '#f8d3ff', '#f8d3ff'],
-                   
+                    borderRadius: {
+                      topLeft: 40,
+                      topRight: 40
+                    }
                 }
             ]
         },
