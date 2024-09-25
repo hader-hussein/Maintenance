@@ -89,7 +89,33 @@ table tr td{
     width: 200px !important;
     height: 200px !important;
   }
+  
 }
+@media print {
+  body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  .card {
+    page-break-inside: avoid;
+  }
+}
+
+@media print {
+  #ageDistributionChart {
+    width: 250px;
+    height: auto; /* ضبط الارتفاع تلقائيا */
+    page-break-inside: avoid; /* تجنب تقطيع الرسم البياني */
+  }
+  
+  .apexcharts-toolbar {
+    display: none; /* إخفاء شريط الأدوات */
+  }
+}
+
+/* For printing */
 
 
 .fault-tree {

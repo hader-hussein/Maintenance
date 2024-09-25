@@ -108,13 +108,15 @@
               </div>
               <div class="col-lg-4 col-md-4 mb-3">
                 
-                <div class="card h-100">
+                <div class="card h-100 w-100">
                   <div class="card-header p-1">
                     <h5 class="card-title m-0 me-2 fw-bold fs-4">   مخطط توزيع الأعمار</h5>
 
                   </div>
                   <div class="card-body">
-                    <canvas id="ageDistributionChart"></canvas>
+                    <canvas id="myChart"></canvas>
+
+
 
                   </div>
                 </div>
@@ -322,29 +324,75 @@ const maintenanceDatesChart = new Chart(ctx, {
 });
 
       </script>
-    <script>
-      const ctx2 = document.getElementById('ageDistributionChart').getContext('2d');
-      const ageDistributionChart = new Chart(ctx2, {
-          type: 'bar',
-          data: {
-              labels: ['0-1 سنة', '1-3 سنوات', '3-5 سنوات', 'أكثر من 5 سنوات'], // الفئات العمرية
-              datasets: [{
-                  label: 'عدد الأصول',
-                  data: [10, 20, 15, 5], // بيانات الأعمار
-                  backgroundColor: 'rgba(75, 192, 192, 0.2)',
-                  borderColor: 'rgba(75, 192, 192, 1)',
-                  borderWidth: 1
-              }]
-          },
-          options: {
-              scales: {
-                  y: {
-                      beginAtZero: true
-                  }
-              }
-          }
-      });
-      </script>
+  <script>
+    const ctxp = document.getElementById('myChart').getContext('2d');
+    const myChart = new Chart(ctxp, {
+        type: 'bar',
+        data: {
+            labels: ['7/12', '8/12', '9/12', '10/12', '11/12'],
+            datasets: [
+               
+                {
+                    label: 'Apple',
+                    data: [90, 120, 55, 100, 80],
+                    backgroundColor: ['#826af9', '#826af9', '#826af9', '#826af9', '#826af9'],
+                    
+                },
+                {
+                    label: 'Samsung',
+                    data: [85, 100, 30, 40, 95],
+                    backgroundColor: ['#d2b0ff', '#d2b0ff', '#d2b0ff', '#d2b0ff', '#d2b0ff'],
+                    borderRadius: {
+                      topLeft: 10,
+                      topRight: 10
+                    }
+                },
+                {
+                    label: 'Background',
+                    data: [240, 240, 240, 240, 240], // اللون الخلفي للعمود الأساسي
+                    backgroundColor: ['#f8d3ff', '#f8d3ff', '#f8d3ff', '#f8d3ff', '#f8d3ff'],
+                   
+                }
+            ]
+        },
+        options: {
+            plugins: {
+                legend: {
+                    position: 'top',
+                    align: 'start',
+                    labels: {
+                        color: '#3f3f3f', // لون النص التفسيري (legend color)
+                    }
+                },
+            },
+            scales: {
+                x: {
+                    stacked: true,
+                    barPercentage: 0.2,  // عرض العمود
+                    categoryPercentage: 0.5, // نسبة الفئة للمحور السيني
+                    ticks: {
+                        color: '#3f3f3f', // لون النص في المحور السيني
+                    },
+                    grid: {
+                        display: false, // إخفاء خطوط الشبكة على المحور السيني
+                    }
+                },
+                y: {
+                    stacked: true,
+                    beginAtZero: true,
+                    ticks: {
+                        color: '#3f3f3f', // لون النص في المحور الصادي
+                    },
+                    grid: {
+                        color: '#f0f0f0', // لون الشبكة في المحور الصادي
+                    }
+                }
+            },
+            responsive: true,
+            maintainAspectRatio: false,
+        }
+    });
+</script>
       <script>
         const ctx3 = document.getElementById('evaluationChart').getContext('2d');
         const evaluationChart = new Chart(ctx3, {
