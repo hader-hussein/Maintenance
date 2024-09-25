@@ -172,3 +172,10 @@ display: none;
 .card-header .fs-4{
   font-size: 12px !important;
 }
+.bg-text-h6{
+  background-color: #28c76f;
+  color:#fff;
+  padding: 4px;
+  font-size: 18px;
+  font-weight: bold;
+}

@@ -89,14 +89,16 @@
             </div>
             </div>
           <!-- Content -->
-          <div class="container-xxl flex-grow-1 container-p-y">
 
             <div class="row mx-0">
-              <div class="col-md-6 col-lg-6 mb-3 px-1">
-                  <div class="card-body px-0">
-                    <!---->
+
+              <div class="col-md-6">
+                <h6 class="text-center bg-text-h6"> المجموعه 1</h6>
+
+                <div class="row mx-0">
+                  <div class="col-sm-6 col-lg-6 col-md-6 mb-2 px-1">
                     <div class="row mx-0 justify-content-center">
-                      <div class="col-sm-6 col-lg-4 col-md-4 mb-2 px-1">
+                      <div class="col-sm-6 col-lg-6 col-md-6 mb-2 px-1">
                         <div class="card card-border-shadow-primary">
                           <div class="card-body pt-1 pb-1">
                             <div class="avatar me-2 mb-2">
@@ -112,7 +114,7 @@
                           </div>
                         </div>
                       </div>
-                      <div class="col-sm-6 col-lg-4 col-md-4 mb-2 px-1">
+                      <div class="col-sm-6 col-lg-6 col-md-6 mb-2 px-1">
                         <div class="card card-border-shadow-warning">
                           <div class="card-body pt-1 pb-1">
                             <div class="avatar mb-2 me-2">
@@ -128,8 +130,8 @@
                           </div>
                         </div>
                       </div>
-                      <div class="col-sm-6 col-lg-4 col-md-4  mb-2 px-1">
-                        <div class="card card-border-shadow-danger">
+                      <div class="col-sm-6 col-lg-6 col-md-6  mb-2 px-1">
+                        <div class="card card-border-shadow-danger h-100">
                           <div class="card-body pt-1 pb-1">
                             <div class="avatar mb-2 me-2">
                               <span class="avatar-initial rounded bg-label-danger"><i
@@ -146,7 +148,7 @@
                         </div>
                       </div>
                       
-                      <div class="col-sm-6 col-lg-4 col-md-5 mb-2 px-1">
+                      <div class="col-sm-6 col-lg-6 col-md-6 mb-2 px-1">
                         <div class="card card-border-shadow-warning">
                           <div class="card-body pt-1 pb-1">
                             <div class="avatar mb-2 me-2">
@@ -162,7 +164,7 @@
                           </div>
                         </div>
                       </div>
-                      <div class="col-sm-6 col-lg-8 col-md-7  mb-2 px-1">
+                      <div class="col-sm-6 col-lg-12 col-md-12  mb-2 px-1">
                         <div class="card card-border-shadow-info">
                           <div class="card-body pt-1 pb-1">
                             <div class="avatar mb-2 me-2">
@@ -180,299 +182,712 @@
                         </div>
                       </div>
                     </div>
-                    <!---->
                   </div>
-                    <div class="card mt-2">
+                  <div class="col-md-6 col-lg-6 mb-3 px-1">
+                    <div class="card mt-2 h-100">
                       <div class="card-header p-1">
-                        <h5 class="card-title m-0 me-2 fw-bold fs-6"> أكثر الأعطال شيوعًا </h5>
+                        <h5 class="card-title m-0 me-2 fw-bold fs-6"> نسبة الأصول العاملة مقابل الأصول المتوقفة</h5>
     
                       </div>
                       <div class="card-body">
-                        <canvas id="commonFailuresChart"></canvas>
+                        <canvas id="assetStatusChart" width="300" height="300" style="margin: auto;"></canvas>
     
                       </div>
-                    </div>
-                    <div class="card mt-2">
-                      <div class="card-header p-1">
-                        <h5 class="card-title m-0 me-2 fw-bold fs-6"> تتبع متوسط وقت الاستجابة للطلبات</h5>
-    
-                      </div>
-                      <div class="card-body">
-                        <canvas id="responseTimeChart"></canvas>
-    
-                      </div>
-                    </div>
-              </div>
-              <div class="col-md-6 col-lg-6 mb-3 px-1">
-                  <div class="card ">
-                    <div class="card-header p-1">
-                      <h5 class="card-title m-0 me-2 fw-bold fs-4">أداء الفنيين</h5>
-
-                    </div>
-                    <div class="card-body">
-                      <canvas id="combinedChart"></canvas>
-
                     </div>
                   </div>
+
+                  <!---->
+                  <div class="col-md-6 col-lg-6 mb-3 px-1">
+                    
+                      <div class="card mt-2">
+                        <div class="card-header p-1">
+                          <h5 class="card-title m-0 me-2 fw-bold fs-6"> أكثر الأعطال شيوعًا </h5>
+      
+                        </div>
+                        <div class="card-body">
+                          <canvas id="commonFailuresChart"></canvas>
+      
+                        </div>
+                      </div>
+                   
+                  </div>
+                <div class="col-md-6 col-lg-6 mb-3 px-1">
+                    <div class="card h-100">
+                      <div class="card-header p-1">
+                        <h5 class="card-title m-0 me-2 fw-bold fs-4">أداء الفنيين</h5>
+  
+                      </div>
+                      <div class="card-body">
+                        <canvas id="combinedChart"></canvas>
+  
+                      </div>
+                    </div>
+                 
+                </div>
+                <div class="col-md-6 col-lg-6 mb-3 px-1">
+                 
                   <div class="card mt-2">
                     <div class="card-header p-1">
-                      <h5 class="card-title m-0 me-2 fw-bold fs-6"> نسبة الأصول العاملة مقابل الأصول المتوقفة</h5>
+                      <h5 class="card-title m-0 me-2 fw-bold fs-6"> تتبع متوسط وقت الاستجابة للطلبات</h5>
   
                     </div>
                     <div class="card-body">
-                      <canvas id="assetStatusChart" width="300" height="300" style="margin: auto;"></canvas>
+                      <canvas id="responseTimeChart"></canvas>
   
                     </div>
                   </div>
+                </div>
+                <div class="col-md-6 col-lg-6 mb-3 px-1">
+                  
+                 
                   <div class="card mt-2">
                     <div class="card-header p-1">
                       <h5 class="card-title m-0 me-2 fw-bold fs-6"> لعرض المقارنات بين البيانات المختلفة</h5>
   
                     </div>
-                    <div class="card-body">
+                    <div class="card-body h-100">
                       <canvas id="monthlyRequestsChart"></canvas>
   
                     </div>
                   </div>
               </div>
-              <div class="col-lg-6 col-md-12 mb-3 px-1 card-malfunctions">
-                <div class="card h-100">
-                  <div class="card-header">
-                    <h5 class="card-title m-0 me-2 fw-bold fs-6"> قائمة بالأصول التي تتطلب صيانة عاجلة</h5>
-
-                  </div>
-                  <div class="card-body">
-                    <div class="card-datatable  pt-0">
-                      <table class=" table table-bordered table-hover rounded">
-                        <thead class="table-light">
-                          <tr>
-                            <th>#</th>
-                            <th>Asset Name</th>
-                            <th>Asset Type</th>
-                            <th>Last Maintenance Date</th>
-                            <th>Current Status</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td>1</td>
-                            <td>Generator 1</td>
-                            <td>Power</td>
-                            <td>2024-08-15</td>
-                            <td class="urgent"> Urgent Maintenance</td>
-                          </tr>
-                          <tr>
-                            <td>2</td>
-                            <td>HVAC Unit 3</td>
-                            <td>Climate Control</td>
-                            <td>2024-07-22</td>
-                            <td class="urgent"> Urgent Maintenance</td>
-                          </tr>
-                          <tr>
-                            <td>3</td>
-                            <td>Pump 2</td>
-                            <td>Water Supply</td>
-                            <td>2024-08-01</td>
-                            <td class="urgent"> Urgent Maintenance</td>
-                          </tr>
-                        </tbody>
-                      </table>
+                <div class="col-lg-6 col-md-12 mb-3 px-1 card-malfunctions">
+                  <div class="card h-100">
+                    <div class="card-header">
+                      <h5 class="card-title m-0 me-2 fw-bold fs-6"> قائمة بالأصول التي تتطلب صيانة عاجلة</h5>
+  
+                    </div>
+                    <div class="card-body">
+                      <div class="card-datatable  pt-0">
+                        <table class=" table table-bordered table-hover rounded">
+                          <thead class="table-light">
+                            <tr>
+                              <th>#</th>
+                              <th>Asset Name</th>
+                              <th>Asset Type</th>
+                              <th>Last Maintenance Date</th>
+                              <th>Current Status</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>1</td>
+                              <td>Generator 1</td>
+                              <td>Power</td>
+                              <td>2024-08-15</td>
+                              <td class="urgent"> Urgent Maintenance</td>
+                            </tr>
+                            <tr>
+                              <td>2</td>
+                              <td>HVAC Unit 3</td>
+                              <td>Climate Control</td>
+                              <td>2024-07-22</td>
+                              <td class="urgent"> Urgent Maintenance</td>
+                            </tr>
+                            <tr>
+                              <td>3</td>
+                              <td>Pump 2</td>
+                              <td>Water Supply</td>
+                              <td>2024-08-01</td>
+                              <td class="urgent"> Urgent Maintenance</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="col-lg-6 col-md-12 mb-3 px-1 card-malfunctions">
-                <div class="card h-100">
-                  <div class="card-header">
-                    <h5 class="card-title m-0 me-2 fw-bold fs-6">قائمة بالأصول التي تجاوزت فترة الصيانة الدورية</h5>
-
-                  </div>
-                  <div class="card-body">
-                    <div class="card-datatable ive pt-0">
-                      <table class=" table table-bordered table-hover rounded">
-                        <thead class="table-light">
-                          <tr>
-                            <th>Asset Name</th>
-                            <th>Asset Type</th>
-                            <th>Last Date</th>
-                            <th>Scheduled Date</th>
-                            <th>Status</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td>Generator 2</td>
-                            <td>Power</td>
-                            <td>2023-12-15</td>
-                            <td>2024-06-15</td>
-                            <td class="overdue">Overdue</td>
-                          </tr>
-                          <tr>
-                            <td>Boiler 1</td>
-                            <td>Heating</td>
-                            <td>2024-01-10</td>
-                            <td>2024-07-10</td>
-                            <td class="overdue">Overdue</td>
-                          </tr>
-                          <tr>
-                            <td>Cooling Tower 5</td>
-                            <td>Climate Control</td>
-                            <td>2024-02-20</td>
-                            <td>2024-08-20</td>
-                            <td class="overdue">Overdue</td>
-                          </tr>
-                        </tbody>
-                      </table>
+                <div class="col-lg-6 col-md-12 mb-3 px-1 card-malfunctions">
+                  <div class="card h-100">
+                    <div class="card-header">
+                      <h5 class="card-title m-0 me-2 fw-bold fs-6">قائمة بالأصول التي تجاوزت فترة الصيانة الدورية</h5>
+  
+                    </div>
+                    <div class="card-body">
+                      <div class="card-datatable ive pt-0">
+                        <table class=" table table-bordered table-hover rounded">
+                          <thead class="table-light">
+                            <tr>
+                              <th>Asset Name</th>
+                              <th>Asset Type</th>
+                              <th>Last Date</th>
+                              <th>Scheduled Date</th>
+                              <th>Status</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>Generator 2</td>
+                              <td>Power</td>
+                              <td>2023-12-15</td>
+                              <td>2024-06-15</td>
+                              <td class="overdue">Overdue</td>
+                            </tr>
+                            <tr>
+                              <td>Boiler 1</td>
+                              <td>Heating</td>
+                              <td>2024-01-10</td>
+                              <td>2024-07-10</td>
+                              <td class="overdue">Overdue</td>
+                            </tr>
+                            <tr>
+                              <td>Cooling Tower 5</td>
+                              <td>Climate Control</td>
+                              <td>2024-02-20</td>
+                              <td>2024-08-20</td>
+                              <td class="overdue">Overdue</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-
+                <div class="col-lg-6 col-md-12">
+                  <div class="card h-100">
+                    <div class="fault-tree">
+                      <!--  الرئيسية -->
+                      <div class="node root">العطل الرئيسي</div>
               
-              <div class="col-lg-6 col-md-6 mb-3 card-malfunctions">
-                <div class="card">
-                  <div class="card-header d-flex justify-content-between">
-                    <div class="card-title mb-0">
-                      <h5 class="card-title m-0 me-2 fw-bold fs-6">  تحديد مواقع الأعطال الأكثر شيوعًا
-                      </h5>
-                    </div>
-                   
-                  </div>
-                  <div class="card-body">
-                    <ul class="p-0 m-0">
-                      <li class="mb-2 pb-1 d-flex">
-                        <div class="d-flex w-50 align-items-center me-3">
-                          <img src="../assets/img/icons/brands/location.png" alt="laravel-logo" class="me-3"
-                            width="25">
-                          <div>
-                            <h6 class="mb-0">Laravel</h6>
-                            <small class="text-muted">eCommerce</small>
-                          </div>
-                        </div>
-                        <div class="d-flex flex-grow-1 align-items-center">
-                          <div class="progress w-100 me-3" style="height: 8px">
-                            <div class="progress-bar bg-danger" role="progressbar" style="width: 54%" aria-valuenow="54"
-                              aria-valuemin="0" aria-valuemax="100"></div>
-                          </div>
-                          <span class="text-muted">54%</span>
-                        </div>
-                      </li>
-                      <li class="mb-2 pb-1 d-flex">
-                        <div class="d-flex w-50 align-items-center me-3">
-                          <img src="../assets/img/icons/brands/location.png" alt="figma-logo" class="me-3"
-                            width="25">
-                          <div>
-                            <h6 class="mb-0">Figma</h6>
-                            <small class="text-muted">App UI Kit</small>
-                          </div>
-                        </div>
-                        <div class="d-flex flex-grow-1 align-items-center">
-                          <div class="progress w-100 me-3" style="height: 8px">
-                            <div class="progress-bar bg-primary" role="progressbar" style="width: 86%"
-                              aria-valuenow="86" aria-valuemin="0" aria-valuemax="100"></div>
-                          </div>
-                          <span class="text-muted">86%</span>
-                        </div>
-                      </li>
-                      <li class="mb-2 pb-1 d-flex">
-                        <div class="d-flex w-50 align-items-center me-3">
-                          <img src="../assets/img/icons/brands/location.png" alt="vue-logo" class="me-3" width="25">
-                          <div>
-                            <h6 class="mb-0">VueJs</h6>
-                            <small class="text-muted">Calendar App</small>
-                          </div>
-                        </div>
-                        <div class="d-flex flex-grow-1 align-items-center">
-                          <div class="progress w-100 me-3" style="height: 8px">
-                            <div class="progress-bar bg-success" role="progressbar" style="width: 90%"
-                              aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                          </div>
-                          <span class="text-muted">90%</span>
-                        </div>
-                      </li>
-                      <li class="mb-2 pb-1 d-flex">
-                        <div class="d-flex w-50 align-items-center me-3">
-                          <img src="../assets/img/icons/brands/location.png" alt="react-logo" class="me-3"
-                            width="25">
-                          <div>
-                            <h6 class="mb-0">React</h6>
-                            <small class="text-muted">Dashboard</small>
-                          </div>
-                        </div>
-                        <div class="d-flex flex-grow-1 align-items-center">
-                          <div class="progress w-100 me-3" style="height: 8px">
-                            <div class="progress-bar bg-info" role="progressbar" style="width: 37%" aria-valuenow="37"
-                              aria-valuemin="0" aria-valuemax="100"></div>
-                          </div>
-                          <span class="text-muted">37%</span>
-                        </div>
-                      </li>
-                      <li class="mb-2 pb-1 d-flex">
-                        <div class="d-flex w-50 align-items-center me-3">
-                          <img src="../assets/img/icons/brands/location.png" alt="bootstrap-logo" class="me-3"
-                            width="25">
-                          <div>
-                            <h6 class="mb-0">Bootstrap</h6>
-                            <small class="text-muted">Website</small>
-                          </div>
-                        </div>
-                        <div class="d-flex flex-grow-1 align-items-center">
-                          <div class="progress w-100 me-3" style="height: 8px">
-                            <div class="progress-bar bg-primary" role="progressbar" style="width: 22%"
-                              aria-valuenow="22" aria-valuemin="0" aria-valuemax="100"></div>
-                          </div>
-                          <span class="text-muted">22%</span>
-                        </div>
-                      </li>
-                      <li class="d-flex">
-                        <div class="d-flex w-50 align-items-center me-3">
-                          <img src="../assets/img/icons/brands/location.png" alt="sketch-logo" class="me-3"
-                            width="25">
-                          <div>
-                            <h6 class="mb-0">Sketch</h6>
-                            <small class="text-muted">Website Design</small>
-                          </div>
-                        </div>
-                        <div class="d-flex flex-grow-1 align-items-center">
-                          <div class="progress w-100 me-3" style="height: 8px">
-                            <div class="progress-bar bg-warning" role="progressbar" style="width: 29%"
-                              aria-valuenow="29" aria-valuemin="0" aria-valuemax="100"></div>
-                          </div>
-                          <span class="text-muted">29%</span>
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
-
-
-                </div>
-              </div>
+                      <!-- المستوى الأول -->
+                      <div class="level">
+                          <div class="node">سبب 1</div>
+                          <div class="node">سبب 2</div>
+                      </div>
               
-              <div class="col-lg-6 col-md-6">
-                <div class="card h-100">
-                  <div class="fault-tree">
-                    <!--  الرئيسية -->
-                    <div class="node root">العطل الرئيسي</div>
-            
-                    <!-- المستوى الأول -->
-                    <div class="level">
-                        <div class="node">سبب 1</div>
-                        <div class="node">سبب 2</div>
-                    </div>
-            
-                    <!-- المستوى الثاني -->
-                    <div class="level">
-                        <div class="node">سبب 1.1</div>
-                        <div class="node">سبب 1.2</div>
-                        <div class="node">سبب 2.1</div>
-                        <div class="node">سبب 2.2</div>
-                    </div>
-                </div>
+                      <!-- المستوى الثاني -->
+                      <div class="level">
+                          <div class="node">سبب 1.1</div>
+                          <div class="node">سبب 1.2</div>
+                          <div class="node">سبب 2.1</div>
+                          <div class="node">سبب 2.2</div>
+                      </div>
+                  </div>
+                  </div>
+                  
                 </div>
                 
+                <div class="col-lg-6 col-md-12 mb-3 card-malfunctions">
+                  <div class="card">
+                    <div class="card-header d-flex justify-content-between">
+                      <div class="card-title mb-0">
+                        <h5 class="card-title m-0 me-2 fw-bold fs-6">  تحديد مواقع الأعطال الأكثر شيوعًا
+                        </h5>
+                      </div>
+                     
+                    </div>
+                    <div class="card-body">
+                      <ul class="p-0 m-0">
+                        <li class="mb-2 pb-1 d-flex">
+                          <div class="d-flex w-50 align-items-center me-3">
+                            <img src="../assets/img/icons/brands/location.png" alt="laravel-logo" class="me-3"
+                              width="25">
+                            <div>
+                              <h6 class="mb-0">Laravel</h6>
+                              <small class="text-muted">eCommerce</small>
+                            </div>
+                          </div>
+                          <div class="d-flex flex-grow-1 align-items-center">
+                            <div class="progress w-100 me-3" style="height: 8px">
+                              <div class="progress-bar bg-danger" role="progressbar" style="width: 54%" aria-valuenow="54"
+                                aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <span class="text-muted">54%</span>
+                          </div>
+                        </li>
+                        <li class="mb-2 pb-1 d-flex">
+                          <div class="d-flex w-50 align-items-center me-3">
+                            <img src="../assets/img/icons/brands/location.png" alt="figma-logo" class="me-3"
+                              width="25">
+                            <div>
+                              <h6 class="mb-0">Figma</h6>
+                              <small class="text-muted">App UI Kit</small>
+                            </div>
+                          </div>
+                          <div class="d-flex flex-grow-1 align-items-center">
+                            <div class="progress w-100 me-3" style="height: 8px">
+                              <div class="progress-bar bg-primary" role="progressbar" style="width: 86%"
+                                aria-valuenow="86" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <span class="text-muted">86%</span>
+                          </div>
+                        </li>
+                        <li class="mb-2 pb-1 d-flex">
+                          <div class="d-flex w-50 align-items-center me-3">
+                            <img src="../assets/img/icons/brands/location.png" alt="vue-logo" class="me-3" width="25">
+                            <div>
+                              <h6 class="mb-0">VueJs</h6>
+                              <small class="text-muted">Calendar App</small>
+                            </div>
+                          </div>
+                          <div class="d-flex flex-grow-1 align-items-center">
+                            <div class="progress w-100 me-3" style="height: 8px">
+                              <div class="progress-bar bg-success" role="progressbar" style="width: 90%"
+                                aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <span class="text-muted">90%</span>
+                          </div>
+                        </li>
+                        <li class="mb-2 pb-1 d-flex">
+                          <div class="d-flex w-50 align-items-center me-3">
+                            <img src="../assets/img/icons/brands/location.png" alt="react-logo" class="me-3"
+                              width="25">
+                            <div>
+                              <h6 class="mb-0">React</h6>
+                              <small class="text-muted">Dashboard</small>
+                            </div>
+                          </div>
+                          <div class="d-flex flex-grow-1 align-items-center">
+                            <div class="progress w-100 me-3" style="height: 8px">
+                              <div class="progress-bar bg-info" role="progressbar" style="width: 37%" aria-valuenow="37"
+                                aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <span class="text-muted">37%</span>
+                          </div>
+                        </li>
+                        <li class="mb-2 pb-1 d-flex">
+                          <div class="d-flex w-50 align-items-center me-3">
+                            <img src="../assets/img/icons/brands/location.png" alt="bootstrap-logo" class="me-3"
+                              width="25">
+                            <div>
+                              <h6 class="mb-0">Bootstrap</h6>
+                              <small class="text-muted">Website</small>
+                            </div>
+                          </div>
+                          <div class="d-flex flex-grow-1 align-items-center">
+                            <div class="progress w-100 me-3" style="height: 8px">
+                              <div class="progress-bar bg-primary" role="progressbar" style="width: 22%"
+                                aria-valuenow="22" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <span class="text-muted">22%</span>
+                          </div>
+                        </li>
+                        <li class="d-flex">
+                          <div class="d-flex w-50 align-items-center me-3">
+                            <img src="../assets/img/icons/brands/location.png" alt="sketch-logo" class="me-3"
+                              width="25">
+                            <div>
+                              <h6 class="mb-0">Sketch</h6>
+                              <small class="text-muted">Website Design</small>
+                            </div>
+                          </div>
+                          <div class="d-flex flex-grow-1 align-items-center">
+                            <div class="progress w-100 me-3" style="height: 8px">
+                              <div class="progress-bar bg-warning" role="progressbar" style="width: 29%"
+                                aria-valuenow="29" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <span class="text-muted">29%</span>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+  
+  
+                  </div>
+                </div>
+                
+               
+                 </div>
+              </div>
+              <div class="col-md-6">
+                <h6 class="text-center bg-text-h6"> المجموعه 2</h6>
+                 <div class="row mx-0">
+                  <div class="col-sm-6 col-lg-6 col-md-6 mb-2 px-1">
+                    <div class="row mx-0 justify-content-center">
+                      <div class="col-sm-6 col-lg-6 col-md-6 mb-2 px-1">
+                        <div class="card card-border-shadow-primary">
+                          <div class="card-body pt-1 pb-1">
+                            <div class="avatar me-2 mb-2">
+                              <span class="avatar-initial rounded bg-label-primary"><i
+                                  class="fa-solid fa-cart-plus"></i></span>
+                            </div>
+
+                            <h5 class="card-title fw-bold mb-1 fs-title-report"> عدد الطلبات الجديدة </h5>
+                            <p class="text-heading fw-bold mb-2 mt-1">$4,673</p>
+                            <div>
+                              <span class="badge fw-bold bg-label-primary">+25.2%</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6 col-lg-6 col-md-6 mb-2 px-1">
+                        <div class="card card-border-shadow-warning">
+                          <div class="card-body pt-1 pb-1">
+                            <div class="avatar mb-2 me-2">
+                              <span class="avatar-initial rounded bg-label-warning"><i
+                                  class="fa-solid fa-list-check"></i></span>
+                            </div>
+
+                            <h5 class="mb-1 fw-bold fs-title-report"> عدد الطلبات المغلقة </h5>
+                            <p class="text-heading fw-bold mb-2 mt-1">$4,673</p>
+                            <div>
+                              <span class="badge fw-bold bg-label-warning">+25.2%</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6 col-lg-6 col-md-6  mb-2 px-1">
+                        <div class="card card-border-shadow-danger h-100">
+                          <div class="card-body pt-1 pb-1">
+                            <div class="avatar mb-2 me-2">
+                              <span class="avatar-initial rounded bg-label-danger"><i
+                                  class="fa-solid fa-list"></i></span>
+                            </div>
+
+                            <h5 class="mb-1 fw-bold fs-title-report">عدد الطلبات المتاخرة
+                            </h5>
+                            <p class="text-heading fw-bold mb-2 mt-1">$4,673</p>
+                            <div>
+                              <span class="badge fw-bold bg-label-danger">+25.2%</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <div class="col-sm-6 col-lg-6 col-md-6 mb-2 px-1">
+                        <div class="card card-border-shadow-warning">
+                          <div class="card-body pt-1 pb-1">
+                            <div class="avatar mb-2 me-2">
+                              <span class="avatar-initial rounded bg-label-warning"><i
+                                  class="fa-regular fa-clock"></i></span>
+                            </div>
+
+                            <h6 class="mb-1 fw-bold fs-title-report"> متوسط وقت إصلاح الطلب </h6>
+                            <p class="text-heading fw-bold mb-2 mt-1">$4,673</p>
+                            <div>
+                              <span class="badge fw-bold bg-label-warning">+25.2%</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6 col-lg-12 col-md-12  mb-2 px-1">
+                        <div class="card card-border-shadow-info">
+                          <div class="card-body pt-1 pb-1">
+                            <div class="avatar mb-2 me-2">
+                              <span class="avatar-initial rounded bg-label-info"><i
+                                  class="fa-regular fa-clock"></i></span>
+                            </div>
+
+
+                            <h5 class="mb-1 fw-bold fs-title-report"> متوسط وقت الاستجابة لطلب الصيانة</h5>
+                            <p class="text-heading fw-bold mb-2 mt-1">$4,673</p>
+                            <div>
+                              <span class="badge fw-bold bg-label-info">+25.2%</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-lg-6 mb-3 px-1">
+                    <div class="card mt-2 h-100">
+                      <div class="card-header p-1">
+                        <h5 class="card-title m-0 me-2 fw-bold fs-6"> نسبة الأصول العاملة مقابل الأصول المتوقفة</h5>
+    
+                      </div>
+                      <div class="card-body">
+                        <canvas id="assetStatusChart-tow" width="300" height="300" style="margin: auto;"></canvas>
+    
+                      </div>
+                    </div>
+                  </div>
+
+                  <!---->
+                  <div class="col-md-6 col-lg-6 mb-3 px-1">
+                    
+                      <div class="card mt-2">
+                        <div class="card-header p-1">
+                          <h5 class="card-title m-0 me-2 fw-bold fs-6"> أكثر الأعطال شيوعًا </h5>
+      
+                        </div>
+                        <div class="card-body">
+                          <canvas id="commonFailuresChart-tow"></canvas>
+      
+                        </div>
+                      </div>
+                   
+                  </div>
+                <div class="col-md-6 col-lg-6 mb-3 px-1">
+                    <div class="card h-100">
+                      <div class="card-header p-1">
+                        <h5 class="card-title m-0 me-2 fw-bold fs-4">أداء الفنيين</h5>
+  
+                      </div>
+                      <div class="card-body">
+                        <canvas id="combinedChart-tow"></canvas>
+  
+                      </div>
+                    </div>
+                 
+                </div>
+                <div class="col-md-6 col-lg-6 mb-3 px-1">
+                 
+                  <div class="card mt-2">
+                    <div class="card-header p-1">
+                      <h5 class="card-title m-0 me-2 fw-bold fs-6"> تتبع متوسط وقت الاستجابة للطلبات</h5>
+  
+                    </div>
+                    <div class="card-body">
+                      <canvas id="responseTimeChart-tow"></canvas>
+  
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-6 mb-3 px-1">
+                  
+                 
+                  <div class="card mt-2">
+                    <div class="card-header p-1">
+                      <h5 class="card-title m-0 me-2 fw-bold fs-6"> لعرض المقارنات بين البيانات المختلفة</h5>
+  
+                    </div>
+                    <div class="card-body h-100">
+                      <canvas id="monthlyRequestsChart-tow"></canvas>
+  
+                    </div>
+                  </div>
+              </div>
+                <div class="col-lg-6 col-md-12 mb-3 px-1 card-malfunctions">
+                  <div class="card h-100">
+                    <div class="card-header">
+                      <h5 class="card-title m-0 me-2 fw-bold fs-6"> قائمة بالأصول التي تتطلب صيانة عاجلة</h5>
+  
+                    </div>
+                    <div class="card-body">
+                      <div class="card-datatable  pt-0">
+                        <table class=" table table-bordered table-hover rounded">
+                          <thead class="table-light">
+                            <tr>
+                              <th>#</th>
+                              <th>Asset Name</th>
+                              <th>Asset Type</th>
+                              <th>Last Maintenance Date</th>
+                              <th>Current Status</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>1</td>
+                              <td>Generator 1</td>
+                              <td>Power</td>
+                              <td>2024-08-15</td>
+                              <td class="urgent"> Urgent Maintenance</td>
+                            </tr>
+                            <tr>
+                              <td>2</td>
+                              <td>HVAC Unit 3</td>
+                              <td>Climate Control</td>
+                              <td>2024-07-22</td>
+                              <td class="urgent"> Urgent Maintenance</td>
+                            </tr>
+                            <tr>
+                              <td>3</td>
+                              <td>Pump 2</td>
+                              <td>Water Supply</td>
+                              <td>2024-08-01</td>
+                              <td class="urgent"> Urgent Maintenance</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-md-12 mb-3 px-1 card-malfunctions">
+                  <div class="card h-100">
+                    <div class="card-header">
+                      <h5 class="card-title m-0 me-2 fw-bold fs-6">قائمة بالأصول التي تجاوزت فترة الصيانة الدورية</h5>
+  
+                    </div>
+                    <div class="card-body">
+                      <div class="card-datatable ive pt-0">
+                        <table class=" table table-bordered table-hover rounded">
+                          <thead class="table-light">
+                            <tr>
+                              <th>Asset Name</th>
+                              <th>Asset Type</th>
+                              <th>Last Date</th>
+                              <th>Scheduled Date</th>
+                              <th>Status</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>Generator 2</td>
+                              <td>Power</td>
+                              <td>2023-12-15</td>
+                              <td>2024-06-15</td>
+                              <td class="overdue">Overdue</td>
+                            </tr>
+                            <tr>
+                              <td>Boiler 1</td>
+                              <td>Heating</td>
+                              <td>2024-01-10</td>
+                              <td>2024-07-10</td>
+                              <td class="overdue">Overdue</td>
+                            </tr>
+                            <tr>
+                              <td>Cooling Tower 5</td>
+                              <td>Climate Control</td>
+                              <td>2024-02-20</td>
+                              <td>2024-08-20</td>
+                              <td class="overdue">Overdue</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-md-12">
+                  <div class="card h-100">
+                    <div class="fault-tree">
+                      <!--  الرئيسية -->
+                      <div class="node root">العطل الرئيسي</div>
+              
+                      <!-- المستوى الأول -->
+                      <div class="level">
+                          <div class="node">سبب 1</div>
+                          <div class="node">سبب 2</div>
+                      </div>
+              
+                      <!-- المستوى الثاني -->
+                      <div class="level">
+                          <div class="node">سبب 1.1</div>
+                          <div class="node">سبب 1.2</div>
+                          <div class="node">سبب 2.1</div>
+                          <div class="node">سبب 2.2</div>
+                      </div>
+                  </div>
+                  </div>
+                  
+                </div>
+                
+                <div class="col-lg-6 col-md-12 mb-3 card-malfunctions">
+                  <div class="card">
+                    <div class="card-header d-flex justify-content-between">
+                      <div class="card-title mb-0">
+                        <h5 class="card-title m-0 me-2 fw-bold fs-6">  تحديد مواقع الأعطال الأكثر شيوعًا
+                        </h5>
+                      </div>
+                     
+                    </div>
+                    <div class="card-body">
+                      <ul class="p-0 m-0">
+                        <li class="mb-2 pb-1 d-flex">
+                          <div class="d-flex w-50 align-items-center me-3">
+                            <img src="../assets/img/icons/brands/location.png" alt="laravel-logo" class="me-3"
+                              width="25">
+                            <div>
+                              <h6 class="mb-0">Laravel</h6>
+                              <small class="text-muted">eCommerce</small>
+                            </div>
+                          </div>
+                          <div class="d-flex flex-grow-1 align-items-center">
+                            <div class="progress w-100 me-3" style="height: 8px">
+                              <div class="progress-bar bg-danger" role="progressbar" style="width: 54%" aria-valuenow="54"
+                                aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <span class="text-muted">54%</span>
+                          </div>
+                        </li>
+                        <li class="mb-2 pb-1 d-flex">
+                          <div class="d-flex w-50 align-items-center me-3">
+                            <img src="../assets/img/icons/brands/location.png" alt="figma-logo" class="me-3"
+                              width="25">
+                            <div>
+                              <h6 class="mb-0">Figma</h6>
+                              <small class="text-muted">App UI Kit</small>
+                            </div>
+                          </div>
+                          <div class="d-flex flex-grow-1 align-items-center">
+                            <div class="progress w-100 me-3" style="height: 8px">
+                              <div class="progress-bar bg-primary" role="progressbar" style="width: 86%"
+                                aria-valuenow="86" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <span class="text-muted">86%</span>
+                          </div>
+                        </li>
+                        <li class="mb-2 pb-1 d-flex">
+                          <div class="d-flex w-50 align-items-center me-3">
+                            <img src="../assets/img/icons/brands/location.png" alt="vue-logo" class="me-3" width="25">
+                            <div>
+                              <h6 class="mb-0">VueJs</h6>
+                              <small class="text-muted">Calendar App</small>
+                            </div>
+                          </div>
+                          <div class="d-flex flex-grow-1 align-items-center">
+                            <div class="progress w-100 me-3" style="height: 8px">
+                              <div class="progress-bar bg-success" role="progressbar" style="width: 90%"
+                                aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <span class="text-muted">90%</span>
+                          </div>
+                        </li>
+                        <li class="mb-2 pb-1 d-flex">
+                          <div class="d-flex w-50 align-items-center me-3">
+                            <img src="../assets/img/icons/brands/location.png" alt="react-logo" class="me-3"
+                              width="25">
+                            <div>
+                              <h6 class="mb-0">React</h6>
+                              <small class="text-muted">Dashboard</small>
+                            </div>
+                          </div>
+                          <div class="d-flex flex-grow-1 align-items-center">
+                            <div class="progress w-100 me-3" style="height: 8px">
+                              <div class="progress-bar bg-info" role="progressbar" style="width: 37%" aria-valuenow="37"
+                                aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <span class="text-muted">37%</span>
+                          </div>
+                        </li>
+                        <li class="mb-2 pb-1 d-flex">
+                          <div class="d-flex w-50 align-items-center me-3">
+                            <img src="../assets/img/icons/brands/location.png" alt="bootstrap-logo" class="me-3"
+                              width="25">
+                            <div>
+                              <h6 class="mb-0">Bootstrap</h6>
+                              <small class="text-muted">Website</small>
+                            </div>
+                          </div>
+                          <div class="d-flex flex-grow-1 align-items-center">
+                            <div class="progress w-100 me-3" style="height: 8px">
+                              <div class="progress-bar bg-primary" role="progressbar" style="width: 22%"
+                                aria-valuenow="22" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <span class="text-muted">22%</span>
+                          </div>
+                        </li>
+                        <li class="d-flex">
+                          <div class="d-flex w-50 align-items-center me-3">
+                            <img src="../assets/img/icons/brands/location.png" alt="sketch-logo" class="me-3"
+                              width="25">
+                            <div>
+                              <h6 class="mb-0">Sketch</h6>
+                              <small class="text-muted">Website Design</small>
+                            </div>
+                          </div>
+                          <div class="d-flex flex-grow-1 align-items-center">
+                            <div class="progress w-100 me-3" style="height: 8px">
+                              <div class="progress-bar bg-warning" role="progressbar" style="width: 29%"
+                                aria-valuenow="29" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <span class="text-muted">29%</span>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+  
+  
+                  </div>
+                </div>
+                
+               
+                 </div>
+  
               </div>
             </div>
-
+             
 
 
           </div>
@@ -610,7 +1025,99 @@
       });
     </script>
     <script>
+      var ctx = document.getElementById('combinedChart-tow').getContext('2d');
+      ctx.canvas.width = 50;  // تعيين العرض
+      var combinedChart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+          labels: ['Technician 1', 'Technician 2', 'Technician 3'],
+          datasets: [{
+            label: 'Number of Tasks Completed',
+            data: [12, 19, 8],
+            backgroundColor: 'rgba(75, 192, 192, 0.2)',
+            borderColor: 'rgba(75, 192, 192, 1)',
+            borderWidth: 1,
+            yAxisID: 'y-tasks'
+          }, {
+            label: 'Average Task Completion Time (minutes)',
+            data: [45, 30, 60],
+            type: 'line',
+            fill: false,
+            borderColor: 'rgba(153, 102, 255, 1)',
+            backgroundColor: 'rgba(153, 102, 255, 0.2)',
+            yAxisID: 'y-time'
+          }]
+        },
+        options: {
+          scales: {
+            yAxes: [{
+              id: 'y-tasks',
+              type: 'linear',
+              position: 'left',
+              ticks: {
+                beginAtZero: true
+              },
+              scaleLabel: {
+                display: true,
+                labelString: 'Number of Tasks Completed'
+              }
+            }, {
+              id: 'y-time',
+              type: 'linear',
+              position: 'right',
+              ticks: {
+                beginAtZero: true
+              },
+              scaleLabel: {
+                display: true,
+                labelString: 'Average Task Completion Time (minutes)'
+              }
+            }]
+          }
+        }
+      });
+    </script>
+    <script>
       var ctx = document.getElementById('assetStatusChart').getContext('2d');
+      ctx.canvas.width = 300;  // تعيين العرض
+      ctx.canvas.height = 300;  // تعيين الارتفاع
+      var assetStatusChart = new Chart(ctx, {
+        type: 'doughnut',
+        data: {
+          labels: ['Operational', 'Non-Operational'],
+          datasets: [{
+            label: 'Asset Status',
+            data: [75, 25],  // 75% operational, 25% non-operational
+            backgroundColor: [
+              'rgba(75, 192, 192, 0.2)',
+              'rgba(255, 99, 132, 0.2)'
+            ],
+            borderColor: [
+              'rgba(75, 192, 192, 1)',
+              'rgba(255, 99, 132, 1)'
+            ],
+            borderWidth: 1
+          }]
+        },
+        options: {
+          responsive: false,
+          plugins: {
+            legend: {
+              position: 'top',
+            },
+            tooltip: {
+              callbacks: {
+                label: function (tooltipItem) {
+                  return tooltipItem.label + ': ' + tooltipItem.raw + '%';
+                }
+              }
+            }
+          }
+        }
+      });
+    </script>
+     <script>
+      var ctx = document.getElementById('assetStatusChart-tow').getContext('2d');
       ctx.canvas.width = 300;  // تعيين العرض
       ctx.canvas.height = 300;  // تعيين الارتفاع
       var assetStatusChart = new Chart(ctx, {
@@ -677,7 +1184,58 @@
       });
     </script>
     <script>
+      var ctx = document.getElementById('commonFailuresChart-tow').getContext('2d');
+      var commonFailuresChart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+          labels: ['Pump Failure', 'Overheating', 'Electrical Issue', 'Leakage', 'Mechanical Breakdown'],
+          datasets: [{
+            label: 'Number of Occurrences',
+            data: [15, 12, 8, 7, 5],
+            backgroundColor: 'rgba(54, 162, 235, 0.2)',
+            borderColor: 'rgba(54, 162, 235, 1)',
+            borderWidth: 1
+          }]
+        },
+        options: {
+          scales: {
+            y: {
+              beginAtZero: true
+            }
+          },
+          plugins: {
+            legend: {
+              display: false
+            }
+          }
+        }
+      });
+    </script>
+    <script>
       var ctx = document.getElementById('monthlyRequestsChart').getContext('2d');
+      var monthlyRequestsChart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+          labels: ['January', 'February', 'March', 'April', 'May', 'June'],
+          datasets: [{
+            label: 'Closed Requests',
+            data: [120, 150, 130, 170, 200, 160],
+            backgroundColor: 'rgba(75, 192, 192, 0.2)',
+            borderColor: 'rgba(75, 192, 192, 1)',
+            borderWidth: 1
+          }]
+        },
+        options: {
+          scales: {
+            y: {
+              beginAtZero: true
+            }
+          }
+        }
+      });
+    </script>
+     <script>
+      var ctx = document.getElementById('monthlyRequestsChart-tow').getContext('2d');
       var monthlyRequestsChart = new Chart(ctx, {
         type: 'bar',
         data: {
@@ -701,6 +1259,29 @@
     </script>
     <script>
       var ctx = document.getElementById('responseTimeChart').getContext('2d');
+      var responseTimeChart = new Chart(ctx, {
+        type: 'line',
+        data: {
+          labels: ['January', 'February', 'March', 'April', 'May', 'June'],
+          datasets: [{
+            label: 'Average Response Time (hours)',
+            data: [4.5, 4.0, 5.0, 3.8, 4.2, 3.5],
+            backgroundColor: 'rgba(255, 159, 64, 0.2)',
+            borderColor: 'rgba(255, 159, 64, 1)',
+            borderWidth: 1
+          }]
+        },
+        options: {
+          scales: {
+            y: {
+              beginAtZero: true
+            }
+          }
+        }
+      });
+    </script>
+     <script>
+      var ctx = document.getElementById('responseTimeChart-tow').getContext('2d');
       var responseTimeChart = new Chart(ctx, {
         type: 'line',
         data: {
