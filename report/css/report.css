@@ -179,3 +179,12 @@ display: none;
   font-size: 18px;
   font-weight: bold;
 }
+@media print {
+  /* جعل الفوتر ثابتًا في أسفل الصفحة */
+  .footer-content {
+       position:relative;
+       bottom: 0px;
+       width: 100%;
+       
+  }
+}
